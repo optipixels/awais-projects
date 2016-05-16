@@ -1,0 +1,217 @@
+/*	--------------------------------------
+	3. Common site styles
+	--------------------------------------*/
+/* main container styles */
+body {
+	&.active {
+		overflow: hidden;
+		#wrapper {
+			margin: 0 0 0 -260px;
+		}
+		.btn-opener {
+			&:after, &:before {
+				@include rotate(45deg);
+				top: 17px!important;
+				left: 15%;
+				right: 15%;
+			}
+			&:after {
+				@include rotate(-45deg);
+				top: 10px;
+			}
+			span { opacity: 0; }
+		}
+		.nav-area {
+			right: 0;
+		}
+	}
+}
+
+.g-padding {
+	padding: 120px 0 60px;
+}
+.header {
+	text-align: center;
+	overflow: hidden;
+}
+
+/* wrapper style */
+#wrapper {
+	position: relative;
+	overflow: hidden;
+	@include media('<tablet') {
+		width: 100%;
+		@include transition(all 0.25s linear);
+	}
+}
+
+/* main styles */
+#main {
+	overflow: hidden;
+}
+
+h1 {
+	margin: 0;
+	text-transform: uppercase;
+	color: $very-dark-gray;
+	font: 700 48px/58px 'PT Sans Caption', Arial, helvetica, sans-serif;
+	span {
+		position: relative;
+		padding: 0 10px 0 0;
+		@include v-align(inline-block, top);
+		&:after, &:before {
+			position: absolute;
+			content: "";
+			border-style: double;
+		}
+		&:after {
+			@include size(3px, 50px);
+			border-width: 0 0 0 3px;
+			top: 10px;
+			bottom: 0;
+			right: 0;
+			z-index: 1;
+		}
+		&:before {
+			@include size(24px, 3px);
+			border-width: 0 0 3px;
+			bottom: 3px;
+			right: -5px;
+			z-index: 2;
+		}
+	}
+}
+
+.btn {
+	border: 0;
+	font-weight: 400;
+	border-radius: 0;
+	font-size: 14px;
+	line-height: 16px;
+	padding: 5px 20px;
+	text-transform: uppercase;
+}
+
+.btn-default {
+	position: relative;
+	border-style: double;
+	border-width: 3px 0;
+	padding: 10px 40px;
+	&:after, &:before {
+		top: -15px;
+		bottom: -15px;
+		content: "";
+		position: absolute;
+		border-style: double;
+		border-width: 0 0 0 3px;
+	}
+	&:before {
+		left: 15px;
+	}
+	&:after {
+		right: 15px;
+	}
+}
+
+.read-more {
+	color: $base-color;
+	border: 3px double $base-color;
+	&:hover {
+		text-decoration: none;
+	}
+}
+
+/* carousel styles */
+.carousel {
+	img {
+		display: block;
+	}
+}
+
+/* who we are styles */
+.who-we-are {
+	overflow: hidden;
+	padding-bottom: 120px;
+	p {
+		margin: 0 0 25px;
+	}
+}
+.steps {
+	margin: 40px 0 50px -60px;
+	font-size: 14px;
+	line-height: 16px;
+	text-transform: uppercase;
+	li {
+		position: relative;
+		padding: 0 0 0 30px;
+		margin: 0 0 0 30px;
+		&:before {
+			@include size(1px, 32px);
+			margin: -16px 0 0;
+			top: 50%;
+			left: 0;
+			position: absolute;
+			content: "";
+			background: $very-light-gray;
+		}
+	}
+	.icon {
+		background: url(../images/sprite.png) no-repeat;
+		@include v-align(inline-block, middle);
+		margin: 0 15px 0 0;
+	}
+	.plan {
+		@include size(26px, 32px);
+		background-position: -11px -9px;
+	}
+	.design {
+		@include square(32px);
+		background-position: -57px -9px;
+	}
+	.build {
+		@include size(32px, 30px);
+		background-position: -109px -9px;
+	}
+	.delivery {
+		@include size(26px, 32px);
+		background-position: -161px -9px;
+	}
+}
+
+/* Consultant styles */
+.consultant {
+	font-size: 18px;
+	line-height: 28px;
+	color: $white;
+	overflow: hidden;
+	position: relative;
+	background: $very-dark-gray;
+	.text-box {
+		padding-top: 85px;
+		padding-bottom: 100px;
+	}
+	h1 {
+		font-size: 46px;
+		color: $white;
+		margin: 0 0 25px;
+	}
+	p {
+		margin: 0 0 45px;
+	}
+	.image-holder {
+		position: absolute;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 50%;
+		-webkit-background-size: cover;
+		background-size: cover;
+		background-repeat: no-repeat;
+		background-position: center top;
+	}
+}
+
+/* services styles */
+.services {
+
+}

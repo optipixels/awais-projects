@@ -1,0 +1,45 @@
+/* contact-info styles */
+.contact-info [class^="icon-"] {
+  color: #fda700;
+}
+
+/* social networks styles */
+.social-networks a:hover {
+  border-color: #fda700;
+}
+
+/* Site  log styles */
+.logo a {
+  color: #fda700;
+}
+
+/* main menu styles */
+.navbar-default .navbar-nav li a:hover {
+  border-color: #fda700;
+}
+
+.navbar-default .navbar-nav li.active a {
+  border-color: #fda700;
+}
+
+h1 span:after, h1 span:before {
+  border-color: #fda700;
+}
+
+.btn-default {
+  border-color: #fda700;
+}
+
+.btn-default:after, .btn-default:before {
+  border-color: #fda700;
+}
+
+.btn-default:hover {
+  border-color: #fda700;
+  color: #fda700;
+}
+
+.read-more:hover {
+  color: #fda700;
+  border-color: #fda700;
+}

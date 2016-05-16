@@ -1,0 +1,69 @@
+@import "bootstrap-custom";
+
+
+/* contact-info styles */
+.contact-info {
+	[class^="icon-"] {
+		color: $pure-orange;
+	}
+}
+
+/* social networks styles */
+.social-networks {
+	a {
+		&:hover {
+			border-color: $pure-orange;
+		}
+	}
+}
+
+/* Site  log styles */
+.logo {
+	a {
+		color: $pure-orange;
+	}
+}
+
+/* main menu styles */
+.navbar-default {
+	.navbar-nav {
+		li {
+			a {
+				&:hover {
+					border-color: $pure-orange;
+				}
+			}
+			&.active {
+				a {
+					border-color: $pure-orange;
+				}
+			}
+		}
+	}
+}
+
+h1 {
+	span {
+		&:after, &:before {
+			border-color: $pure-orange;
+		}
+	}
+}
+
+
+.btn-default {
+	border-color: $pure-orange;
+	&:after, &:before {
+		border-color: $pure-orange;
+	}
+	&:hover {
+		border-color: $pure-orange;
+		color: $pure-orange;
+	}
+}
+.read-more {
+	&:hover {
+		color: $pure-orange;
+		border-color: $pure-orange;
+	}
+}

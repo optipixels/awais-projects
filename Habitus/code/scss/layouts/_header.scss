@@ -1,0 +1,171 @@
+/* header styles */
+#header {
+	@extend %clearfix;
+	.home & {
+		position: absolute;
+		z-index: 1;
+		top: 0;
+		left: 0;
+		right: 0;
+	}
+	.btn-opener {
+		top: 30px;
+		right: 10px;
+		display: none;
+		background: $pure-orange;
+		position: absolute;
+		border: 2px solid $pure-orange;
+		@include size(40px, 35px);
+		padding: 5px;
+		@include media('<tablet') {
+			display: block;
+		}
+		&:after, &:before, span {
+			background: $white;
+			border-radius: 4px;
+			position: absolute;
+			top: 16px;
+			left: 20%;
+			right: 20%;
+			height: 3px;
+			margin-top: -2px;
+			@include transition(all 0.2s linear);
+		}
+		&:after, &:before {
+			content: "";
+			top: 10px;
+		}
+		&:after {
+			top: 22px;
+		}
+	}
+	.holder {
+		padding-top: 51px;
+	}
+}
+
+/* top panel styles */
+.top-panel {
+	min-height: 69px;
+	overflow: hidden;
+	padding: 19px 0 15px;
+	background: $very-dark-gray;
+}
+
+/* contact-info styles */
+.contact-info {
+	color: $white;
+	font-size: 0;
+	line-height: 0;
+	margin: 7px 0 0;
+	li {
+		letter-spacing: 1px;
+		position: relative;
+		padding: 0 95px 0 40px;
+		text-transform: capitalize;
+		font: 300 16px/18px 'Roboto', Arial, helvetica, sans-serif;
+	}
+	[class^="icon-"] {
+		margin: -13px 0 0;
+		position: absolute;
+		left: 0;
+		top: 50%;
+	}
+	.icon-location {
+		font-size: 19px;
+		margin: -9px 0 0;
+	}
+	.icon-phone {
+		font-size: 26px;
+	}
+	a {
+		color: $white;
+	}
+}
+
+/* social networks styles */
+.social-networks {
+	margin: 0;
+	float: right;
+	font-size: 0;
+	line-height: 0;
+	li {
+		font-size: 16px;
+		line-height: 18px;
+		@include v-align(inline-block, middle);
+	}
+	a {
+		display: block;
+		color: $white;
+		padding: 5px 13px;
+		border-width: 0 0 3px;
+		border-style: double;
+		border-color: transparent;
+		&:hover {
+			text-decoration: none;
+		}
+	}
+	.icon-facebook {
+		font-size: 20px;
+	}
+}
+
+/* Site  log styles */
+.logo {
+	padding: 0;
+	float: left;
+	border-color: $white;
+	border-width: 0 0 4px;
+	border-style: double;
+	text-transform: uppercase;
+	text-shadow: 0 1px 2px rgba(0,0,0,.2), inset 0 -2px rgba(0,0,0,.2);
+	font: 700 44px/50px 'Roboto', Arial, helvetica, sans-serif;
+	span {
+		color: $white;
+	}
+	a {
+		&:hover {
+			text-decoration: none;
+		}
+	}
+}
+
+/* nav area styles */
+.nav-area {
+	padding: 0;
+	@include media('<tablet') {
+		@include box-shadow(0 0 10px rgba(0, 0, 0, 0.5));
+		@include transition(all 0.25s linear);
+		@include size(260px, 100%);
+		background: $white;
+		padding: 20px 0;
+		position: fixed;
+		z-index: 99;
+		right: -260px;
+		top: 0;
+	}
+}
+
+/* main menu styles */
+.navbar-default {
+	text-align: center;
+	border-style: double;
+	border-width: 4px 0;
+	border-color: rgba(255, 255, 255, 0.10);
+	text-transform: uppercase;
+	font: 500 14px/16px 'Roboto', Arial, helvetica, sans-serif;
+	.navbar-nav {
+		margin: -4px 0;
+		@include v-align(inline-block, top);
+		float: none;
+		li {
+			margin: 0 16px;
+			a {
+				padding: 13px 0;
+				border-style: double;
+				border-width: 4px 0;
+				border-color: transparent;
+			}
+		}
+	}
+}
