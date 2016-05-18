@@ -1083,6 +1083,386 @@ h1 span:before {
 }
 
 /* services styles */
+.services .nav-tabs {
+  border: 0;
+}
+
+.services .nav-tabs li {
+  height: 150px;
+  float: none;
+  margin: 30px 0 0;
+  border: 3px double #dbdbdb;
+}
+
+.services .nav-tabs li:first-child {
+  margin: 0;
+}
+
+.services .nav-tabs li.active a {
+  border: 0;
+}
+
+.services .nav-tabs a {
+  border: 0;
+  padding: 17px 30px;
+  color: #4c4c4c;
+}
+
+.services .nav-tabs a:hover {
+  background: none;
+}
+
+.services .nav-tabs .title {
+  clear: both;
+  display: block;
+  font-weight: 400;
+  line-height: 18px;
+  text-transform: capitalize;
+}
+
+.services .nav-tabs .title span {
+  display: block;
+  text-transform: uppercase;
+  font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+}
+
+.services .nav-tabs.text-right .icon {
+  float: right;
+}
+
+.services .nav-tabs .icon {
+  display: block;
+  margin: 0 0 15px;
+  background: url(../images/sprite.png) no-repeat;
+}
+
+.services .nav-tabs .icon.contruction {
+  width: 36px;
+  height: 31px;
+  background-position: -10px -61px;
+}
+
+.services .nav-tabs .icon.architecture {
+  width: 36px;
+  height: 36px;
+  background-position: -10px -112px;
+}
+
+.services .nav-tabs .icon.painting {
+  width: 36px;
+  height: 37px;
+  background-position: -10px -168px;
+}
+
+.services .nav-tabs .icon.electrical {
+  width: 23px;
+  height: 46px;
+  background-position: -10px -225px;
+}
+
+.services .nav-tabs .icon.metal-roofing {
+  width: 34px;
+  height: 17px;
+  background-position: -10px -292px;
+}
+
+.services .nav-tabs .icon.consulting {
+  width: 28px;
+  height: 39px;
+  background-position: -10px -329px;
+}
+
+.services .tab-content {
+  height: 510px;
+  color: #fff;
+  line-height: 26px;
+  padding: 37px 70px;
+  position: relative;
+  text-align: center;
+  background-position: center top;
+  -webkit-background-size: cover;
+  background-size: cover;
+}
+
+.services .tab-content:after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(24, 24, 24, 0.9);
+}
+
+.services .tab-content * {
+  position: relative;
+  z-index: 2;
+}
+
+.services h1 {
+  color: #fff;
+  margin: 0 0 20px;
+  text-transform: uppercase;
+  font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+}
+
+.services p {
+  margin: 0 0 25px;
+}
+
+.services .read-more {
+  color: #fff;
+  border-color: #fff;
+}
+
+.services .tab-pane {
+  height: 100%;
+}
+
+.services .holder {
+  display: table;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.services .holder:after, .services .holder:before {
+  content: "";
+  position: absolute;
+  border-style: double;
+  border-color: rgba(255, 255, 255, 0.4);
+  border-width: 0 0 0 3px;
+  top: -25px;
+  bottom: -25px;
+}
+
+.services .holder:before {
+  left: -16px;
+}
+
+.services .holder:after {
+  right: -16px;
+}
+
+.services .frame {
+  position: relative;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.services .frame:after, .services .frame:before {
+  content: "";
+  position: absolute;
+  border-style: double;
+  border-color: rgba(255, 255, 255, 0.4);
+  border-width: 3px 0 0;
+  left: -49px;
+  right: -49px;
+}
+
+.services .frame:before {
+  top: 0;
+}
+
+.services .frame:after {
+  bottom: 0;
+}
+
+/* our work styles */
+.our-work {
+  overflow: hidden;
+}
+
+.our-work .text-box {
+  text-align: center;
+}
+
+.our-work .text-box p {
+  margin: 0 0 30px;
+}
+
+.our-work .projects {
+  padding: 0;
+  border-style: solid;
+  border-color: #c9c9c9;
+  border-width: 0 0 2px 2px;
+}
+
+.our-work .projects .row {
+  margin: 0;
+}
+
+.our-work .projects [class^="col-"] {
+  padding: 0;
+}
+
+.our-work .project {
+  border-style: solid;
+  border-color: #c9c9c9;
+  border-width: 2px 2px 0 0;
+}
+
+.our-work .project img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.our-work .project .title, .our-work .project .arrow {
+  position: absolute;
+  z-index: 2;
+  display: none;
+}
+
+.our-work .project .title {
+  left: 20px;
+  bottom: 15px;
+  color: #fff;
+  font-size: 20px;
+  line-height: 24px;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0, 0, 0, 0.2);
+}
+
+.our-work .project .arrow {
+  right: 0;
+  bottom: 0;
+  width: 100px;
+  height: 50px;
+}
+
+.our-work .project .arrow:after, .our-work .project .arrow:before {
+  content: "";
+  position: absolute;
+}
+
+.our-work .project .arrow:after {
+  top: 0;
+  right: 0;
+  z-index: 2;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 0 50px 100px;
+}
+
+.our-work .project .arrow:before {
+  top: 50%;
+  right: 8px;
+  z-index: 3;
+  margin: -4px 0 0;
+  width: 30px;
+  height: 22px;
+  background: url(../images/sprite.png) no-repeat -141px -66px;
+}
+
+.our-work .project a {
+  display: block;
+  text-decoration: none;
+}
+
+.our-work .project a:hover:after {
+  z-index: 1;
+  content: "";
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  background: rgba(24, 24, 24, 0.9);
+}
+
+.our-work .project a:hover .title, .our-work .project a:hover .arrow {
+  display: block;
+}
+
+/* our team styles */
+.our-team {
+  padding-bottom: 205px;
+}
+
+.our-team .box {
+  position: relative;
+  margin: 0 0 30px;
+  border: 3px double #c9c9c9;
+}
+
+.our-team .box:hover {
+  border-color: #4c4c4c;
+}
+
+.our-team .box:hover .info-box {
+  display: block;
+}
+
+.our-team .box a {
+  display: block;
+}
+
+.our-team .image-frame {
+  overflow: hidden;
+  width: 100%;
+  height: auto;
+}
+
+.our-team .image-frame img {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.our-team .info-box {
+  background: rgba(24, 24, 24, 0.9);
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  display: none;
+  z-index: 1;
+}
+
+.our-team .info-frame {
+  display: table;
+  width: 100%;
+  height: 100%;
+}
+
+.our-team .info-holder {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.our-team .social-networks {
+  float: none;
+  text-align: center;
+}
+
+.our-team .social-networks li {
+  padding: 0 15px;
+}
+
+.our-team .social-networks a {
+  padding: 0;
+  border: 0;
+}
+
+.our-team .title {
+  display: block;
+  margin: 0 0 25px;
+  text-align: center;
+  text-transform: uppercase;
+  font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+}
+
+.our-team .title span {
+  display: block;
+  color: #fff;
+  text-align: center;
+  font: 400 16px/18px 'Roboto', Arial, helvetica, sans-serif;
+}
+
 /* footer styles */
 @font-face {
   font-family: "icomoon";

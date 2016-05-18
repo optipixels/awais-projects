@@ -67,3 +67,40 @@ h1 {
 		border-color: $pure-orange;
 	}
 }
+
+/* services styles */
+.services {
+	.nav-tabs {
+		border: 0;
+		li {
+			&.active, &:hover {
+				border-color: $pure-orange;
+			}
+		}
+	}
+}
+
+/* our work styles */
+.our-work {
+	.project {
+		.arrow {
+			&:after {
+				border-color: transparent transparent $pure-orange transparent;
+			}
+		}
+	}
+}
+
+/* our team styles */
+.our-team {
+	.title {
+		color: $pure-orange
+	}
+	.social-networks {
+		a {
+			&:hover {
+				color: $pure-orange;
+			}
+		}
+	}
+}

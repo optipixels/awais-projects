@@ -213,5 +213,301 @@ h1 {
 
 /* services styles */
 .services {
+	.nav-tabs {
+		border: 0;
+		li {
+			height: 150px;
+			float: none;
+			margin: 30px 0 0;
+			border: 3px double $very-light-gray;
+			&:first-child {
+				margin: 0;
+			}
+			&.active {
+				a {
+					border: 0;
+				}
+			}
+		}
+		a {
+			border: 0;
+			padding: 17px 30px;
+			color: $base-color;
+			&:hover {
+				background: none;
+			}
+		}
+		.title {
+			clear: both;
+			display: block;
+			font-weight: 400;
+			line-height: 18px;
+			text-transform: capitalize;
+			span {
+				display: block;
+				text-transform: uppercase;
+				font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+			}
+		}
+		&.text-right {
+			.icon {
+				float: right;
+			}
+		}
+		.icon {
+			display: block;
+			margin: 0 0 15px;
+			background: url(../images/sprite.png) no-repeat;
+			&.contruction {
+				@include size(36px, 31px);
+				background-position: -10px -61px;
+			}
+			&.architecture {
+				@include square(36px);
+				background-position: -10px -112px;
+			}
+			&.painting {
+				@include size(36px, 37px);
+				background-position: -10px -168px;
+			}
+			&.electrical {
+				@include size(23px, 46px);
+				background-position: -10px -225px;
+			}
+			&.metal-roofing {
+				@include size(34px, 17px);
+				background-position: -10px -292px;
+			}
+			&.consulting {
+				@include size(28px, 39px);
+				background-position: -10px -329px;
+			}
+		}
+	}
+	.tab-content {
+		height: 510px;
+		color: $white;
+		line-height: 26px;
+		padding: 37px 70px;
+		position: relative;
+		text-align: center;
+		background-position: center top;
+		-webkit-background-size: cover;
+		background-size: cover;
+		&:after {
+			z-index: 1;
+			content: "";
+			@include position;
+			background: rgba(24, 24, 24, 0.9);
+		}
+		* {
+			position: relative;
+			z-index: 2;
+		}
+	}
+	h1 {
+		color: $white;
+		margin: 0 0 20px;
+		text-transform: uppercase;
+		font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+	}
+	p {
+		margin: 0 0 25px;
+	}
+	.read-more {
+		color: $white;
+		border-color: $white;
+	}
+	.tab-pane {
+		height: 100%;
+	}
+	.holder {
+		display: table;
+		position: relative;
+		@include square(100%);
+		&:after, &:before {
+			content: "";
+			position: absolute;
+			border-style: double;
+			border-color: rgba(255, 255, 255, 0.40);
+			border-width: 0 0 0 3px;
+			top: -25px;
+			bottom: -25px;
+		}
+		&:before {
+			left: -16px;
+		}
+		&:after {
+			right: -16px;
+		}
+	}
+	.frame {
+		position: relative;
+		@include v-align(table-cell, middle);
+		&:after, &:before {
+			content: "";
+			position: absolute;
+			border-style: double;
+			border-color: rgba(255, 255, 255, 0.40);
+			border-width: 3px 0 0;
+			left: -49px;
+			right: -49px;
+		}
+		&:before {
+			top: 0;
+		}
+		&:after {
+			bottom: 0;
+		}
+	}
+}
 
+/* our work styles */
+.our-work {
+	overflow: hidden;
+	.text-box {
+		text-align: center;
+		p {
+			margin: 0 0 30px;
+		}
+	}
+	.projects {
+		padding: 0;
+		border-style: solid;
+		border-color: $light-gray;
+		border-width: 0 0 2px 2px;
+		.row {
+			margin: 0;
+		}
+		[class^="col-"] {
+			padding: 0;
+		}
+	}
+	.project {
+		border-style: solid;
+		border-color: $light-gray;
+		border-width: 2px 2px 0 0;
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+		.title, .arrow {
+			position: absolute;
+			z-index: 2;
+			display: none;
+		}
+		.title {
+			left: 20px;
+			bottom: 15px;
+			color: $white;
+			font-size: 20px;
+			line-height: 24px;
+			text-transform: uppercase;
+			text-shadow: 0 1px 2px rgba(0,0,0,.2);
+		}
+		.arrow {
+			right: 0;
+			bottom: 0;
+			@include size(100px, 50px);
+			&:after, &:before {
+				content: "";
+				position: absolute;
+			}
+			&:after {
+				top: 0;
+				right: 0;
+				z-index: 2;
+				@include square(0);
+				border-style: solid;
+				border-width: 0 0 50px 100px;
+			}
+			&:before {
+				top: 50%;
+				right: 8px;
+				z-index: 3;
+				margin: -4px 0 0;
+				@include size(30px, 22px);
+				background: url(../images/sprite.png) no-repeat -141px -66px;
+			}
+		}
+		a {
+			display: block;
+			text-decoration: none;
+			&:hover {
+				&:after {
+					z-index: 1;
+					content: "";
+					@include position;
+					background: rgba(24, 24, 24, 0.9);
+				}
+				.title, .arrow {
+					display: block;
+				}
+			}
+		}
+	}
+}
+
+/* our team styles */
+.our-team {
+	padding-bottom: 205px;
+	.box {
+		position: relative;
+		margin: 0 0 30px;
+		border: 3px double $light-gray;
+		&:hover {
+			border-color: $base-color;
+			.info-box {
+				display: block;
+			}
+		}
+		a {
+			display: block;
+		}
+	}
+	.image-frame {
+		overflow: hidden;
+		@include size(100%, auto);
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	.info-box {
+		background: rgba(24, 24, 24, 0.9);
+		@include position;
+		display: none;
+		z-index: 1;
+	}
+	.info-frame {
+		display: table;
+		@include square(100%);
+	}
+	.info-holder {
+		@include v-align(table-cell, middle);
+	}
+	.social-networks {
+		float: none;
+		text-align: center;
+		li {
+			padding: 0 15px;
+		}
+		a {
+			padding: 0;
+			border: 0;
+		}
+	}
+	.title {
+		display: block;
+		margin: 0 0 25px;
+		text-align: center;
+		text-transform: uppercase;
+		font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+		span {
+			display: block;
+			color: $white;
+			text-align: center;
+			font: 400 16px/18px 'Roboto', Arial, helvetica, sans-serif;
+		}
+	}
 }

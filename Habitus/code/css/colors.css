@@ -43,3 +43,26 @@ h1 span:after, h1 span:before {
   color: #fda700;
   border-color: #fda700;
 }
+
+/* services styles */
+.services .nav-tabs {
+  border: 0;
+}
+
+.services .nav-tabs li.active, .services .nav-tabs li:hover {
+  border-color: #fda700;
+}
+
+/* our work styles */
+.our-work .project .arrow:after {
+  border-color: transparent transparent #fda700 transparent;
+}
+
+/* our team styles */
+.our-team .title {
+  color: #fda700;
+}
+
+.our-team .social-networks a:hover {
+  color: #fda700;
+}
