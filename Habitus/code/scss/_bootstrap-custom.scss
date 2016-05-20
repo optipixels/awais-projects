@@ -17,8 +17,8 @@ $base-font-size: 16px;
 $base-line-height: 25px;
 
 $font-size-h1:            48px;
-$font-size-h2:            18px;
-$font-size-h3:            16px;
+$font-size-h2:            36px;
+$font-size-h3:            24px;
 
 $headings-font-weight:    500;
 $headings-color:          $shark;
@@ -56,3 +56,10 @@ $navbar-default-link-hover-color:          $pure-orange;
 $navbar-default-link-hover-bg:             transparent !default;
 $navbar-default-link-active-color:         $pure-orange;
 $navbar-default-link-active-bg:            transparent;
+
+$input-bg:                       transparent;
+$input-color:                    #4c4c4c !default;
+$input-border:                   #dadada !default;
+$input-border-radius:            0;
+$input-border-focus:             $pure-orange;
+$input-color-placeholder:        #dadada !default;

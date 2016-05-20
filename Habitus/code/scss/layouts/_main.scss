@@ -8,7 +8,7 @@ body {
 		#wrapper {
 			margin: 0 0 0 -260px;
 		}
-		.btn-opener {
+		.navbar-toggle {
 			&:after, &:before {
 				@include rotate(45deg);
 				top: 17px!important;
@@ -21,7 +21,7 @@ body {
 			}
 			span { opacity: 0; }
 		}
-		.nav-area {
+		.navbar-collapse {
 			right: 0;
 		}
 	}
@@ -29,6 +29,21 @@ body {
 
 .g-padding {
 	padding: 120px 0 60px;
+	@include media('<desktop') {
+		padding: 60px 0 30px;
+	}
+	@include media('<tablet') {
+		padding: 15px 0;
+	}
+}
+.add-padding {
+	padding-bottom: 120px;
+	@include media('<desktop') {
+		padding-bottom: 30px;
+	}
+	@include media('<tablet') {
+		padding-bottom: 10px;
+	}
 }
 .header {
 	text-align: center;
@@ -50,11 +65,19 @@ body {
 	overflow: hidden;
 }
 
-h1 {
-	margin: 0;
+h1, h2, h3 {
 	text-transform: uppercase;
 	color: $very-dark-gray;
-	font: 700 48px/58px 'PT Sans Caption', Arial, helvetica, sans-serif;
+	font-family: 'PT Sans Caption', Arial, helvetica, sans-serif;
+}
+
+h1 {
+	margin: 0;
+	font-size: 48px;
+	line-height: 58px;
+	@include media('<tablet') {
+		font-size: 38px;
+	}
 	span {
 		position: relative;
 		padding: 0 10px 0 0;
@@ -79,6 +102,13 @@ h1 {
 			right: -5px;
 			z-index: 2;
 		}
+	}
+}
+h2 {
+	@include media('<tablet') {
+		font-size: 30px;
+		line-height: 34px;
+		margin: 0 0 15px;
 	}
 }
 
@@ -114,17 +144,307 @@ h1 {
 }
 
 .read-more {
+	padding: 1px;
 	color: $base-color;
-	border: 3px double $base-color;
+	border: 1px double $base-color;
+	@include transition(all 0.0s ease);
+	span {
+		display: block;
+		padding: 4px 18px;
+		border: 1px double $base-color;
+	}
 	&:hover {
+		color: $white;
 		text-decoration: none;
 	}
 }
 
+/* banner styles */
+.banner {
+	position: relative;
+	background-position: center top;
+	-webkit-background-size: cover;
+	background-size: cover;
+	&:after {
+		z-index: 1;
+		content: "";
+		@include position;
+		background: rgba(24, 24, 24, 0.85);
+	}
+	.description {
+		z-index: 10;
+		color: $white;
+		position: relative;
+		text-align: center;
+		padding: 290px 0 115px;
+		font: 400 italic 20px/24px 'Roboto', Arial, helvetica, sans-serif;
+		@include media('<desktop') {
+			font: 400 italic 16px/18px 'Roboto', Arial, helvetica, sans-serif;
+			padding: 145px 0 50px;
+		}
+		@include media('<tablet') {
+			padding: 45px 15px 50px;
+		}
+		p {
+			margin: 0 0 35px;
+			@include media('<desktop') {
+				margin: 0 0 20px;
+			}
+			@include media('<tablet') {
+				margin: 0 0 15px;
+			}
+		}
+	}
+	h1 {
+		color: $white;
+		font-size: 48px;
+		line-height: 58px;
+		font-style: normal;
+		@include media('<desktop') {
+			font-size: 30px;
+			line-height: 36px;
+			margin: 40px 0 0;
+		}
+		@include media('<tablet') {
+			font-size: 20px;
+			line-height: 26px;
+			margin: 10px 0 0;
+		}
+	}
+	.breadcrumb {
+		background: none;
+		text-transform: uppercase;
+		font: 400 16px/18px 'Roboto', Arial, helvetica, sans-serif;
+		> li + li {
+			&:before {
+				color: $white;
+			}
+		}
+		a {
+			color: $white;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+	.corner {
+		bottom: 0;
+		z-index: 10;
+		overflow: hidden;
+		position: absolute;
+		@include size(50%, 160px);
+		padding-top: 15.3%;
+		@include media('<desktop') {
+			@include size(50%, 118px);
+		}
+		@include media('<tablet') {
+			@include size(50%, 49px);
+		}
+		&:before {
+			background : url(../images/pattern.png);
+			@include size(120%, 100%);
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+		&.left {
+			left: 0;
+			&:before {
+				-webkit-transform-origin: 0 0;
+				-ms-transform-origin: 0 0;
+				transform-origin: 0 0;
+				-webkit-transform: rotate(17deg);
+				-ms-transform: rotate(17deg);
+				transform: rotate(17deg);
+			}
+		}
+		&.right {
+			right: 0;
+			&:before {
+				-webkit-transform-origin: 100% 100%;
+				-ms-transform-origin: 100% 100%;
+				transform-origin: 100% 100%;
+				-webkit-transform: rotate(-14.8deg);
+				-ms-transform: rotate(-14.8deg);
+				transform: rotate(-14.8deg);
+			}
+		}
+	}
+}
 /* carousel styles */
 .carousel {
-	img {
-		display: block;
+	position: relative;
+	.item {
+		&:after {
+			z-index: 1;
+			content: "";
+			@include position;
+			background: rgba(0, 0, 0, 0.60);
+		}
+	}
+	.description {
+		z-index: 9;
+		color: $white;
+		@include position;
+		text-align: center;
+		font: 400 italic 20px/24px 'Roboto', Arial, helvetica, sans-serif;
+		@include media('<desktop') {
+			font: 400 italic 16px/18px 'Roboto', Arial, helvetica, sans-serif;
+		}
+		.container {
+			display: table;
+			height: 100%;
+		}
+		.row {
+			@include v-align(table-cell, middle);
+			@include media('<tablet') {
+				@include v-align(table-cell, top);
+			}
+		}
+		p {
+			margin: 0 0 45px;
+			@include media('<desktop') {
+				margin: 0 0 30px;
+			}
+			@include media('<tablet') {
+				margin: 0 0 20px;
+			}
+		}
+		.btn-default {
+			font-style: normal;
+		}
+	}
+	h1 {
+		color: $white;
+		font-size: 60px;
+		line-height: 70px;
+		font-style: normal;
+		@include media('<widescreen') {
+			font-size: 50px;
+			line-height: 60px;
+		}
+		@include media('<desktop') {
+			font-size: 30px;
+			line-height: 36px;
+			margin: 40px 0 0;
+		}
+		@include media('<tablet') {
+			font-size: 20px;
+			line-height: 26px;
+			margin: 10px 0 0;
+		}
+	}
+	.carousel-control {
+		background: rgba(255, 255, 255, 0.2);
+		@include square(100px);
+		margin: -50px 0 0;
+		opacity: 1;
+		top: 50%;
+		z-index: 9;
+		@include media('<desktop') {
+			@include square(74px);
+			margin: -37px 0 0;
+		}
+		@include media('<tablet') {
+			background: rgba(255, 255, 255, 0.1);
+			@include square(30px);
+			margin: -15px 0 0;
+		}
+		&:after {
+			top: 50%;
+			left: 50%;
+			content: "";
+			position: absolute;
+			margin: -33px 0 0 -19px;
+			@include size(38px, 66px);
+			background: url(../images/sprite.png) no-repeat;
+			@include media('<tablet') {
+				margin: -12px 0 0 -7px;
+				@include size(15px, 25px);
+			}
+		}
+		&.left, &.right {
+			filter: none;
+		}
+		&.left {
+			&:after {
+				background-position: -114px -202px;
+				@include media('<tablet') {
+					background-position: -222px -202px;
+				}
+			}
+			&:hover {
+				&:after {
+					background-position: -114px -287px;
+					@include media('<tablet') {
+						background-position: -222px -233px;
+					}
+				}
+			}
+		}
+		&.right {
+			&:after {
+				background-position: -168px -202px;
+				@include media('<tablet') {
+					background-position: -242px -202px;
+				}
+			}
+			&:hover {
+				&:after {
+					background-position: -168px -287px;
+					@include media('<tablet') {
+						background-position: -242px -233px;
+					}
+				}
+			}
+		}
+	}
+	.corner {
+		bottom: 0;
+		z-index: 10;
+		overflow: hidden;
+		position: absolute;
+		@include size(50%, 160px);
+		padding-top: 15.3%;
+		@include media('<desktop') {
+			@include size(50%, 118px);
+		}
+		@include media('<tablet') {
+			@include size(50%, 49px);
+		}
+		&:before {
+			background : url(../images/pattern.png);
+			@include size(120%, 100%);
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			right: 0;
+		}
+		&.left {
+			left: 0;
+			&:before {
+				-webkit-transform-origin: 0 0;
+				-ms-transform-origin: 0 0;
+				transform-origin: 0 0;
+				-webkit-transform: rotate(17deg);
+				-ms-transform: rotate(17deg);
+				transform: rotate(17deg);
+			}
+		}
+		&.right {
+			right: 0;
+			&:before {
+				-webkit-transform-origin: 100% 100%;
+				-ms-transform-origin: 100% 100%;
+				transform-origin: 100% 100%;
+				-webkit-transform: rotate(-14.8deg);
+				-ms-transform: rotate(-14.8deg);
+				transform: rotate(-14.8deg);
+			}
+		}
 	}
 }
 
@@ -132,8 +452,80 @@ h1 {
 .who-we-are {
 	overflow: hidden;
 	padding-bottom: 120px;
+	@include media('<desktop') {
+		padding-bottom: 60px;
+	}
+	@include media('<tablet') {
+		font-size: 14px;
+		padding-bottom: 20px;
+	}
 	p {
 		margin: 0 0 25px;
+		@include media('<tablet') {
+			margin: 0 0 15px;
+		}
+	}
+	.read-more {
+		@include media('<tablet') {
+			@include v-align(inline-block, top);
+			margin: 0 0 10px;
+		}
+	}
+	.image-holder {
+		overflow: hidden;
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	.box {
+		border: 3px double $very-light-gray;
+		padding: 24px 29px 10px;
+		line-height: 26px;
+		margin: 0 0 30px;
+		@include media('<desktop') {
+			padding: 15px 10px 10px;
+			font-size: 14px;
+			line-height: 18px;
+		}
+		@include media('<tablet') {
+			margin: 0 0 10px;
+		}
+		.title {
+			display: block;
+			text-transform: uppercase;
+			font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+		}
+		p {
+			margin: 0 0 10px;
+		}
+		.icon {
+			background: url(../images/sprite.png) no-repeat;
+			@include v-align(inline-block, middle);
+			margin: 0 0 5px;
+		}
+		.plan {
+			@include size(26px, 32px);
+			background-position: -11px -9px;
+		}
+		.design {
+			@include square(32px);
+			background-position: -57px -9px;
+		}
+		.build {
+			@include size(32px, 30px);
+			background-position: -109px -9px;
+		}
+		.delivery {
+			@include size(26px, 32px);
+			background-position: -161px -9px;
+		}
+	}
+	.text {
+		@include media('<tablet') {
+			padding-left: 15px;
+			padding-right: 15px;
+		}
 	}
 }
 .steps {
@@ -141,10 +533,30 @@ h1 {
 	font-size: 14px;
 	line-height: 16px;
 	text-transform: uppercase;
+	@include media('<widescreen') {
+		margin: 40px 0 50px -20px;
+	}
+	@include media('<tablet') {
+		margin: 0;
+	}
 	li {
 		position: relative;
 		padding: 0 0 0 30px;
 		margin: 0 0 0 30px;
+		@include media('<widescreen') {
+			margin: 0 0 0 10px;
+			padding: 0 0 0 10px;
+		}
+		@include media('<tablet') {
+			width: 48%;
+			margin: 0;
+			padding: 0 0 15px;
+		}
+		&:first-child {
+			&:before {
+				display: none;
+			}
+		}
 		&:before {
 			@include size(1px, 32px);
 			margin: -16px 0 0;
@@ -153,12 +565,18 @@ h1 {
 			position: absolute;
 			content: "";
 			background: $very-light-gray;
+			@include media('<tablet') {
+				display: none;
+			}
 		}
 	}
 	.icon {
 		background: url(../images/sprite.png) no-repeat;
 		@include v-align(inline-block, middle);
 		margin: 0 15px 0 0;
+		@include media('<tablet') {
+			margin: 0 5px 0 0;
+		}
 	}
 	.plan {
 		@include size(26px, 32px);
@@ -186,14 +604,36 @@ h1 {
 	overflow: hidden;
 	position: relative;
 	background: $very-dark-gray;
+	@include media('<tablet') {
+		font-size: 14px;
+		line-height: 22px;
+	}
 	.text-box {
 		padding-top: 85px;
 		padding-bottom: 100px;
+		@include media('<desktop') {
+			padding-top: 42px;
+			padding-bottom: 50px;
+		}
+		@include media('<tablet') {
+			text-align: center;
+		}
 	}
 	h1 {
 		font-size: 46px;
 		color: $white;
 		margin: 0 0 25px;
+		@include media('<widescreen') {
+			font-size: 34px;
+		}
+		@include media('<desktop') {
+			font-size: 28px;
+			line-height: 32px;
+		}
+		@include media('<tablet') {
+			font-size: 20px;
+			line-height: 24px;
+		}
 	}
 	p {
 		margin: 0 0 45px;
@@ -208,6 +648,9 @@ h1 {
 		background-size: cover;
 		background-repeat: no-repeat;
 		background-position: center top;
+		@include media('<tablet') {
+			display: none;
+		}
 	}
 }
 
@@ -215,11 +658,19 @@ h1 {
 .services {
 	.nav-tabs {
 		border: 0;
+		@include media('<tablet') {
+			margin: 5px 0 0;
+		}
 		li {
 			height: 150px;
 			float: none;
 			margin: 30px 0 0;
 			border: 3px double $very-light-gray;
+			@include media('<tablet') {
+				@include size(33%, auto);
+				margin: 0 0 5px;
+				float: left;
+			}
 			&:first-child {
 				margin: 0;
 			}
@@ -233,6 +684,12 @@ h1 {
 			border: 0;
 			padding: 17px 30px;
 			color: $base-color;
+			@include media('<desktop') {
+				padding: 17px 8px;
+			}
+			@include media('<tablet') {
+				padding: 5px 8px;
+			}
 			&:hover {
 				background: none;
 			}
@@ -243,10 +700,21 @@ h1 {
 			font-weight: 400;
 			line-height: 18px;
 			text-transform: capitalize;
+			@include media('<tablet') {
+				font-size: 12px;
+				line-height: 14px;
+				text-align: center;
+			}
 			span {
 				display: block;
 				text-transform: uppercase;
 				font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+				@include media('<widescreen') {
+					font: 700 18px/22px 'PT Sans Caption', Arial, helvetica, sans-serif;
+				}
+				@include media('<tablet') {
+					font: 700 10px/14px 'PT Sans Caption', Arial, helvetica, sans-serif;
+				}
 			}
 		}
 		&.text-right {
@@ -258,6 +726,9 @@ h1 {
 			display: block;
 			margin: 0 0 15px;
 			background: url(../images/sprite.png) no-repeat;
+			@include media('<tablet') {
+				display: none;
+			}
 			&.contruction {
 				@include size(36px, 31px);
 				background-position: -10px -61px;
@@ -284,6 +755,30 @@ h1 {
 			}
 		}
 	}
+	.blocks {
+		@include media('<tablet') {
+			display: -ms-flexbox;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+	}
+	.block1 {
+		@include media('<tablet') {
+			order: 1;
+		}
+	}
+	.block2 {
+		@include media('<tablet') {
+			order: 3;
+		}
+	}
+	.block3 {
+		@include media('<tablet') {
+			order: 2;
+		}
+	}
 	.tab-content {
 		height: 510px;
 		color: $white;
@@ -294,6 +789,15 @@ h1 {
 		background-position: center top;
 		-webkit-background-size: cover;
 		background-size: cover;
+		@include media('<desktop') {
+			padding: 37px 50px;
+		}
+		@include media('<tablet') {
+			padding: 30px;
+			font-size: 14px;
+			line-height: 20px;
+			height: auto;
+		}
 		&:after {
 			z-index: 1;
 			content: "";
@@ -305,18 +809,27 @@ h1 {
 			z-index: 2;
 		}
 	}
-	h1 {
+	h2 {
 		color: $white;
 		margin: 0 0 20px;
 		text-transform: uppercase;
 		font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+		@include media('<tablet') {
+			margin: 0 0 10px;
+		}
 	}
 	p {
 		margin: 0 0 25px;
+		@include media('<tablet') {
+			margin: 0 0 10px;
+		}
 	}
 	.read-more {
 		color: $white;
 		border-color: $white;
+		span {
+			border-color: $white;
+		}
 	}
 	.tab-pane {
 		height: 100%;
@@ -333,6 +846,10 @@ h1 {
 			border-width: 0 0 0 3px;
 			top: -25px;
 			bottom: -25px;
+			@include media('<tablet') {
+				top: -30px;
+				bottom: -30px;
+			}
 		}
 		&:before {
 			left: -16px;
@@ -352,12 +869,26 @@ h1 {
 			border-width: 3px 0 0;
 			left: -49px;
 			right: -49px;
+			@include media('<desktop') {
+				left: -40px;
+				right: -40px;
+			}
+			@include media('<tablet') {
+				left: -30px;
+				right: -30px;
+			}
 		}
 		&:before {
 			top: 0;
+			@include media('<tablet') {
+				top: -15px;
+			}
 		}
 		&:after {
 			bottom: 0;
+			@include media('<tablet') {
+				bottom: -15px;
+			}
 		}
 	}
 }
@@ -367,8 +898,14 @@ h1 {
 	overflow: hidden;
 	.text-box {
 		text-align: center;
+		@include media('<tablet') {
+			font-size: 14px;
+		}
 		p {
 			margin: 0 0 30px;
+			@include media('<tablet') {
+				margin: 0 0 15px;
+			}
 		}
 	}
 	.projects {
@@ -387,14 +924,18 @@ h1 {
 		border-style: solid;
 		border-color: $light-gray;
 		border-width: 2px 2px 0 0;
+		@include media('<phone') {
+			width: 100%;
+		}
 		img {
 			display: block;
 			@include size(100%, auto);
 		}
 		.title, .arrow {
-			position: absolute;
 			z-index: 2;
-			display: none;
+			opacity: 0;
+			position: absolute;
+			@include transition(all ease-in 0.4s);
 		}
 		.title {
 			left: 20px;
@@ -404,6 +945,12 @@ h1 {
 			line-height: 24px;
 			text-transform: uppercase;
 			text-shadow: 0 1px 2px rgba(0,0,0,.2);
+			@include media('<desktop') {
+				font-size: 16px;
+				line-height: 20px;
+				bottom: auto;
+				top: 15px;
+			}
 		}
 		.arrow {
 			right: 0;
@@ -433,15 +980,17 @@ h1 {
 		a {
 			display: block;
 			text-decoration: none;
+			&:after {
+				opacity: 0;
+				z-index: 1;
+				content: "";
+				@include position;
+				background: rgba(24, 24, 24, 0.9);
+   				@include transition(all ease-in 0.4s);
+			}
 			&:hover {
-				&:after {
-					z-index: 1;
-					content: "";
-					@include position;
-					background: rgba(24, 24, 24, 0.9);
-				}
-				.title, .arrow {
-					display: block;
+				&:after, .title, .arrow {
+					opacity: 1;
 				}
 			}
 		}
@@ -451,14 +1000,20 @@ h1 {
 /* our team styles */
 .our-team {
 	padding-bottom: 205px;
+	@include media('<desktop') {
+		padding-bottom: 100px;
+	}
 	.box {
 		position: relative;
 		margin: 0 0 30px;
 		border: 3px double $light-gray;
+		@include media('<tablet') {
+			margin: 0 0 15px;
+		}
 		&:hover {
 			border-color: $base-color;
 			.info-box {
-				display: block;
+				opacity: 1;
 			}
 		}
 		a {
@@ -474,9 +1029,10 @@ h1 {
 		}
 	}
 	.info-box {
+		@include transition(all ease-in 0.4s);
 		background: rgba(24, 24, 24, 0.9);
 		@include position;
-		display: none;
+		opacity: 0;
 		z-index: 1;
 	}
 	.info-frame {
@@ -491,6 +1047,9 @@ h1 {
 		text-align: center;
 		li {
 			padding: 0 15px;
+			@include media('<desktop') {
+				padding: 0 8px;
+			}
 		}
 		a {
 			padding: 0;
@@ -508,6 +1067,377 @@ h1 {
 			color: $white;
 			text-align: center;
 			font: 400 16px/18px 'Roboto', Arial, helvetica, sans-serif;
+		}
+	}
+}
+
+/* testimonials styles */
+.testimonials {
+	position: relative;
+	padding: 91px 0;
+	@extend %clearfix;
+	background-position: center top;
+	-webkit-background-size: cover;
+	background-size: cover;
+	text-align: center;
+	&:after {
+		z-index: 1;
+		content: "";
+		@include position;
+		background: rgba(24, 24, 24, 0.9);
+	}
+	.corner {
+		z-index: 2;
+		position: absolute;
+		@include size(50%, 160px);
+		@include media('<tablet') {
+			@include size(50%, 80px);
+		}
+		div {
+			position: absolute;
+			@include square(100%);
+		}
+		&.left {
+			bottom: 0;
+			left: 0;
+			background: linear-gradient(to bottom left, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, $white 50%, $white 100%);
+			div {
+				top: 2px;
+			}
+		}
+		&.right {
+			top: 0;
+			right: 0;
+			background: linear-gradient(to top right, rgba(0,0,0,0) 0%, rgba(0,0,0,0) 50%, $white 50%, $white 100%);
+			div {
+				top: -2px;
+			}
+		}
+	}
+	.carousel-holder {
+		position: relative;
+		z-index: 2;
+	}
+	.image-holder {
+		@include square(170px);
+		border-radius: 50%;
+		position: absolute;
+		top: -170px;
+		left: 0;
+		img {
+			display: block;
+			@include square(170px);
+			border-radius: 50%;
+		}
+	}
+	h1 {
+		color: $white;
+		margin: 0 0 45px;
+		@include media('<desktop') {
+			font-size: 30px;
+			margin: 0 0 20px;
+		}
+	}
+	blockquote {
+		border: 0;
+		padding: 0;
+		margin: 0 0 50px;
+		font: 400 italic 16px/25px 'Roboto', Arial, helvetica, sans-serif;
+		color: $white;
+		quotes: none;
+		q, cite {
+			display: block;
+		}
+		q {
+			margin: 0 0 20px;
+		}
+	}
+	.carousel {
+		.item {
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.carousel-indicators {
+		width: 100%;
+		position: static;
+		text-align: center;
+		margin: 0;
+		li {
+			border-radius: 50%;
+			@include square(25px);
+			margin: 0 8px;
+		}
+	}
+}
+
+/* news styles */
+.news {
+	padding-bottom: 170px;
+	@include media('<desktop') {
+		padding-bottom: 60px;
+	}
+	@include media('<tablet') {
+		padding-bottom: 30px;
+	}
+	.article {
+		margin-bottom: 60px;
+		@include media('<desktop') {
+			margin-bottom: 30px;
+		}
+		@include media('<tablet') {
+			margin-bottom: 15px;
+			display: -webkit-flex;
+			display: flex;
+			-webkit-flex-direction: column;
+			flex-direction: column;
+		}
+	}
+	.box {
+		padding: 15px 0 0 100px;
+		line-height: 26px;
+		@include media('<desktop') {
+			padding: 15px 0 0 30px;
+		}
+		@include media('<tablet') {
+			padding: 0 0 15px;
+			font-size: 14px;
+		}
+	}
+	.box1 {
+		@include media('<tablet') {
+			order: 2;
+		}
+	}
+	.box2 {
+		@include media('<tablet') {
+			order: 1;
+		}
+	}
+	.text-right {
+		.box {
+			padding: 15px 100px 0 0;
+			@include media('<desktop') {
+				padding: 15px 30px 0 0;
+			}
+			@include media('<tablet') {
+				text-align: left;
+				padding: 0 0 15px;
+			}
+		}
+		h2 {
+			&:before {
+				right: auto;
+				left: 100%;
+			}
+		}
+	}
+	h2 {
+		margin: 0 0 20px;
+		position: relative;
+		@include media('<tablet') {
+			margin: 0 0 10px;
+		}
+		&:before {
+			top: 15px;
+			right: 100%;
+			content: "";
+			z-index: 9;
+			position: absolute;
+			@include size(202px, 3px);
+			@include media('<tablet') {
+				display: none;
+			}
+		}
+	}
+	.image-holder {
+		overflow: hidden;
+		@include media('<tablet') {
+			margin: 0 0 10px;
+		}
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	p {
+		margin: 0 0 30px;
+		@include media('<tablet') {
+			margin: 0 0 15px;
+		}
+	}
+	.post-info {
+		margin: 0 0 30px;
+		@include media('<tablet') {
+			margin: 0 0 15px;
+		}
+		li {
+			position: relative;
+			padding: 0 0 0 25px;
+			margin: 0 0 0 28px;
+			@include media('<tablet') {
+				padding: 0 0 0 20px;
+				margin: 0 0 0 10px;
+			}
+			&:first-child {
+				margin: 0;
+			}
+			&:before {
+				top: 7px;
+				left: 0;
+				content: "";
+				position: absolute;
+				@include square(15px);
+				background: url(../images/sprite.png) no-repeat;
+			}
+			&.tools {
+				&:before {
+					background-position: -139px -107px;
+				}
+			}
+			&.comments {
+				&:before {
+					background-position: -139px -135px;
+				}
+			}
+			&.date {
+				&:before {
+					background-position: -139px -166px;
+				}
+			}
+		}
+		a {
+			color: $base-color;
+		}
+	}
+	.btn-holder {
+		padding-top: 18px;
+		text-align: center;
+		@extend %clearfix;
+		.btn {
+			color: $base-color;
+		}
+	}
+}
+
+form {
+	.btn-submit {
+		width: 100%;
+		display: block;
+		padding: 1px;
+		color: $white;
+		min-width: inherit;
+		background: transparent;
+		span {
+			height: 36px;
+			display: block;
+			padding: 9px 18px;
+		}
+	}
+}
+
+/* fun-facts styles */
+.fun-facts {
+	overflow: hidden;
+	background-position: center top;
+	-webkit-background-size: cover;
+	background-size: cover;
+	padding: 120px 0;
+	@include media('<tablet') {
+		padding: 50px 0;
+	}
+}
+.counter-list {
+	margin: 0;
+	display: table;
+	table-layout: fixed;
+	width: 100%;
+	&.add-class {
+		.number, .title {
+			color: $very-dark-gray;
+		}
+	}
+	@include media('<tablet') {
+		display: block;
+		font-size: 0;
+		line-height: 0;
+	}
+	li {
+		@include v-align(table-cell, top);
+		@include media('<tablet') {
+			@include v-align(inline-block, top);
+			margin: 30px 0;
+			width: 50%;
+			padding: 0;
+		}
+		.number, .title {
+			display: block;
+			text-align: center;
+			color: $white;
+		}
+	}
+	.number {
+		margin: 0 0 30px;
+		font: 700 48px/58px 'PT Sans Caption', Arial, helvetica, sans-serif;
+		@include media('<tablet') {
+			margin: 0 0 15px;
+			font: 700 38px/48px 'PT Sans Caption', Arial, helvetica, sans-serif;
+		}
+	}
+	.title {
+		padding: 15px 0;
+		position: relative;
+		font: 400 italic 18px/20px 'Roboto', Arial, helvetica, sans-serif;
+		@include media('<tablet') {
+			font: 400 italic 16px/18px 'Roboto', Arial, helvetica, sans-serif;
+		}
+		&:before, &:after {
+			@include size(48px, 3px);
+			position: absolute;
+			margin: 0 0 0 -24px;
+			content: "";
+			left: 50%;
+		}
+		&:before {
+			top: 0;
+		}
+		&:after {
+			bottom: 0;
+		}
+	}
+}
+
+/* our partners styles */
+.our-partners {
+	line-height: 26px;
+	padding-bottom: 126px;
+	@include media('<desktop') {
+		padding-bottom: 50px;
+	}
+	@include media('<tablet') {
+		padding-bottom: 10px;
+		font-size: 14px;
+		line-height: 20px;
+	}
+	.image-holder {
+		overflow: hidden;
+		@include media('<tablet') {
+			margin: 0 0 10px;
+		}
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	p {
+		margin: 0 0 10px;
+	}
+	.box {
+		border: 3px double $very-light-gray;
+		margin: 0 0 30px;
+		@include media('<tablet') {
+			margin: 0 0 10px;
 		}
 	}
 }

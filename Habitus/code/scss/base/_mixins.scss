@@ -302,6 +302,24 @@ $animation-speed: .3s !default;
           transition: $transition;
 }
 
+// mixin for skew
+@mixin skew($degrees) {
+  -webkit-transform: skew($degrees);
+  -moz-transform: skew($degrees);
+  -ms-transform: skew($degrees);
+  -o-transform: skew($degrees);
+  transform: skew($degrees);
+}
+
+// mixin for origin
+@mixin origin($degrees) {
+  -webkit-transform-origin: origin($degrees);
+  -moz-transform-origin: origin($degrees);
+  -ms-transform-origin: origin($degrees);
+  -o-transform-origin: origin($degrees);
+  transform-origin: origin($degrees);
+}
+
 // mixin for rotation
 @mixin rotate($degrees) {
   -webkit-transform: rotate($degrees);
