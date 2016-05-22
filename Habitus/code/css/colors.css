@@ -1,0 +1,196 @@
+/* contact-info styles */
+.contact-info [class^="icon-"] {
+  color: #fda700;
+}
+
+/* social networks styles */
+.social-networks a:hover {
+  border-color: #fda700;
+}
+
+/* Site  log styles */
+.logo a {
+  color: #fda700;
+}
+
+#header .navbar-toggle {
+  background: #fda700;
+  border: 2px solid #fda700;
+}
+
+#header .navbar-toggle:hover, #header .navbar-toggle:fosuc {
+  background: #fda700 !important;
+}
+
+/* main menu styles */
+.navbar-default .navbar-nav li a:hover {
+  border-color: #fda700;
+}
+
+.navbar-default .navbar-nav li.active a {
+  border-color: #fda700;
+}
+
+h1 span:after, h1 span:before {
+  border-color: #fda700;
+}
+
+.btn-default {
+  border-color: #fda700;
+}
+
+.btn-default:after, .btn-default:before {
+  border-color: #fda700;
+}
+
+.btn-default:hover {
+  border-color: #fda700;
+  color: #fda700;
+}
+
+.read-more:hover {
+  border-color: #fda700;
+}
+
+.read-more:hover span {
+  background: #fda700;
+  border-color: #fda700;
+}
+
+/* services styles */
+.services .nav-tabs {
+  border: 0;
+}
+
+.services .nav-tabs li.active, .services .nav-tabs li:hover {
+  border-color: #fda700;
+}
+
+/* services-block styles */
+.services-block .nav-tabs a {
+  background: #fda700;
+}
+
+/* our work styles */
+.our-work .project .arrow:after {
+  border-color: transparent transparent #fda700 transparent;
+}
+
+/* our team styles */
+.our-team .title {
+  color: #fda700;
+}
+
+.our-team .social-networks a:hover {
+  color: #fda700;
+}
+
+/* testimonials styles */
+.testimonials .corner.left div {
+  background: linear-gradient(to bottom left, transparent 0%, transparent 50%, #fda700 50%, #fda700 100%);
+}
+
+.testimonials .corner.right div {
+  background: linear-gradient(to top right, transparent 0%, transparent 50%, #fda700 50%, #fda700 100%);
+}
+
+.testimonials blockquote cite span {
+  color: #fda700;
+}
+
+.testimonials .carousel-indicators li {
+  border-color: #fda700;
+}
+
+.testimonials .carousel-indicators li.active, .testimonials .carousel-indicators li:hover {
+  background: #fda700;
+}
+
+/* news styles */
+.news h2:before {
+  border-bottom: 3px double #fda700;
+}
+
+.news .btn-holder .btn:hover {
+  color: #fda700;
+}
+
+form .btn-submit {
+  border: 1px double #fda700;
+}
+
+form .btn-submit span {
+  background: #fda700;
+  border: 1px double #fda700;
+}
+
+form .btn-submit:hover {
+  opacity: 0.9;
+}
+
+/* carousel styles */
+.carousel .corner:before, .banner .corner:before {
+  background-color: #fda700;
+}
+
+.carousel h1 span, .banner h1 span {
+  color: #fda700;
+  padding: 0;
+}
+
+.carousel h1 span:after, .carousel h1 span:before, .banner h1 span:after, .banner h1 span:before {
+  display: none;
+}
+
+.banner .breadcrumb a:hover {
+  color: #fda700;
+}
+
+.banner .breadcrumb .active {
+  color: #fda700;
+}
+
+.counter-list .title:before, .counter-list .title:after {
+  border-top: 3px double #fda700;
+}
+
+.cost-calculator .orange {
+  background: #fda700;
+}
+
+.aside h3 span {
+  border-bottom: 3px double #fda700;
+}
+
+.pagination > li.active > a {
+  color: #fda700;
+}
+
+.pagination > li.active > a:hover {
+  color: #fda700;
+}
+
+.pagination > li > a:hover {
+  color: #fda700;
+}
+
+.tags li.active a {
+  background: #fda700;
+}
+
+.tags li a:hover {
+  background: #fda700;
+}
+
+/* footer styles */
+.b-container .corner:before {
+  background-color: #fda700;
+}
+
+.b-container h3 span:after, .b-container h3 span:before {
+  border-color: #fda700;
+}
+
+#footer p span a {
+  color: #fda700;
+}
