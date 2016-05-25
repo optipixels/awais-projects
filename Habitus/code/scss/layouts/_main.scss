@@ -27,6 +27,16 @@ body {
 	}
 }
 
+.form-control {
+	margin: 0;
+	color: $very-dark-gray;
+	box-shadow: none;
+	border: 1px solid $light-gray;
+	@include placeholder {
+		color: $base-color;
+	}
+}
+
 .g-padding {
 	padding: 120px 0 60px;
 	@include media('<desktop') {
@@ -54,6 +64,75 @@ body {
 .header {
 	text-align: center;
 	overflow: hidden;
+}
+
+.comming-soon {
+	#header {
+		@include media('<tablet') {
+			z-index: 9;
+			position: relative;
+			padding: 30px 15px;
+		}
+	}
+	#wrapper {
+		padding: 144px 0 0;
+		background-position: center top;
+		-webkit-background-size: cover;
+		background-size: cover;
+		@include media('<tablet') {
+			padding: 0;
+		}
+		&:after {
+			z-index: 1;
+			content: "";
+			@include position;
+			background: rgba(0, 0, 0, 0.85);
+		}
+	}
+	.b-container {
+		z-index: 9;
+		.holder {
+			padding: 50px 0 61px;
+			&:after {
+				display: none;
+			}
+		}
+	}
+	.main-container {
+		font: 400 italic 20px/24px 'Roboto', Arial, helvetica, sans-serif;
+		position: relative;
+		text-align: center;
+		color: $white;
+		z-index: 9;
+		@include media('<tablet') {
+			padding-top: 20px;
+		}
+		.logo {
+			float: none;
+			margin: 0 auto 50px;
+			@include v-align(inline-block, top);
+			@include media('<tablet') {
+				margin: 0 auto 20px;
+			}
+		}
+	}
+	h1 {
+		font-size: 72px;
+		line-height: 82px;
+		font-style: normal;
+		color: $white;
+		@include media('<tablet') {
+			font-size: 30px;
+			line-height: 36px;
+			margin: 0 0 20px;
+		}
+		span {
+			padding: 0;
+			&:after, &:before {
+				display: none;
+			}
+		}
+	}
 }
 
 /* wrapper style */
@@ -1783,6 +1862,10 @@ form {
 	@include media('<tablet') {
 		background: none;
 	}
+	.jcf-select {
+		border-color: $light-gray;
+		border-width: 1px 1px 1px 0;
+	}
 	.big {
 		text-align: center;
 		@include size(152px, 50px);
@@ -1932,6 +2015,20 @@ form {
 		}
 		li {
 			margin: 0 0 0 8px;
+		}
+	}
+	.social-networks {
+		float: none;
+		width: 100%;
+		overflow: hidden;
+		margin: 0 0 0 -15px;
+		li {
+			padding: 0 13px;
+		}
+		a {
+			color: $base-color;
+			padding: 0;
+			border: 0;
 		}
 	}
 }
@@ -2116,12 +2213,14 @@ form {
 }
 
 .pagination {
-	margin: 0 0 0 -10px;
 	font: 400 15px/17px 'Roboto', Arial, helvetica, sans-serif;
 	> li {
 		float: left;
 		display: inherit;
 		margin: 0 0 0 10px;
+		&:first-child {
+			margin: 0;
+		}
 		&:first-child, &:last-child {
 			a {
 				border-radius: 0!important;
@@ -2150,5 +2249,191 @@ form {
 			}
 		}
 	}
-	
+}
+
+.pager {
+	margin-bottom: 30px;
+	text-transform: uppercase;
+	line-height: 18px;
+	li {
+		text-align: left;
+		&.disabled {
+			display: none;
+		}
+		> a {
+			padding: 0;
+			background: none;
+			border: 0;
+			span {
+				margin: 5px 0 0; 
+				display: block;
+				font-weight: 700;
+			}
+			&:hover {
+				background: none;
+			}
+		}
+		&.next {
+			> a {
+				text-align: right;
+			}
+		}
+	}
+}
+
+.info-list {
+	dt {
+		color: $very-dark-gray;
+		text-transform: uppercase;
+		font: 500 18px/20px 'Roboto', Arial, helvetica, sans-serif;
+	}
+	dd {
+		display: block;
+		margin: 0 0 28px; 
+		font: 400 16px/18px 'Roboto', Arial, helvetica, sans-serif;
+		a {
+			color: $base-color;
+			&:hover {
+				text-decoration: none;
+			}
+		}
+	}
+}
+
+/* message-form */
+.message-form {
+	margin-bottom: 45px;
+	@include media('<tablet') {
+		margin-bottom: 15px;
+	}
+	.form-control {
+		text-transform: uppercase;
+	}
+	.btn {
+		z-index: 1;
+		color: $white;
+		display: block;
+		position: relative;
+		text-align: center;
+		padding: 4px 6px 3px;
+		background: $base-color;
+		text-transform: uppercase;
+		@include size(100%, 50px);
+		font: 400 15px/18px 'Roboto', Arial, helvetica, sans-serif;
+		color: $white;
+		&:before {
+			content: "";
+			top: 2px;
+			right: 2px;
+			bottom: 2px;
+			left: 2px;
+			position: absolute;
+			border: 1px solid $white;
+		}
+		&:hover {
+			color: $white;
+			text-decoration: none;
+			background: $pure-orange;
+		}
+	}
+}
+
+/* location-block */
+.location-block {
+	margin-bottom: 157px;
+	@include media('<tablet') {
+		margin-bottom: 30px;
+	}
+	.image-holder {
+		overflow: hidden;
+		position: relative;
+		&:after {
+			background: rgba(24, 24, 24, 0.4);
+			@include position;
+			content: "";
+			z-index: 1
+		}
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	.address {
+		left: 0;
+		bottom: 0;
+		z-index: 2;
+		position: absolute;
+		padding: 70px 30px 5px 5px;
+		font-weight: 300;
+		&:after {
+			background : $pure-orange;
+			@include size(120%, 100%);
+			position: absolute;
+			content: "";
+			top: 0;
+			left: 0;
+			right: 0;
+			-webkit-transform-origin: 0 0;
+			-ms-transform-origin: 0 0;
+			transform-origin: 0 0;
+			@include rotate(12.5deg);
+			@include media('<desktop') {
+				@include rotate(16deg);
+			}
+			@include media('<tablet') {
+				@include rotate(22.5deg);
+			}
+		}
+		address {
+			margin: 0;
+			color: $white;
+			position: relative;
+			z-index: 9;
+			@include media('<tablet') {
+				font-size: 14px;
+			}
+		}
+	}
+}
+
+.error-page {
+	padding-top: 180px;
+	padding-bottom: 100px;
+	@include media('<desktop') {
+		padding-top: 90px;
+		padding-bottom: 50px;
+	}
+	@include media('<tablet') {
+		padding-top: 45px;
+		padding-bottom: 20px;
+		text-align: center;
+	}
+	h1 {
+		overflow: hidden;
+		@include size(327px, auto);
+		@include media('<tablet') {
+			@include size(280px, auto);
+			margin: 0 auto 20px!important;
+		}
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	h2 {
+		text-transform: none;
+		@include media('<tablet') {
+			font-size: 25px;
+		}
+	}
+	.image-frame {
+		overflow: hidden;
+		@include media('<tablet') {
+			margin: 20px 0 0;
+		}
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
 }

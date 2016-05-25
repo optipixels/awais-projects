@@ -63,7 +63,27 @@
 									<li><a href="aboutus.html">ABOUT US</a></li>
 									<li><a href="services.html">SERVICES</a></li>
 									<li><a href="projects.html">projects</a></li>
-									<li><a href="#">pages</a></li>
+									<li class="dropdown">
+										<a href="pages.html" class="dropdown-toggle" data-toggle="dropdown">pages</a>
+										<ul class="dropdown-menu">
+											<li><a tabindex="-1" href="#">HTML</a></li>
+											<li><a tabindex="-1" href="#">CSS</a></li>
+											<li class="dropdown-submenu">
+												<a class="test" tabindex="-1" href="#">New dropdown <span class="caret"></span></a>
+												<ul class="dropdown-menu">
+													<li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+													<li><a tabindex="-1" href="#">2nd level dropdown</a></li>
+													<li class="dropdown-submenu">
+														<a class="test" href="#">Another dropdown <span class="caret"></span></a>
+														<ul class="dropdown-menu">
+															<li><a href="#">3rd level dropdown</a></li>
+															<li><a href="#">3rd level dropdown</a></li>
+														</ul>
+													</li>
+												</ul>
+											</li>
+										</ul>
+									</li>
 									<li><a href="blog-category.html">BLOG</a></li>
 									<li><a href="contact.html">CONTACT</a></li>
 								</ul>
@@ -549,7 +569,7 @@
 							<ul class="contact-info list-inline">
 								<li><span class="icon-location"></span>135 Rose Street, Melbourne</li>
 								<li><span class="icon-phone"></span><a href="tel:61383766284">+61 3 8376 6284</a></li>
-								<li><span class="icon-paperplane"></span><a href="mailto:office@habitus.com">office@habitus.com</a></li>
+								<li><span class="icon-paperplane"></span><a href="mailto:&#111;&#102;&#102;&#105;&#099;&#101;&#064;&#104;&#097;&#098;&#105;&#116;&#117;&#115;&#046;&#099;&#111;&#109;">&#111;&#102;&#102;&#105;&#099;&#101;&#064;&#104;&#097;&#098;&#105;&#116;&#117;&#115;&#046;&#099;&#111;&#109;</a></li>
 							</ul>
 						</div>
 					</div>
@@ -588,6 +608,13 @@
 			)
 			document.querySelector('head').appendChild(msViewportStyle)
 		}
+		$(document).ready(function(){
+			$('.dropdown-submenu a.test').on("click", function(e){
+				$(this).next('ul').toggle();
+				e.stopPropagation();
+				e.preventDefault();
+			});
+		});
 	</script>
 </body>
 </html>

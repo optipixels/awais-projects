@@ -27,7 +27,7 @@
   border-color: #fda700;
 }
 
-.navbar-default .navbar-nav li.active a {
+.navbar-default .navbar-nav li.active > a, .navbar-default .navbar-nav li.open > a {
   border-color: #fda700;
 }
 
@@ -106,12 +106,25 @@ h1 span:after, h1 span:before {
   background: #fda700;
 }
 
+.info-list dd a:hover {
+  color: #fda700;
+}
+
+.comming-soon h1 span {
+  color: #fda700;
+}
+
 /* news styles */
 .news h2:before {
   border-bottom: 3px double #fda700;
 }
 
 .news .btn-holder .btn:hover {
+  color: #fda700;
+}
+
+/* blog styles */
+.blog .social-networks a:hover {
   color: #fda700;
 }
 

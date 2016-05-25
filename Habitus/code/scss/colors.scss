@@ -42,8 +42,8 @@
 					border-color: $pure-orange;
 				}
 			}
-			&.active {
-				a {
+			&.active, &.open {
+				> a {
 					border-color: $pure-orange;
 				}
 			}
@@ -157,6 +157,25 @@ h1 {
 	}
 }
 
+
+.info-list {
+	dd {
+		a {
+			&:hover {
+				color: $pure-orange;
+			}
+		}
+	}
+}
+
+.comming-soon {
+	h1 {
+		span {
+			color: $pure-orange
+		}
+	}
+}
+
 /* news styles */
 .news {
 	h2 {
@@ -166,6 +185,17 @@ h1 {
 	}
 	.btn-holder {
 		.btn {
+			&:hover {
+				color: $pure-orange;
+			}
+		}
+	}
+}
+
+/* blog styles */
+.blog {
+	.social-networks {
+		a {
 			&:hover {
 				color: $pure-orange;
 			}

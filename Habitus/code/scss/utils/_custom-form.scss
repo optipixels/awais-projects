@@ -74,11 +74,10 @@
 /* custom select styles */
 .jcf-select {
 	position: relative;
-	border-style: solid;
 	@include v-align(inline-block, top);
-	border-color: $light-gray;
-	border-width: 1px 1px 1px 0;
-	background: #fff;
+	border: 1px solid $light-gray;
+	@include size(100%, 50px);
+	background: $white;
 	margin: 0 0 12px;
 	min-width: inherit;
 }
@@ -93,9 +92,10 @@
 	overflow: hidden;
 	cursor: pointer;
 	display: block;
-	font-size: 13px;
-	line-height: 26px;
 	margin: 0 35px 0 8px;
+	color: $very-dark-gray;
+	padding: 15px 0;
+	font: 400 16px/18px 'Roboto', Arial, helvetica, sans-serif;
 }
 .jcf-select .jcf-select-opener {
 	position: absolute;
