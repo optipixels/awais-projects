@@ -1429,6 +1429,7 @@ form {
 		padding: 10px 0;
 	}
 }
+
 .counter-list {
 	margin: 0;
 	display: table;
@@ -1447,7 +1448,8 @@ form {
 		font-size: 0;
 		line-height: 0;
 	}
-	li {
+	.grid-item {
+		text-align: center;
 		@include v-align(table-cell, top);
 		@include media('<tablet') {
 			@include v-align(inline-block, top);

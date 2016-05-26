@@ -10,6 +10,7 @@
 	<link rel="stylesheet" href="css/bootstrap.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/style.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/colors.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
 	<link rel="stylesheet" href="css/animations.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:700" type="text/css">
@@ -309,6 +310,9 @@
 	<!-- include custom JavaScript -->
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 	<script type="text/javascript" src="js/animations.min.js"></script>
+	<script type="text/javascript" src="js/jquery.plugin.js"></script>
+	<script type="text/javascript" src="js/jquery.countdown.js"></script>
+	<script type="text/javascript" src="js/timber.master.min.js"></script>
 	<script type="text/javascript">
 		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 			var msViewportStyle = document.createElement('style')
@@ -319,13 +323,6 @@
 			)
 			document.querySelector('head').appendChild(msViewportStyle)
 		}
-		$(document).ready(function(){
-			$('.dropdown-submenu a.test').on("click", function(e){
-				$(this).next('ul').toggle();
-				e.stopPropagation();
-				e.preventDefault();
-			});
-		});
 	</script>
 </body>
 </html>

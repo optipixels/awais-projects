@@ -15,9 +15,9 @@
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:700" type="text/css">
 </head>
-<body >
+<body class="comming-soon">
 	<!-- main container of all the page elements -->
-	<div id="wrapper">
+	<div id="wrapper" style="background-image: url(images/bg-wrapper.jpg);">
 		<!-- header -->
 		<header id="header">
 			<!-- top panel -->
@@ -45,14 +45,14 @@
 					</div>
 				</div>
 			</div>
-			<div class="container holder">
+			<div class="container holder visible-xs">
 				<div class="row">
-					<div class="col-sm-4">
+					<div class="col-sm-4 hidden">
 						<strong class="logo"><a href="index.html">habit<span>us</span></a></strong>
 					</div>
 					<div class="col-sm-8 nav-area">
 						<!-- main navigation -->
-						<nav class="navbar navbar-default animate" data-anim-type="fadeIn"> 
+						<nav class="navbar navbar-default"> 
 							<!-- Brand and toggle get grouped for better mobile display -->
 							<div class="navbar-header">
 								<button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false"><span></span></button>
@@ -60,11 +60,11 @@
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav">
-									<li><a href="index.html">HOME</a></li>
+									<li class="active"><a href="index.html">HOME</a></li>
 									<li><a href="aboutus.html">ABOUT US</a></li>
 									<li><a href="services.html">SERVICES</a></li>
 									<li><a href="projects.html">projects</a></li>
-									<li class="active"><a href="pages.html">pages</a></li>
+									<li><a href="pages.html">pages</a></li>
 									<li><a href="blog-category.html">BLOG</a></li>
 									<li><a href="contact.html">CONTACT</a></li>
 								</ul>
@@ -74,101 +74,24 @@
 				</div>
 			</div>
 		</header>
-		<!-- banner -->
-		<div class="banner" style="background-image: url(images/image8.jpg);"> 
-			<div class="corner right"></div>
-			<div class="corner left"></div>
-			<div class="container description">
-				<div class="row">
-					<div class="col-md-8 col-sm-12 col-md-offset-2 col-md-offset-0">
-						<h1>404</h1>
-						<p>Vestibulum pharetra bibendum dui, in ultricies eros hendrerit sit amet.</p>
-						<ol class="breadcrumb">
-							<li><a href="index.html">Home</a></li>
-							<li><a href="index.html">Pages</a></li>
-							<li class="active">404</li>
-						</ol>
-					</div>
-				</div>
-			</div>
-		</div>
 		<!-- contain main informative part of the site -->
-		<main id="main">
-			<div class="container error-page">
+		<main id="main" class="main-container">
+			<div class="container">
 				<div class="row">
-					<div class="col-sm-6">
-						<h1 class="404"><img src="images/404.png" alt="image description"></h1>
-						<h2>Error - Page not found</h2>
-						<p>It looks like is nothing here!<br> The page you are looking for can't be found.</p>
-						<a href="#" class="btn read-more"><span>read more</span></a>
-					</div>
-					<div class="col-sm-6">
-						<div class="image-frame"><img src="images/image16.jpg" alt="image description"></div>
+					<div class="col-xs-12">
+						<strong class="logo"><a href="index.html">habit<span>us</span></a></strong>
+						<h1><span>coming</span> soon</h1>
+						<p>We are currently working on launching the new website</p>
 					</div>
 				</div>
 			</div>
 		</main>
 		<!-- footer of the page -->
 		<div class="b-container">
-			<div class="corner right"></div>
-			<div class="corner left"></div>
-			<div class="holder" style="background-image: url(images/image7.jpg);">
+			<div class="holder">
 				<div class="container">
-					<div class="row">
-						<div class="col-xs-12 logo-holder">
-							<strong class="logo"><a href="index.html">habit<span>us</span></a></strong>
-						</div>
-					</div>
 					<div class="row columns">
-						<!-- About us -->
-						<div class="col-sm-4">
-							<h3><span>about us</span></h3>
-							<div class="text">
-								<p>Praesent sit amet magna ex. Fusce ornare ipsum a orci pretium pharetra. Nam placerat laoreet lacus, ac egestas velit vulputate vitae. Curabitur viverra accumsan semper. Pellentesque vehicula quam sit amet dolor consequat, vel viverra dui vestibulum.</p>
-							</div>
-						</div>
-						<!-- Send quick message -->
-						<div class="col-sm-4">
-							<h3><span>Send quick message</span></h3>
-							<form action="#" class="message-form">
-								<div class="row">
-									<div class="col-md-6 col-sm-12">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="*Name">
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-12">
-										<div class="form-group">
-											<input type="email" class="form-control" placeholder="*Email">
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-12">
-										<div class="form-group">
-											<input type="text" class="form-control" placeholder="Website">
-										</div>
-									</div>
-									<div class="col-md-6 col-sm-12">
-										<div class="form-group">
-											<button class="btn btn-submit" type="submit"><span>send message</span></button>
-										</div>
-									</div>
-								</div>
-							</form>
-						</div>
-						<!-- contact info -->
-						<div class="col-sm-4">
-							<h3><span>Contact info</span></h3>
-							<ul class="contact-info list-inline">
-								<li><span class="icon-location"></span>135 Rose Street, Melbourne</li>
-								<li><span class="icon-phone"></span><a href="tel:61383766284">+61 3 8376 6284</a></li>
-								<li><span class="icon-paperplane"></span><a href="mailto:&#111;&#102;&#102;&#105;&#099;&#101;&#064;&#104;&#097;&#098;&#105;&#116;&#117;&#115;&#046;&#099;&#111;&#109;">&#111;&#102;&#102;&#105;&#099;&#101;&#064;&#104;&#097;&#098;&#105;&#116;&#117;&#115;&#046;&#099;&#111;&#109;</a></li>
-							</ul>
-						</div>
-					</div>
-					<div class="row">
-						<div class="col-xs-12">
-							<div class="google-map"><img src="images/google-map.jpg" alt="map"></div>
-						</div>
+						<div id="defaultCountdown"></div>
 					</div>
 				</div>
 			</div>

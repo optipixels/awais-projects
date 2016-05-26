@@ -1,5 +1,5 @@
 // function for tabs
-$(document).ready(function() {
+$(function() {
 	$('.blocks li').click(function(event){
 		event.preventDefault();//stop browser to take action for clicked anchor
 					
@@ -26,22 +26,40 @@ $(document).ready(function() {
 
 // function for counter
 $(function() {
-	function count($this){
-		var current = parseInt($this.html(), 10);
-		current = current + 1; /* Where 50 is increment */
-
-	$this.html(++current);
-	if(current > $this.data('count')){
-		$this.html($this.data('count'));
-	} else {    
-		setTimeout(function(){count($this)}, 5);
-	}
-}        
-	$(".number").each(function() {
-		$(this).data('count', parseInt($(this).html(), 10));
-		$(this).html('0');
-		count($(this));
+	$( '.stats' ).counter({
+		autoStart: false
 	});
+	$( '.horizon' ).horizon({
+		recurring: true,
+		inView: function(){	
+			$( '.stats' ).each( function(){
+				var counter = $( this ).data( 'counter' );
+				counter.startCounter();
+			});
+		},
+		outOfView: function(){
+			$( '.stats' ).each( function(){
+				var counter = $( this ).data( 'counter' );
+				counter.clearCounter();
+			});
+		}
+	});
+});
+
+$(function(){
+	$('.dropdown-submenu a.test').on("click", function(e){
+		$(this).next('ul').toggle();
+		e.stopPropagation();
+		e.preventDefault();
+	});
+});
+
+// function for countdown clock
+$(function () {
+	var austDay = new Date();
+	austDay = new Date(austDay.getFullYear() + 1, 1 - 6, 9);
+	$('#defaultCountdown').countdown({until: austDay});
+	$('#year').text(austDay.getFullYear());
 });
 
 // page init

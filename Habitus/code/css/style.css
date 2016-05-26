@@ -3050,13 +3050,14 @@ form .btn-submit span {
   }
 }
 
-.counter-list li {
+.counter-list .grid-item {
+  text-align: center;
   display: table-cell;
   vertical-align: top;
 }
 
 @media (max-width: 767px) {
-  .counter-list li {
+  .counter-list .grid-item {
     display: inline-block;
     vertical-align: top;
     margin: 30px 0;
@@ -3065,7 +3066,7 @@ form .btn-submit span {
   }
 }
 
-.counter-list li .number, .counter-list li .title {
+.counter-list .grid-item .number, .counter-list .grid-item .title {
   display: block;
   text-align: center;
   color: #fff;
