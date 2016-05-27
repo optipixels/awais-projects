@@ -1182,16 +1182,18 @@ body.active .navbar-collapse {
   background-size: cover;
 }
 
+
 @media (max-width: 767px) {
   .comming-soon #wrapper {
     padding: 0;
+      position: static;
   }
 }
 
 .comming-soon #wrapper:after {
   z-index: 1;
   content: "";
-  position: absolute;
+  position: fixed;
   top: 0;
   right: 0;
   bottom: 0;
