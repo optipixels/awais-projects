@@ -190,10 +190,16 @@
 	border-color: rgba(255, 255, 255, 0.10);
 	text-transform: uppercase;
 	font: 500 14px/16px 'Roboto', Arial, helvetica, sans-serif;
+	@include media('<tablet') {
+		text-align: left;
+	}
 	.navbar-nav {
 		margin: -4px 0;
 		@include v-align(inline-block, top);
 		float: none;
+		@include media('<tablet') {
+			display: block;
+		}
 		li {
 			margin: 0 16px;
 			@include media('<desktop') {
@@ -208,7 +214,7 @@
 				border-width: 4px 0;
 				border-color: transparent;
 				@include media('<tablet') {
-					padding: 3px 0;
+					padding: 5px 15px 5px 25px;
 					border-width: 3px 0;
 				}
 			}
@@ -221,12 +227,13 @@
 			}
 		}
 	}
-	.dropdown-submenu {
-		position: relative;
-		.dropdown-menu {
-			top: 0;
-			left: 100%;
-			margin-top: -1px;
+	.caret {
+		position: absolute;
+		right: 10px;
+		top: 9px;
+		@include media('<tablet') {
+			top: 13px;
+			border-color: transparent transparent transparent $white!important;
 		}
 	}
 }

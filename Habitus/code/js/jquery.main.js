@@ -46,14 +46,6 @@ $(function() {
 	});
 });
 
-$(function(){
-	$('.dropdown-submenu a.test').on("click", function(e){
-		$(this).next('ul').toggle();
-		e.stopPropagation();
-		e.preventDefault();
-	});
-});
-
 // function for countdown clock
 $(function () {
 	var austDay = new Date();

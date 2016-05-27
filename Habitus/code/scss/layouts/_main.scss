@@ -75,7 +75,12 @@ body {
 		}
 	}
 	#wrapper {
-		padding: 144px 0 0;
+		top: 0;
+		right: 0;
+		left: 0;
+		height: 100%;
+		position: fixed;
+		padding: 100px 0 0;
 		background-position: center top;
 		-webkit-background-size: cover;
 		background-size: cover;
@@ -92,7 +97,7 @@ body {
 	.b-container {
 		z-index: 9;
 		.holder {
-			padding: 50px 0 61px;
+			padding: 30px 0 61px;
 			&:after {
 				display: none;
 			}
@@ -109,7 +114,7 @@ body {
 		}
 		.logo {
 			float: none;
-			margin: 0 auto 50px;
+			margin: 0 auto 30px;
 			@include v-align(inline-block, top);
 			@include media('<tablet') {
 				margin: 0 auto 20px;
@@ -132,6 +137,13 @@ body {
 				display: none;
 			}
 		}
+	}
+	#footer {
+		bottom: 0;
+		left: 0;
+		right: 0;
+		position: fixed;
+		z-index: 99;
 	}
 }
 
@@ -2303,7 +2315,7 @@ form {
 }
 
 /* message-form */
-.message-form {
+.form {
 	margin-bottom: 45px;
 	@include media('<tablet') {
 		margin-bottom: 15px;
