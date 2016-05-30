@@ -1002,7 +1002,7 @@ img.aligncenter {
 
 @media (max-width: 1023px) {
   .navbar-default .navbar-nav li {
-    margin: 0 8px;
+    margin: 0 5px;
   }
 }
 
@@ -1018,6 +1018,7 @@ img.aligncenter {
   border-width: 4px 0;
   border-color: transparent;
 }
+
 @media (max-width: 767px) {
   .navbar-default .navbar-nav li a {
     padding: 5px 15px 5px 25px;
@@ -1031,17 +1032,35 @@ img.aligncenter {
 }
 
 .navbar-default .navbar-nav li li a {
-  padding: 0 15px;
+  padding: 3px 0;
+  color: #fff;
+}
+
+.navbar-default .navbar-nav li li a:hover {
+  background: none;
 }
 
 .navbar-default .caret {
+  display: inline-block;
+  vertical-align: middle;
+  margin: 0 0 0 5px;
+}
+
+.navbar-default .dropdown-menu {
+  background: transparent;
+  box-shadow: none;
+  border: 0;
+}
+
+.navbar-default .dropdown-menu .caret {
+  margin: 0;
   position: absolute;
   right: 10px;
   top: 9px;
 }
 
 @media (max-width: 767px) {
-  .navbar-default .caret {
+  .navbar-default .dropdown-menu .caret {
     top: 13px;
     border-color: transparent transparent transparent #fff !important;
   }
@@ -1162,38 +1181,62 @@ body.active .navbar-collapse {
   overflow: hidden;
 }
 
+html {
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  html {
+    height: auto;
+  }
+}
+
+.comming-soon {
+  height: 100%;
+}
+
+@media (max-width: 767px) {
+  .comming-soon {
+    height: auto;
+  }
+}
+
 @media (max-width: 767px) {
   .comming-soon #header {
-    z-index: 9;
-    position: relative;
-    padding: 30px 15px;
+    display: none;
+  }
+}
+
+.comming-soon .w1 {
+  display: table-row;
+}
+
+@media (max-width: 767px) {
+  .comming-soon .w1 {
+    display: block;
   }
 }
 
 .comming-soon #wrapper {
-  top: 0;
-  right: 0;
-  left: 0;
+  display: table;
+  padding: 120px 0 0;
+  width: 100%;
   height: 100%;
-  position: fixed;
-  padding: 100px 0 0;
   background-position: center top;
   -webkit-background-size: cover;
   background-size: cover;
 }
 
-
 @media (max-width: 767px) {
   .comming-soon #wrapper {
     padding: 0;
-      position: static;
   }
 }
 
 .comming-soon #wrapper:after {
   z-index: 1;
   content: "";
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   bottom: 0;
@@ -1203,14 +1246,24 @@ body.active .navbar-collapse {
 
 .comming-soon .b-container {
   z-index: 9;
+  display: table-footer-group;
 }
 
 .comming-soon .b-container .holder {
-  padding: 61px 0;
+  padding: 60px 0 0;
 }
 
 .comming-soon .b-container .holder:after {
   display: none;
+}
+
+.comming-soon .f-holder {
+  display: table-row;
+  height: 1%;
+}
+
+.comming-soon .f-frame {
+  display: table-cell;
 }
 
 .comming-soon .main-container {
@@ -1229,7 +1282,7 @@ body.active .navbar-collapse {
 
 .comming-soon .main-container .logo {
   float: none;
-  margin: 0 auto 30px;
+  margin: 0 auto 60px;
   display: inline-block;
   vertical-align: top;
 }
@@ -2215,40 +2268,64 @@ h1 span:before {
   }
 }
 
-.services .nav-tabs .icon.contruction {
+.services .nav-tabs .contruction .icon {
   width: 36px;
   height: 31px;
   background-position: -10px -61px;
 }
 
-.services .nav-tabs .icon.architecture {
+.services .nav-tabs .contruction:hover .icon, .services .nav-tabs .contruction.active .icon {
+  background-position: -73px -61px;
+}
+
+.services .nav-tabs .architecture .icon {
   width: 36px;
   height: 36px;
   background-position: -10px -112px;
 }
 
-.services .nav-tabs .icon.painting {
+.services .nav-tabs .architecture:hover .icon, .services .nav-tabs .architecture.active .icon {
+  background-position: -73px -112px;
+}
+
+.services .nav-tabs .painting .icon {
   width: 36px;
   height: 37px;
   background-position: -10px -168px;
 }
 
-.services .nav-tabs .icon.electrical {
+.services .nav-tabs .painting:hover .icon, .services .nav-tabs .painting.active .icon {
+  background-position: -73px -168px;
+}
+
+.services .nav-tabs .electrical .icon {
   width: 23px;
   height: 46px;
   background-position: -10px -225px;
 }
 
-.services .nav-tabs .icon.metal-roofing {
+.services .nav-tabs .electrical:hover .icon, .services .nav-tabs .electrical.active .icon {
+  background-position: -73px -225px;
+}
+
+.services .nav-tabs .metal-roofing .icon {
   width: 34px;
   height: 17px;
   background-position: -10px -292px;
 }
 
-.services .nav-tabs .icon.consulting {
+.services .nav-tabs .metal-roofing:hover .icon, .services .nav-tabs .metal-roofing.active .icon {
+  background-position: -73px -292px;
+}
+
+.services .nav-tabs .consulting .icon {
   width: 28px;
   height: 39px;
   background-position: -10px -329px;
+}
+
+.services .nav-tabs .consulting:hover .icon, .services .nav-tabs .consulting.active .icon {
+  background-position: -73px -329px;
 }
 
 @media (max-width: 767px) {
@@ -2759,7 +2836,7 @@ h1 span:before {
   height: 170px;
   border-radius: 50%;
   position: absolute;
-  top: -170px;
+  top: 0;
   left: 0;
 }
 
@@ -2784,8 +2861,9 @@ h1 span:before {
 
 .testimonials blockquote {
   border: 0;
-  padding: 0;
+  padding: 260px 0 0;
   margin: 0 0 50px;
+  position: relative;
   font: 400 italic 16px/25px 'Roboto', Arial, helvetica, sans-serif;
   color: #fff;
   quotes: none;
@@ -2797,6 +2875,16 @@ h1 span:before {
 
 .testimonials blockquote q {
   margin: 0 0 20px;
+}
+
+.testimonials .carousel {
+  margin: -280px 0 0;
+}
+
+@media (max-width: 767px) {
+  .testimonials .carousel {
+    margin: -260px 0 0;
+  }
 }
 
 .testimonials .carousel .item:after {
@@ -3913,8 +4001,8 @@ form .btn-submit span {
   overflow: hidden;
   padding: 45px 38px;
   border-radius: 1px;
-  background: #fbfbfb;
-  border: solid 1px #c9c9c9;
+  background: rgba(251, 251, 251, 0.5);
+  border: solid 1px rgba(201, 201, 201, 0.5);
   margin: 0 0 40px;
 }
 
@@ -4201,6 +4289,7 @@ form .btn-submit span {
 }
 
 .info-list dt {
+  margin: 0 0 10px;
   color: #181818;
   text-transform: uppercase;
   font: 500 18px/20px 'Roboto', Arial, helvetica, sans-serif;
@@ -4493,12 +4582,28 @@ form .btn-submit span {
 
 .b-container .google-map {
   overflow: hidden;
+  height: 440px;
 }
 
-.b-container .google-map img {
-  display: block;
+@media (max-width: 767px) {
+  .b-container .google-map {
+    height: auto;
+  }
+}
+
+.b-container .map-responsive {
+  overflow: hidden;
+  padding-bottom: 56.25%;
+  position: relative;
+  height: 0;
+}
+
+.b-container .map-responsive iframe {
+  left: 0;
+  top: 0;
+  height: 100%;
   width: 100%;
-  height: auto;
+  position: absolute;
 }
 
 .b-container .corner {

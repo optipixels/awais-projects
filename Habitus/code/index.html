@@ -13,8 +13,8 @@
 	<link rel="stylesheet" href="css/jquery.countdown.css" type="text/css">
 	<link rel="stylesheet" href="css/animations.min.css" type="text/css" media="all">
 	<!-- Bootstrap Dropdown Hover CSS -->
-    <link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all">
-    <link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:400,500,300,300italic" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=PT+Sans+Caption:700" type="text/css">
 </head>
@@ -66,33 +66,28 @@
 									<li class="active"><a href="index.html">HOME</a></li>
 									<li><a href="aboutus.html">ABOUT US</a></li>
 									<li><a href="services.html">SERVICES</a></li>
-									<li><a href="projects.html">projects</a></li>
 									<li class="dropdown">
-										<a href="pages.html" class=" dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">pages</a>
+										<a href="projects.html" class=" dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">projects<span class="caret"></span></a>
 										<ul class="dropdown-menu">
-											<li><a href="#">Action</a></li>
-											<li><a href="#">Another action</a></li>
-											<li class="dropdown">
-												<a href="#">One more dropdown<span class="caret"></span></a>
-												<ul class="dropdown-menu">
-													<li><a href="#">Action</a></li>
-													<li><a href="#">Another action</a></li>
-													<li class="dropdown">
-														<a href="#">One more dropdown<span class="caret"></span></a>
-														<ul class="dropdown-menu">
-															<li><a href="#">Action</a></li>
-															<li><a href="#">Another action</a></li>
-														</ul>
-													</li>
-													<li><a href="#">Something else here</a></li>
-													<li><a href="#">Separated link</a></li>
-												</ul>
-											</li>
-											<li><a href="#">Something else here</a></li>
-											<li><a href="#">Separated link</a></li>
+											<li><a href="project-detail.html">projects detail</a></li>
 										</ul>
 									</li>
-									<li><a href="blog-category.html">BLOG</a></li>
+									<li class="dropdown">
+										<a href="pages.html" class=" dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">pages<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="404.html">404</a></li>
+											<li><a href="comming-soon1.html">Comming Soon 1</a></li>
+											<li><a href="comming-soon2.html">Comming Soon 2</a></li>
+										</ul>
+									</li>
+									<li>
+										<a href="blog-category.html" class=" dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">BLOG<span class="caret"></span></a>
+										<ul class="dropdown-menu">
+											<li><a href="blog-category1.html">blog category 1</a></li>
+											<li><a href="blog-category1.html">blog category 2</a></li>
+											<li><a href="blog.html">Post detail</a></li>
+										</ul>
+									</li>
 									<li><a href="contact.html">CONTACT</a></li>
 								</ul>
 							</div>
@@ -189,21 +184,21 @@
 				<div class="row blocks">
 					<div class="col-sm-3 block1 animate" data-anim-type="fadeInUp" data-anim-delay="300">
 						<ul class="nav nav-tabs text-right" role="tablist">
-							<li class="active">
+							<li class="contruction active">
 								<a href="#tab1" aria-controls="tab1" role="tab" data-toggle="tab">
-									<span class="icon contruction"></span>
+									<span class="icon"></span>
 									<strong class="title"><span>construction</span> Our services</strong>
 								</a>
 							</li>
-							<li>
+							<li class="architecture">
 								<a href="#tab2" aria-controls="tab2" role="tab" data-toggle="tab">
-									<span class="icon architecture"></span>
+									<span class="icon"></span>
 									<strong class="title"><span>architecture</span> Our services</strong>
 								</a>
 							</li>
-							<li>
+							<li class="painting">
 								<a href="#tab3" aria-controls="tab3" role="tab" data-toggle="tab">
-									<span class="icon painting"></span>
+									<span class="icon"></span>
 									<strong class="title"><span>painting</span> Our services</strong>
 								</a>
 							</li>
@@ -269,21 +264,21 @@
 					</div>
 					<div class="col-sm-3 block3 animate" data-anim-type="fadeInUp" data-anim-delay="900">
 						<ul class="nav nav-tabs" role="tablist">
-							<li>
+							<li class="electrical">
 								<a href="#tab4" aria-controls="tab4" role="tab" data-toggle="tab">
-									<span class="icon electrical"></span>
+									<span class="icon"></span>
 									<strong class="title"><span>electrical</span> Our services</strong>
 								</a>
 							</li>
-							<li>
+							<li class="metal-roofing">
 								<a href="#tab5" aria-controls="tab5" role="tab" data-toggle="tab">
-									<span class="icon metal-roofing"></span>
+									<span class="icon"></span>
 									<strong class="title"><span>metal roofing</span> Our services</strong>
 								</a>
 							</li>
-							<li>
+							<li class="consulting">
 								<a href="#tab6" aria-controls="tab6" role="tab" data-toggle="tab">
-									<span class="icon consulting"></span>
+									<span class="icon"></span>
 									<strong class="title"><span>consulting</span> Our services</strong>
 								</a>
 							</li>
@@ -439,7 +434,6 @@
 				<div class="corner right"><div></div></div>
 				<div class="corner left"><div></div></div>
 				<div class="container carousel-holder">
-					<div class="image-holder"><img src="images/image5.jpg" alt="image description"></div>
 					<div class="row">
 						<div class="col-lg-10 col-md-12 col-lg-offset-1 col-md-offset-0">
 							<h1><span>what clients say</span></h1>
@@ -449,19 +443,19 @@
 									<div class="item active">
 										<blockquote>
 											<q>Praesent sit amet magna ex. Fusce ornare ipsum a orci pretium pharetra. Nam placerat laoreet lacus, ac egestas velit vulputate vitae. Curabitur viverra accumsan semper. Pellentesque vehicula quam sit amet dolor consequat, vel viverra dui vestibulum. Sed sapien ligula, semper nec vestibulum quis, interdum vel massa. Nam a porta neque, non laoreet nibh.</q>
-											<cite>- <span>Liza iAN</span>, Manager - architect -</cite> 
+											<cite>- <span class="image-holder"><img src="images/image5.jpg" alt="image description"></span><span>Liza iAN</span>, Manager - architect -</cite> 
 										</blockquote>
 									</div>
 									<div class="item">
 										<blockquote>
 											<q>Praesent sit amet magna ex. Fusce ornare ipsum a orci pretium pharetra. Nam placerat laoreet lacus, ac egestas velit vulputate vitae. Curabitur viverra accumsan semper. Pellentesque vehicula quam sit amet dolor consequat, vel viverra dui vestibulum. Sed sapien ligula, semper nec vestibulum quis, interdum vel massa. Nam a porta neque, non laoreet nibh.</q>
-											<cite>- <span>Liza iAN</span>, Manager - architect -</cite> 
+											<cite>- <span class="image-holder"><img src="images/image5.jpg" alt="image description"></span><span>Liza iAN</span>, Manager - architect -</cite> 
 										</blockquote>
 									</div>
 									<div class="item">
 										<blockquote>
 											<q>Praesent sit amet magna ex. Fusce ornare ipsum a orci pretium pharetra. Nam placerat laoreet lacus, ac egestas velit vulputate vitae. Curabitur viverra accumsan semper. Pellentesque vehicula quam sit amet dolor consequat, vel viverra dui vestibulum. Sed sapien ligula, semper nec vestibulum quis, interdum vel massa. Nam a porta neque, non laoreet nibh.</q>
-											<cite>- <span>Liza iAN</span>, Manager - architect -</cite> 
+											<cite>- <span class="image-holder"><img src="images/image5.jpg" alt="image description"></span><span>Liza iAN</span>, Manager - architect -</cite> 
 										</blockquote>
 									</div>
 								</div>
@@ -583,7 +577,11 @@
 					</div>
 					<div class="row">
 						<div class="col-xs-12">
-							<div class="google-map"><img src="images/google-map.jpg" alt="map"></div>
+							<div class="google-map">
+								<div class="map-responsive">
+									<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3023.477499654985!2d-73.99864958539291!3d40.729517444482084!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c2599af55395c1%3A0xda30743171b5f305!2sNew+York+University!5e0!3m2!1sen!2s!4v1464614487941" frameborder="0" style="border:0" allowfullscreen></iframe>
+								</div>
+							</div>
 						</div>
 					</div>
 				</div>

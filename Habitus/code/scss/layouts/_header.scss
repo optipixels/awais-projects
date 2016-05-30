@@ -203,7 +203,7 @@
 		li {
 			margin: 0 16px;
 			@include media('<desktop') {
-				margin: 0 8px;
+				margin: 0 5px;
 			}
 			@include media('<tablet') {
 				margin: 8px 0;
@@ -222,18 +222,32 @@
 				margin: 0;
 				padding: 5px 0;
 				a {
-					padding: 0 15px;
+					padding: 3px 0;
+					color: $white;
+					&:hover {
+						background: none;
+					}
 				}
 			}
 		}
 	}
 	.caret {
-		position: absolute;
-		right: 10px;
-		top: 9px;
-		@include media('<tablet') {
-			top: 13px;
-			border-color: transparent transparent transparent $white!important;
+		@include v-align(inline-block, middle);
+		margin: 0 0 0 5px;
+	}
+	.dropdown-menu {
+		background: transparent;
+		box-shadow: none;
+		border: 0;
+		.caret {
+			margin: 0;
+			position: absolute;
+			right: 10px;
+			top: 9px;
+			@include media('<tablet') {
+				top: 13px;
+				border-color: transparent transparent transparent $white!important;
+			}
 		}
 	}
 }
