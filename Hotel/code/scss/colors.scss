@@ -1,0 +1,135 @@
+@import "bootstrap-custom";
+
+#header {
+	.navbar-toggle {
+		background: $light-grayish-orange;
+		border: 2px solid $light-grayish-orange;
+		&:hover, &:fosuc {
+			background: $light-grayish-orange!important;
+		}
+	}
+}
+
+/* main menu styles */
+.navbar-default {
+	.navbar-nav {
+		li {
+			a {
+				&:hover {
+					color: $mine-shaft;
+					border-color: $light-grayish-orange;
+					&:before, &:after {
+						background: $light-grayish-orange;
+					}
+				}
+			}
+			&.active, &.open {
+				> a {
+					color: $mine-shaft;
+					border-color: $light-grayish-orange;
+					&:before, &:after {
+						background: $light-grayish-orange;
+					}
+				}
+			}
+		}
+	}
+}
+
+/* navigation-bar styles */
+.navigation-bar {
+	.link {
+		&:hover {
+			color: $light-grayish-orange;
+		}
+	}
+}
+
+/* about styles */
+.about {
+	.box {
+		&:before {
+			background: $light-grayish-orange;
+		}
+	}
+}
+
+/* news styles */
+.news {
+	.carousel-caption {
+		h2 {
+			color: $light-grayish-orange;
+		}
+	}
+	.carousel-indicators {
+		li {
+			border-color: $light-grayish-orange;
+			&.active, &:hover {
+				background: $light-grayish-orange;
+			}
+		}
+	}
+}
+
+.btn-default {
+	&:hover {
+		background: $light-grayish-orange;
+	}
+}
+
+/* Restaurant styles */
+.restaurant {
+	.btn-default {
+		color: $light-grayish-orange;
+	}
+}
+
+.team-carousel {
+	.info-box {
+		background: rgba($light-grayish-orange, 0.9);
+	}
+	.box {
+		&:hover {
+			.image-frame {
+				border-color: $light-grayish-orange;
+			}
+		}
+	}
+	.carousel-indicators {
+		li {
+			border-color: $light-grayish-orange;
+			&.active, &:hover {
+				background: $light-grayish-orange;
+			}
+		}
+	}
+}
+
+/* reservation bar styles */
+.reservation-bar {
+	.btn {
+		background: $light-grayish-orange;
+	}
+}
+
+/* sidebar styles */
+.sidebar {
+	.widget {
+		h1 {
+			background: $light-grayish-orange;
+		}
+	}
+}
+
+/* footer styles */
+#footer {
+	background: $light-grayish-orange;
+}
+
+.f-nav {
+	a {
+		&:hover {
+			color: $light-grayish-orange;
+		}
+	}
+}

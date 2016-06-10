@@ -1,0 +1,94 @@
+#header .navbar-toggle {
+  background: #c2a476;
+  border: 2px solid #c2a476;
+}
+
+#header .navbar-toggle:hover, #header .navbar-toggle:fosuc {
+  background: #c2a476 !important;
+}
+
+/* main menu styles */
+.navbar-default .navbar-nav li a:hover {
+  color: #353535;
+  border-color: #c2a476;
+}
+
+.navbar-default .navbar-nav li a:hover:before, .navbar-default .navbar-nav li a:hover:after {
+  background: #c2a476;
+}
+
+.navbar-default .navbar-nav li.active > a, .navbar-default .navbar-nav li.open > a {
+  color: #353535;
+  border-color: #c2a476;
+}
+
+.navbar-default .navbar-nav li.active > a:before, .navbar-default .navbar-nav li.active > a:after, .navbar-default .navbar-nav li.open > a:before, .navbar-default .navbar-nav li.open > a:after {
+  background: #c2a476;
+}
+
+/* navigation-bar styles */
+.navigation-bar .link:hover {
+  color: #c2a476;
+}
+
+/* about styles */
+.about .box:before {
+  background: #c2a476;
+}
+
+/* news styles */
+.news .carousel-caption h2 {
+  color: #c2a476;
+}
+
+.news .carousel-indicators li {
+  border-color: #c2a476;
+}
+
+.news .carousel-indicators li.active, .news .carousel-indicators li:hover {
+  background: #c2a476;
+}
+
+.btn-default:hover {
+  background: #c2a476;
+}
+
+/* Restaurant styles */
+.restaurant .btn-default {
+  color: #c2a476;
+}
+
+.team-carousel .info-box {
+  background: rgba(194, 164, 118, 0.9);
+}
+
+.team-carousel .box:hover .image-frame {
+  border-color: #c2a476;
+}
+
+.team-carousel .carousel-indicators li {
+  border-color: #c2a476;
+}
+
+.team-carousel .carousel-indicators li.active, .team-carousel .carousel-indicators li:hover {
+  background: #c2a476;
+}
+
+/* reservation bar styles */
+.reservation-bar .btn {
+  background: #c2a476;
+}
+
+/* sidebar styles */
+.sidebar .widget h1 {
+  background: #c2a476;
+}
+
+/* footer styles */
+#footer {
+  background: #c2a476;
+}
+
+.f-nav a:hover {
+  color: #c2a476;
+}
