@@ -1,27 +1,28 @@
-// function for tabs
+// date picker 
 $(function() {
-	$('.blocks li').click(function(event){
-		event.preventDefault();//stop browser to take action for clicked anchor
-					
-		//get displaying tab content jQuery selector
-		var active_tab_selector = $('.blocks li.active a').attr('href');					
-					
-		//find actived navigation and remove 'active' css
-		var actived_nav = $('.blocks li.active');
-		actived_nav.removeClass('active');
-					
-		//add 'active' css into clicked navigation
-		$(this).parents('li').addClass('active');
-					
-		//hide displaying tab content
-		$(active_tab_selector).removeClass('active');
-		//$(active_tab_selector).addClass('hide');
-					
-		//show target tab content
-		var target_tab_selector = $(this).attr('href');
-		//$(target_tab_selector).removeClass('hide');
-		$(target_tab_selector).addClass('active');
-	});
+	var nowTemp = new Date();
+	var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
+	 
+	var checkin = $('#dpd1').datepicker({
+		onRender: function(date) {
+			return date.valueOf() < now.valueOf() ? 'disabled' : '';
+		}
+	}).on('changeDate', function(ev) {
+	if (ev.date.valueOf() > checkout.date.valueOf()) {
+		var newDate = new Date(ev.date)
+		newDate.setDate(newDate.getDate() + 1);
+		checkout.setValue(newDate);
+	}
+	checkin.hide();
+	$('#dpd2')[0].focus();
+	}).data('datepicker');
+	var checkout = $('#dpd2').datepicker({
+		onRender: function(date) {
+		return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
+	}
+	}).on('changeDate', function(ev) {
+		checkout.hide();
+	}).data('datepicker');
 });
 
 // function for counter
@@ -58,7 +59,7 @@ $(function () {
 jQuery(function(){
 	initMobileNav();
 	initSameHeight();
-	initCustomForms();
+	//initCustomForms();
 	initFitVids();
 	jQuery('input, textarea').placeholder();
 });

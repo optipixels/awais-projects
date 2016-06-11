@@ -79,9 +79,68 @@
   background: #c2a476;
 }
 
+.view-type li.active a {
+  color: #c2a476;
+}
+
+.view-type a:hover {
+  color: #c2a476;
+}
+
+/* rooms and blog-posts styles */
+.rooms .info-frame h1, .blog-posts .info-frame h1 {
+  color: #c2a476;
+}
+
+.rooms .rent-price, .blog-posts .rent-price {
+  color: #c2a476;
+}
+
+.rooms .detail-list dt, .blog-posts .detail-list dt {
+  color: #c2a476;
+}
+
+.rooms .metas span, .blog-posts .metas span {
+  font-size: 12px;
+  color: #c2a476;
+}
+
+.rooms .metas a:hover, .blog-posts .metas a:hover {
+  color: #c2a476;
+}
+
+.rooms .image-slider .carousel-control:hover, .blog-posts .image-slider .carousel-control:hover {
+  opacity: 1;
+  color: #c2a476;
+}
+
+/* paging styles */
+.paging .pagination > li.active a {
+  background: #c2a476;
+  border-color: #c2a476;
+}
+
+.paging .pagination > li > a:hover {
+  background: #c2a476;
+  border-color: #c2a476;
+}
+
 /* sidebar styles */
 .sidebar .widget h1 {
   background: #c2a476;
+}
+
+.sidebar .list a:hover {
+  color: #c2a476;
+}
+
+.sidebar .list a:before {
+  background: #c2a476;
+}
+
+form [type="checkbox"]:checked + .fake-input {
+  background: #c2a476;
+  border-color: #c2a476;
 }
 
 /* footer styles */

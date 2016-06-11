@@ -112,12 +112,100 @@
 	}
 }
 
+.view-type {
+	li {
+		&.active {
+			a {
+				color: $light-grayish-orange;
+			}
+		}
+	}
+	a {
+		&:hover {
+			color: $light-grayish-orange;
+		}
+	}
+}
+
+/* rooms and blog-posts styles */
+.rooms, .blog-posts {
+	.info-frame {
+		h1 {
+			color: $light-grayish-orange;
+		}
+	}
+	.rent-price {
+		color: $light-grayish-orange;
+	}
+	.detail-list {
+		dt {
+			color: $light-grayish-orange;
+		}
+	}
+	.metas {
+		span {
+			font-size: 12px;
+			color: $light-grayish-orange;
+		}
+		a {
+			&:hover {
+				color: $light-grayish-orange;
+			}
+		}
+	}
+	.image-slider {
+		.carousel-control {
+			&:hover {
+				opacity: 1;
+				color: $light-grayish-orange;
+			}
+		}
+	}
+}
+
+/* paging styles */
+.paging {
+	.pagination {
+		> li {
+			&.active {
+				a {
+					background: $light-grayish-orange;
+					border-color: $light-grayish-orange;
+				}
+			}
+			> a {
+				&:hover {
+					background: $light-grayish-orange;
+					border-color: $light-grayish-orange;
+				}
+			}
+		}
+	}
+}
+
 /* sidebar styles */
 .sidebar {
 	.widget {
 		h1 {
 			background: $light-grayish-orange;
 		}
+	}
+	.list {
+		a {
+			&:hover {
+				color: $light-grayish-orange;
+			}
+			&:before {
+				background: $light-grayish-orange;
+			}
+		}
+	}
+}
+
+form {
+	[type="checkbox"]:checked + .fake-input {
+		background: $light-grayish-orange;
+		border-color: $light-grayish-orange;
 	}
 }
 

@@ -16,8 +16,11 @@
 	<!-- Bootstrap Dropdown Hover CSS -->
 	<link rel="stylesheet" href="css/animate.min.css" type="text/css" media="all">
 	<link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" type="text/css" media="all">
+	<!-- Fonts CSS -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700" type="text/css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" type="text/css">
+	<!-- Range slider CSS -->
+	<link rel="stylesheet prefetch" href="css/jquery-ui.css" type="text/css">
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -45,7 +48,7 @@
 								<ul class="nav navbar-nav navbar-right">
 									<li><a href="#">wedding hall</a></li>
 									<li><a href="#">restaurant</a></li>
-									<li><a href="#">blog</a></li>
+									<li><a href="blog.html">blog</a></li>
 									<li><a href="#">contact</a></li>
 								</ul>
 							</div>
@@ -112,20 +115,24 @@
 							<div class="row">
 								<div class="col-sm-4">
 									<div class="form-group">
-										<select>
-											<option>Adult/Children</option>
-											<option>Option2</option>
-											<option>Option3</option>
-										</select>
+										<div class="fake-select">
+											<select>
+												<option selected="Adult/Children">Adult/Children</option>
+												<option>Option2</option>
+												<option>Option3</option>
+											</select>
+										</div>
 									</div>
 								</div>
 								<div class="col-sm-4">
 									<div class="form-group">
-										<select>
-											<option>Room</option>
-											<option>Option2</option>
-											<option>Option3</option>
-										</select>
+										<div class="fake-select">
+											<select>
+												<option selected="Room">Room</option>
+												<option>Option2</option>
+												<option>Option3</option>
+											</select>
+										</div>
 									</div>
 								</div>
 								<div class="col-sm-4">
@@ -356,7 +363,7 @@
 								<ul class="nav navbar-nav navbar-right">
 									<li><a href="#">wedding hall</a></li>
 									<li><a href="#">restaurant</a></li>
-									<li><a href="#">blog</a></li>
+									<li><a href="blog.html">blog</a></li>
 									<li><a href="#">contact</a></li>
 								</ul>
 							</nav>
@@ -388,6 +395,11 @@
 	<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
 	<script type="text/javascript">window.jQuery || document.write('<script src="js/jquery-1.11.2.min.js"><\/script>')</script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
+	<!-- Range Slider JavaScript -->
+	<script type="text/javascript" src='js/jquery-ui.min.js'></script>
+	<script type="text/javascript" src='js/range-slider.js'></script>
+	<!-- Same Height JavaScript -->
+	<script type="text/javascript" src='js/same-height.js'></script>
 	<!-- include custom JavaScript -->
 	<script type="text/javascript" src="js/jquery.main.js"></script>
 	<script type="text/javascript" src="js/animations.min.js"></script>
@@ -396,6 +408,7 @@
 	<script type="text/javascript" src="js/timber.master.min.js"></script>
 	<!-- Bootstrap Dropdown Hover JS -->
 	<script type="text/javascript" src="js/bootstrap-dropdownhover.min.js"></script>
+	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
 	<script type="text/javascript">
 		if (navigator.userAgent.match(/IEMobile\/10\.0/)) {
 			var msViewportStyle = document.createElement('style')
@@ -410,36 +423,9 @@
 		$('.map-responsive').click(function () {
 			$('.map-responsive iframe').css("pointer-events", "auto");
 		});
-
 		$( ".map-responsive" ).mouseleave(function() {
 			$('.map-responsive iframe').css("pointer-events", "none"); 
 		});
-	</script>
-	<script type="text/javascript" src="js/bootstrap-datepicker.js"></script>
-	<script type="text/javascript">
-		var nowTemp = new Date();
-		var now = new Date(nowTemp.getFullYear(), nowTemp.getMonth(), nowTemp.getDate(), 0, 0, 0, 0);
-		 
-		var checkin = $('#dpd1').datepicker({
-			onRender: function(date) {
-				return date.valueOf() < now.valueOf() ? 'disabled' : '';
-			}
-		}).on('changeDate', function(ev) {
-		if (ev.date.valueOf() > checkout.date.valueOf()) {
-			var newDate = new Date(ev.date)
-			newDate.setDate(newDate.getDate() + 1);
-			checkout.setValue(newDate);
-		}
-		checkin.hide();
-		$('#dpd2')[0].focus();
-			}).data('datepicker');
-			var checkout = $('#dpd2').datepicker({
-				onRender: function(date) {
-				return date.valueOf() <= checkin.date.valueOf() ? 'disabled' : '';
-			}
-			}).on('changeDate', function(ev) {
-				checkout.hide();
-			}).data('datepicker');
 	</script>
 </body>
 </html>
