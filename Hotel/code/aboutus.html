@@ -18,9 +18,11 @@
 	<link rel="stylesheet" href="css/bootstrap-dropdownhover.min.css" type="text/css" media="all">
 	<!-- Fonts CSS -->
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Lora:400,400italic,700" type="text/css">
-	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400" type="text/css">
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,600,700" type="text/css">
 	<!-- Range slider CSS -->
 	<link rel="stylesheet prefetch" href="css/jquery-ui.css" type="text/css">
+	<!-- flex slider CSS -->
+	<link rel="stylesheet" href="css/flexslider.css" type="text/css">
 </head>
 <body>
 	<!-- main container of all the page elements -->
@@ -43,13 +45,13 @@
 									<li><a href="index.html">HOME</a></li>
 									<li class="active"><a href="aboutus.html">ABOUT US</a></li>
 									<li><a href="rooms.html">rooms</a></li>
-									<li><a href="#">conference room</a></li>
+									<li><a href="conference-room.html">conference room</a></li>
 								</ul>
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">wedding hall</a></li>
-									<li><a href="#">restaurant</a></li>
+									<li><a href="wedding-hall.html">wedding hall</a></li>
+									<li><a href="restaurant.html">restaurant</a></li>
 									<li><a href="blog.html">blog</a></li>
-									<li><a href="#">contact</a></li>
+									<li><a href="contact.html">contact</a></li>
 								</ul>
 							</div>
 						</nav>
@@ -124,19 +126,19 @@
 					<div class="row">
 						<div class="col-md-6 col-sm-12 pull-right">
 							<div class="row">
-								<div class="col-sm-6 block block1">
+								<div class="col-sm-6 block downtown">
 									<h2>near downtown</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
-								<div class="col-sm-6 block block2">
+								<div class="col-sm-6 block sea">
 									<h2>close to the sea</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
-								<div class="col-sm-6 block block3">
+								<div class="col-sm-6 block pool">
 									<h2>pool</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
-								<div class="col-sm-6 block block4">
+								<div class="col-sm-6 block playground">
 									<h2>playground</h2>
 									<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
 								</div>
@@ -391,13 +393,13 @@
 									<li><a href="index.html">HOME</a></li>
 									<li><a href="aboutus.html">ABOUT US</a></li>
 									<li><a href="rooms.html">rooms</a></li>
-									<li><a href="#">conference room</a></li>
+									<li><a href="conference-room.html">conference room</a></li>
 								</ul>
 								<ul class="nav navbar-nav navbar-right">
-									<li><a href="#">wedding hall</a></li>
-									<li><a href="#">restaurant</a></li>
+									<li><a href="wedding-hall.html">wedding hall</a></li>
+									<li><a href="restaurant.html">restaurant</a></li>
 									<li><a href="blog.html">blog</a></li>
-									<li><a href="#">contact</a></li>
+									<li><a href="contact.html">contact</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -458,6 +460,30 @@
 		});
 		$( ".map-responsive" ).mouseleave(function() {
 			$('.map-responsive iframe').css("pointer-events", "none"); 
+		});
+	</script><script type="text/javascript" defer src="js/jquery.flexslider.js"></script> 
+	<script type="text/javascript">
+		$(window).load(function(){
+			$('#thumbnails').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				itemWidth: 210,
+				itemMargin: 5,
+				asNavFor: '#flex-slider'
+			});
+
+			$('#flex-slider').flexslider({
+				animation: "slide",
+				controlNav: false,
+				animationLoop: false,
+				slideshow: false,
+				sync: "#thumbnails",
+				start: function(slider){
+					$('body').removeClass('loading');
+				}
+			});
 		});
 	</script>
 </body>

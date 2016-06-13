@@ -142,23 +142,45 @@
 			color: $light-grayish-orange;
 		}
 	}
-	.metas {
-		span {
-			font-size: 12px;
-			color: $light-grayish-orange;
-		}
-		a {
-			&:hover {
-				color: $light-grayish-orange;
-			}
-		}
-	}
 	.image-slider {
 		.carousel-control {
 			&:hover {
 				opacity: 1;
 				color: $light-grayish-orange;
 			}
+		}
+	}
+}
+
+/* post detail styles */
+.post-detail {
+	.social-networks {
+		a {
+			border-color: $light-grayish-orange;
+			color: $light-grayish-orange;
+		}
+	}
+	.pager {
+		li {
+			> a {
+				&:hover {
+					color: $light-grayish-orange;
+					.glyphicon {
+						color: $light-grayish-orange;
+					}
+				}
+			}
+		}
+	}
+}
+.metas {
+	span {
+		font-size: 12px;
+		color: $light-grayish-orange;
+	}
+	a {
+		&:hover {
+			color: $light-grayish-orange;
 		}
 	}
 }
@@ -183,6 +205,116 @@
 	}
 }
 
+/* comments block styles */
+.comments-block {
+	.btn {
+		background: $light-grayish-orange;
+		&:hover {
+			color: $light-grayish-orange;
+		}
+	}
+}
+
+/* contact styles */
+.contact-form {
+	.btn {
+		background: $light-grayish-orange;
+		&:hover {
+			color: $light-grayish-orange;
+		}
+	}
+}
+
+/* rooms-section styles */
+.info-block {
+	.holder {
+		.title {
+			color: $light-grayish-orange;
+		}
+		.price {
+			span {
+				color: $light-grayish-orange;
+			}
+		}
+	}
+	.social-networks {
+		a {
+			&:hover {
+				color: $light-grayish-orange;
+				border-color: $light-grayish-orange;
+			}
+		}
+	}
+}
+
+/* gallery section styles */
+.gallery-section {
+	.social-networks {
+		a {
+			&:hover {
+				color: $light-grayish-orange;
+				border-color: $light-grayish-orange;
+			}
+		}
+	}
+}
+
+/* testimonials styles */
+.testimonials {
+	blockquote {
+		cite {
+			color: $light-grayish-orange;
+		}
+	}
+	.carousel-indicators {
+		li {
+			border-color: $light-grayish-orange;
+			&.active, &:hover {
+				background: $light-grayish-orange;
+			}
+		}
+	}
+}
+
+/* menu section styles */
+.menu-list {
+	h2 {
+		color: $light-grayish-orange;
+	}
+	.image-frame {
+		border: 1px solid rgba($slightly-desaturated-orange, 0.3);
+	}
+	a {
+		&:hover {
+			.price {
+				color: $white;
+				background: $light-grayish-orange;
+				border-color: $light-grayish-orange;
+			}
+		}
+	}
+}
+.menu-carousel {
+	.carousel-indicators {
+		li {
+			border-color: $light-grayish-orange;
+			&.active, &:hover {
+				background: $light-grayish-orange;
+			}
+		}
+	}
+}
+
+/* billing form styles */
+.billing-form {
+	.btn {
+		background: $light-grayish-orange;
+		&:hover {
+			color: $light-grayish-orange;
+		}
+	}
+}
+
 /* sidebar styles */
 .sidebar {
 	.widget {
@@ -197,6 +329,32 @@
 			}
 			&:before {
 				background: $light-grayish-orange;
+			}
+		}
+	}
+}
+
+/* room-details styles */
+.room-details {
+	.detail-list {
+		li {
+			strong {
+				color: $light-grayish-orange;
+			}
+		}
+	}
+	.rent-price {
+		color: $light-grayish-orange;
+	}
+}
+
+/* flex slider styles */
+#flex-slider {
+	.social-networks {
+		a {
+			&:hover {
+				border-color: $light-grayish-orange;
+				color: $light-grayish-orange;
 			}
 		}
 	}

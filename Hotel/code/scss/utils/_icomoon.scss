@@ -9,11 +9,14 @@
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
+.icon-paperplane:before { content: "\e90c"; }
+.icon-location:before { content: "\e90d"; }
+.icon-phone:before { content: "\e90e"; }
+.icon-cancel:before { content: "\e908"; }
 .icon-play:before { content: "\e90a"; }
 .icon-image:before { content: "\e90b"; }
 .icon-folder-open:before { content: "\e909"; }
 .icon-calendar:before { content: "\e905"; }
-.icon-cancel:before { content: "\e908"; }
 .icon-view_module:before { content: "\e906"; }
 .icon-view_list:before { content: "\e907"; }
 .icon-facebook:before { content: "\e904"; }
