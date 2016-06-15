@@ -16,7 +16,6 @@
 		li {
 			a {
 				&:hover {
-					color: $mine-shaft;
 					border-color: $light-grayish-orange;
 					&:before, &:after {
 						background: $light-grayish-orange;
@@ -24,8 +23,7 @@
 				}
 			}
 			&.active, &.open {
-				> a {
-					color: $mine-shaft;
+				a {
 					border-color: $light-grayish-orange;
 					&:before, &:after {
 						background: $light-grayish-orange;
@@ -49,7 +47,7 @@
 .about {
 	.box {
 		&:before {
-			background: $light-grayish-orange;
+			background: rgba($light-grayish-orange, 0.3);
 		}
 	}
 }
@@ -72,6 +70,7 @@
 }
 
 .btn-default {
+	font-weight: 400;
 	&:hover {
 		background: $light-grayish-orange;
 	}
@@ -332,6 +331,16 @@
 			}
 		}
 	}
+	.total-price {
+		background: $light-grayish-orange;
+	}
+}
+
+.article-box {
+	.close {
+		border: 2px solid $light-grayish-orange;
+		color: $light-grayish-orange;
+	}
 }
 
 /* room-details styles */
@@ -377,5 +386,11 @@ form {
 		&:hover {
 			color: $light-grayish-orange;
 		}
+	}
+}
+
+.go-top {
+	&:hover {
+		color: $light-grayish-orange;
 	}
 }

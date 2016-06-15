@@ -60,7 +60,7 @@
 /* footer nav styles */
 .footer-nav {
 	padding: 39px 0;
-	overflow: hidden;
+	@extend %clearfix;
 	background: $mine-shaft;
 	@include media('<desktop') {
 		padding: 15px 0 60px;
@@ -172,4 +172,17 @@
 	}
 }
 
-
+.go-top {
+	right: 0;
+	top: -89px;
+	@include square(50px);
+	position: absolute;
+	border-radius: 3px;
+	background: $mine-shaft;
+	text-align: center;
+	color: $light-grayish;
+	span {
+		font-size: 20px;
+		line-height: 50px;
+	}
+}

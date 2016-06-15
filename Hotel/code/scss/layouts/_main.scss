@@ -32,8 +32,11 @@ body {
 	color: $very-dark-gray;
 	box-shadow: none;
 	border: 1px solid $light-gray;
+	&:focus {
+		color: $light-grayish-orange!important;
+	}
 	@include placeholder {
-		color: $base-color;
+		color: $light-grayish-orange;
 	}
 }
 
@@ -259,7 +262,7 @@ h1 {
 	overflow: hidden;
 	padding: 40px 0 20px;
 	background: $mine-shaft;
-	.fake-select{
+	.fake-select {
 		position: relative;
 		display: block;
 		&:before, &:after {
@@ -541,6 +544,9 @@ h1 {
 .restaurant {
 	font-size: 0;
 	line-height: 0;
+	background-position: center top;
+	-webkit-background-size: cover;
+	background-size: cover;
 	[class^="col-"] {
 		float: none;
 		@include v-align(inline-block, middle);
@@ -558,6 +564,7 @@ h1 {
 	h1 {
 		font-size: 36px;
 		line-height: 40px;
+		font-style: normal;
 		margin: 0 0 30px;
 		@include media('<tablet') {
 			font-size: 30px;
@@ -570,6 +577,7 @@ h1 {
 	.text-box {
 		font-size: 16px;
 		line-height: 23px;
+		font-style: italic;
 		text-align: center;
 		@include media('<tablet') {
 			font-size: 14px;
@@ -578,6 +586,7 @@ h1 {
 	}
 	.btn-default {
 		font-size: 16px;
+		font-style: normal;
 		&:hover {
 			color: $white;
 		}
@@ -893,7 +902,7 @@ h1 {
 	.block {
 		border-style: solid;
 		border-width: 0 0 1px 1px;
-		padding: 40px 20px 20px 80px;
+		padding: 40px 15px 20px 80px;
 		border-color: rgba(255, 255, 255, 0.05);
 		font: 300 16px/21px 'Source Sans Pro', Arial, helvetica, sans-serif;
 		@include media('<desktop-min') {
@@ -1034,6 +1043,10 @@ h1 {
 
 /* pur team styles */
 .our-team {
+	background-position: center top;
+	-webkit-background-size: cover;
+	background-size: cover;
+	overflow: hidden;
 	h2 {
 		color: $white;
 		margin: 0 0 10px;
@@ -1210,6 +1223,21 @@ h1 {
 		.date, .form-group {
 			margin: 0 0 20px;
 		}
+		.total-price {
+			display: block;
+			color: $light-grayish;
+			text-align: center;
+			margin: 40px -30px 0;
+			padding: 7px 10px;
+			text-transform: uppercase;
+			font: 400 24px/26px 'Source Sans Pro', Arial, helvetica, sans-serif;
+			@include media('<tablet') {
+				margin: 20px -30px 0;
+			}
+			span {
+				font-weight: 700;
+			}
+		}
 	}
 	.holder {
 		overflow: hidden;
@@ -1357,6 +1385,17 @@ h1 {
 	}
 	.selection {
 		width: 70px;
+		position: relative;
+		&:after {
+			z-index: 9;
+			top: 5px;
+			right: 25px;
+			bottom: 5px;
+			width: 1px;
+			content: "";
+			position: absolute;
+			background: $grayish-orange;
+		}
 	}
 	.fake-select{
 		position: relative;
@@ -1626,6 +1665,13 @@ h1 {
 					color: $white;
 				}
 			}
+			&:last-child {
+				a {
+					background: $black;
+					color: $light-grayish;
+					border-color: $black;
+				}
+			}
 		}
 		.glyphicon {
 			font-size: 12px;
@@ -1726,7 +1772,7 @@ h1 {
 			padding: 10px 0;
 		}
 		.btn {
-			color: $white;
+			color: $light-grayish;
 			font: 400 16px/18px 'Lora', Arial, helvetica, sans-serif;
 		}
 	}
@@ -1756,6 +1802,7 @@ h1 {
 .metas {
 	padding: 0;
 	margin: 0 0 15px;
+	color: $base-color;
 	li {
 		padding: 0 30px 0 0;
 	}
@@ -1763,7 +1810,7 @@ h1 {
 		margin: 0 10px 0 0;
 	}
 	a {
-		color: $light-grayish;
+		color: $base-color;
 		&:hover, &:focus {
 			text-decoration: none;
 		}
@@ -1772,9 +1819,9 @@ h1 {
 
 /* post detail styles */
 .post-detail {
-	font: 400 16px/23px 'Source Sans Pro', Arial, helvetica, sans-serif;
+	font: 300 16px/23px 'Source Sans Pro', Arial, helvetica, sans-serif;
 	@include media('<tablet') {
-		font: 400 14px/21px 'Source Sans Pro', Arial, helvetica, sans-serif;
+		font: 300 14px/21px 'Source Sans Pro', Arial, helvetica, sans-serif;
 	}
 	.image-frame {
 		overflow: hidden;
@@ -1809,7 +1856,7 @@ h1 {
 	.pager {
 		margin: 0;
 		text-transform: uppercase;
-		font: 400 18px/20px 'Source Sans Pro', Arial, helvetica, sans-serif;
+		font: 300 18px/20px 'Source Sans Pro', Arial, helvetica, sans-serif;
 		li {
 			text-align: left;
 			&.disabled {
@@ -1818,6 +1865,7 @@ h1 {
 			.link-text {
 				display: block;
 				position: relative;
+				font-weight: 400;
 			}
 			.glyphicon {
 				position: absolute;
@@ -1908,11 +1956,15 @@ h1 {
 		}
 	}
 	.form-control {
-		font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+		font: 300 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+		@include placeholder {
+			color: $base-color;
+		}
 	}
 	.btn {
 		width: 100%;
 		color: $white;
+		font: 400 18px/20px 'Lora', Arial, helvetica, sans-serif;
 		&:hover {
 			background: transparent;
 		}
@@ -1921,9 +1973,9 @@ h1 {
 
 /* contact styles */
 .contact {
-	font: 400 16px/24px 'Source Sans Pro', Arial, helvetica, sans-serif;
+	font: 300 16px/24px 'Source Sans Pro', Arial, helvetica, sans-serif;
 	@include media('<tablet') {
-		font: 400 14px/20px 'Source Sans Pro', Arial, helvetica, sans-serif;
+		font: 300 14px/20px 'Source Sans Pro', Arial, helvetica, sans-serif;
 	}
 	h1 {
 		font-family: 'Lora';
@@ -1966,6 +2018,10 @@ h1 {
 		a {
 			color: $base-color;
 		}
+	}
+	label {
+		margin: 0 0 3px;
+		font: 300 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
 	}
 }
 .contact-form {
@@ -2737,6 +2793,77 @@ h1 {
 		}
 	}
 }
+
+.article-box {
+	overflow: hidden;
+	margin-bottom: 60px;
+	position: relative;
+	@include media('<tablet') {
+		margin-bottom: 30px;
+	}
+	.image-frame {
+		overflow: hidden;
+		@include size(100%, auto);
+		img {
+			display: block;
+			@include size(100%, auto);
+		}
+	}
+	.close {
+		top: 0;
+		right: 0;
+		z-index: 1;
+		opacity: 0.5;
+		position: absolute;
+		text-align: center;
+		@include square(35px);
+		border-radius: 5px;
+		text-shadow: none;
+		text-transform: uppercase;
+		font: 400 24px/32px 'Lora', Arial, helvetica, sans-serif;
+		&:hover {
+			opacity: 1;
+			@include media('<tablet') {
+				color: $light-grayish!important;
+				border-color: $light-grayish!important;
+			}
+		}
+		@include media('<tablet') {
+			top: 10px;
+			right: 25px;
+			color: $mine-shaft!important;
+			border-color: $mine-shaft!important;
+		}
+	}
+	.info-frame {
+		font: 400 16px/23px 'Source Sans Pro', Arial, helvetica, sans-serif;
+		@include media('<tablet') {
+			padding-top: 15px;
+		}
+		h1 {
+			margin: 0 0 20px;
+		}
+		p {
+			margin: 0 0 15px;
+		}
+	}
+	.detail-list {
+		margin: 0 0 10px;
+	}
+	.btn-holder {
+		padding: 15px 0 0;
+		border-bottom: 0;
+	}
+}
+
+.button {
+	.btn {
+		&:hover {
+			color: $white;
+		}
+	}
+}
+
 /* form styles */
 form {
 	[type="radio"],

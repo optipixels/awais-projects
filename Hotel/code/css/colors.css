@@ -9,7 +9,6 @@
 
 /* main menu styles */
 .navbar-default .navbar-nav li a:hover {
-  color: #353535;
   border-color: #c2a476;
 }
 
@@ -17,12 +16,11 @@
   background: #c2a476;
 }
 
-.navbar-default .navbar-nav li.active > a, .navbar-default .navbar-nav li.open > a {
-  color: #353535;
+.navbar-default .navbar-nav li.active a, .navbar-default .navbar-nav li.open a {
   border-color: #c2a476;
 }
 
-.navbar-default .navbar-nav li.active > a:before, .navbar-default .navbar-nav li.active > a:after, .navbar-default .navbar-nav li.open > a:before, .navbar-default .navbar-nav li.open > a:after {
+.navbar-default .navbar-nav li.active a:before, .navbar-default .navbar-nav li.active a:after, .navbar-default .navbar-nav li.open a:before, .navbar-default .navbar-nav li.open a:after {
   background: #c2a476;
 }
 
@@ -33,7 +31,7 @@
 
 /* about styles */
 .about .box:before {
-  background: #c2a476;
+  background: rgba(194, 164, 118, 0.3);
 }
 
 /* news styles */
@@ -47,6 +45,10 @@
 
 .news .carousel-indicators li.active, .news .carousel-indicators li:hover {
   background: #c2a476;
+}
+
+.btn-default {
+  font-weight: 400;
 }
 
 .btn-default:hover {
@@ -235,6 +237,15 @@
   background: #c2a476;
 }
 
+.sidebar .total-price {
+  background: #c2a476;
+}
+
+.article-box .close {
+  border: 2px solid #c2a476;
+  color: #c2a476;
+}
+
 /* room-details styles */
 .room-details .detail-list li strong {
   color: #c2a476;
@@ -261,5 +272,9 @@ form [type="checkbox"]:checked + .fake-input {
 }
 
 .f-nav a:hover {
+  color: #c2a476;
+}
+
+.go-top:hover {
   color: #c2a476;
 }

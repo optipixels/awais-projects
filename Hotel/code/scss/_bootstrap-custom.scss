@@ -1,6 +1,6 @@
 // custom variables and override bootstrap variables
 
-$body-bg: #fff;
+$body-bg: #f9f6f1;
 $base-color: #7e7e7e;
 $base-min-width: 320px;
 
@@ -61,16 +61,16 @@ $navbar-default-border:            0;
 
 // Navbar links
 $navbar-default-link-color:                $mine-shaft;
-$navbar-default-link-hover-color:          $pure-orange;
+$navbar-default-link-hover-color:          $mine-shaft;
 $navbar-default-link-hover-bg:             transparent !default;
-$navbar-default-link-active-color:         $pure-orange;
+$navbar-default-link-active-color:         $mine-shaft;
 $navbar-default-link-active-bg:            transparent;
 
 $input-bg:                       transparent;
 $input-color:                    $gray !default;
 $input-border:                   $gray !default;
 $input-border-focus:             $light-grayish-orange;
-$input-color-placeholder:        $gray !default;
+$input-color-placeholder:        $light-grayish-orange;
 
 $breadcrumb-padding-vertical:   0 !default;
 $breadcrumb-padding-horizontal: 0 !default;

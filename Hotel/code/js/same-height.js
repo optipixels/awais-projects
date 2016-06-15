@@ -34,10 +34,14 @@ var currentTallest = 0,
 }
 
 $(window).load(function() {
-  equalheight('.article .col, .item .col');
+  equalheight('.article .col');
+  equalheight('.item .col');
+  equalheight('.blocks .block');
 });
 
 
 $(window).resize(function(){
-  equalheight('.article .col, .item .col');
+  equalheight('.article .col');
+  equalheight('.item .col');
+  equalheight('.blocks .block');
 });

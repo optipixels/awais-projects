@@ -47,10 +47,11 @@ textarea {
 
     &:focus {
       border-color: $light-grayish-orange;
+      color: $light-grayish-orange;
     }
 
     @include placeholder {
-      color: #aeaeae;
+      color: $light-grayish-orange;
     }
   }
   
