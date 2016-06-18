@@ -42,13 +42,15 @@
 							<!-- Collect the nav links, forms, and other content for toggling -->
 							<div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
 								<ul class="nav navbar-nav navbar-left">
-									<li><a href="index.html">HOME</a></li>
+									<li class="active"><a href="index.html">HOME</a></li>
 									<li><a href="aboutus.html">ABOUT US</a></li>
-									<li class="activedropdown">
-										<a href="rooms.html" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown">rooms</a>
+									<li class="dropdown">
+										<a href="rooms.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">rooms</a>
 										<ul class="dropdown-menu">
-											<li><a href="checkout.html">Checkout</a></li>
 											<li><a href="room-detail.html">Room details</a></li>
+                                            <li><a href="rooms2.html">Rooms 2</a></li>
+                                            <li><a href="payment.html">Payment</a></li>
+                                            <li><a href="checkout.html">Checkout</a></li>
 										</ul>
 									</li>
 									<li><a href="conference-room.html">conference room</a></li>
@@ -57,12 +59,14 @@
 									<li><a href="wedding-hall.html">wedding hall</a></li>
 									<li><a href="restaurant.html">restaurant</a></li>
 									<li class="dropdown">
-										<a href="blog.html" class="dropdown-toggle disabled" data-toggle="dropdown" data-hover="dropdown">blog</a>
+										<a href="blog.html" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown">blog</a>
 										<ul class="dropdown-menu">
 											<li><a href="blog-single.html">Blog single</a></li>
 										</ul>
 									</li>
-									<li><a href="contact.html">contact</a></li>
+									<li>
+                                        <a href="contact.html">contact</a>
+                                    </li>
 								</ul>
 							</div>
 						</nav>
@@ -98,21 +102,13 @@
 						<section class="widget">
 							<h1>confirmation</h1>
 							<div class="holder reservation-bar">
-								<div class="input-append date" id="dpd1" data-date="Check In" data-date-format="dd-mm-yyyy">
-									<input class="form-control" size="16" type="text" value="Arrive date: 7-June-2016">
-								</div>
-								<div class="input-append date" id="dpd2" data-date="Check Out" data-date-format="dd-mm-yyyy">
-									<input class="form-control" size="16" type="text" value="Departure: 10-June-2016">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Adult: 2">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Children: 2">
-								</div>
-								<div class="form-group">
-									<input type="text" class="form-control" placeholder="Room: 2">
-								</div>
+                                <ul class="itemsList">
+                                    <li>Arrive date: 7-June-2016</li>
+                                    <li>Departure: 10-June-2016</li>
+                                    <li>Adult: 2</li>
+                                    <li>Children: 2</li>
+                                    <li>Room(s): 2</li>
+                                </ul>
 								<strong class="total-price">total: <span>$1410</span></strong>
 							</div>
 						</section>
@@ -301,6 +297,34 @@
 		$( ".map-responsive" ).mouseleave(function() {
 			$('.map-responsive iframe').css("pointer-events", "none"); 
 		});
+	</script>
+	<script type="text/javascript">
+
+		// Standard google maps function
+		function initialize() {
+			var myLatlng = new google.maps.LatLng(40.779502, -73.967857);
+			var myOptions = {
+				zoom: 12,
+				center: myLatlng,
+				mapTypeId: google.maps.MapTypeId.ROADMAP
+			}
+			map = new google.maps.Map(document.getElementById("map_canvas"), myOptions);
+			TestMarker();
+		}
+		
+		// Function for adding a marker to the page.
+		function addMarker(location) {
+			marker = new google.maps.Marker({
+				position: location,
+				map: map
+			});
+		}
+
+		// Testing the addMarker function
+		function TestMarker() {
+			CentralPark = new google.maps.LatLng(37.7699298, -122.4469157);
+			addMarker(CentralPark);
+		}
 	</script>
 	<script type="text/javascript" defer src="js/jquery.flexslider.js"></script> 
 	<script type="text/javascript">

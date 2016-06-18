@@ -262,6 +262,19 @@ h1 {
 	overflow: hidden;
 	padding: 40px 0 20px;
 	background: $mine-shaft;
+    .itemsList {
+        overflow: hidden;
+        font: 16px/18px "Source Sans Pro",Arial,helvetica,sans-serif;
+        li {
+            overflow: hidden;
+            margin: 0 0 15px;
+            border:1px solid #c9c9c9;
+            color: #aeaeae;
+            padding: 11px 12px;
+            border-radius: 4px;
+            margin: 0 0 15px;
+        }
+    }
 	.fake-select {
 		position: relative;
 		display: block;
@@ -319,7 +332,7 @@ h1 {
 		font-size: 17px;
 		line-height: 16px;
 	}
-	.form-control {
+	.form-control, .items li {
 		color: $gray;
 		box-shadow: none;
 		font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;

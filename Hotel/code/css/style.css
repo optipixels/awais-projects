@@ -56,7 +56,7 @@ Theme URI:
 }
 
 body {
-  font: 400 16px/26px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 16px/26px "Lora", Arial, helvetica, sans-serif;
   min-width: 320px;
   color: #7e7e7e;
 }
@@ -100,42 +100,28 @@ input[type='date'] {
 
 .comment-form input[type='text'],
 .search-form input[type='text'],
-.post-password-form input[type='text'], .comment-form
-input[type='tel'],
-.search-form
-input[type='tel'],
-.post-password-form
-input[type='tel'], .comment-form
-input[type='email'],
-.search-form
-input[type='email'],
-.post-password-form
-input[type='email'], .comment-form
-input[type='search'],
-.search-form
-input[type='search'],
-.post-password-form
-input[type='search'], .comment-form
-input[type='password'],
-.search-form
-input[type='password'],
-.post-password-form
-input[type='password'], .comment-form
-input[type='url'],
-.search-form
-input[type='url'],
-.post-password-form
-input[type='url'], .comment-form
-input[type='date'],
-.search-form
-input[type='date'],
-.post-password-form
-input[type='date'], .comment-form
-textarea,
-.search-form
-textarea,
-.post-password-form
-textarea {
+.post-password-form input[type='text'],
+.comment-form input[type='tel'],
+.search-form input[type='tel'],
+.post-password-form input[type='tel'],
+.comment-form input[type='email'],
+.search-form input[type='email'],
+.post-password-form input[type='email'],
+.comment-form input[type='search'],
+.search-form input[type='search'],
+.post-password-form input[type='search'],
+.comment-form input[type='password'],
+.search-form input[type='password'],
+.post-password-form input[type='password'],
+.comment-form input[type='url'],
+.search-form input[type='url'],
+.post-password-form input[type='url'],
+.comment-form input[type='date'],
+.search-form input[type='date'],
+.post-password-form input[type='date'],
+.comment-form textarea,
+.search-form textarea,
+.post-password-form textarea {
   -webkit-appearance: none;
   -webkit-border-radius: 0;
   border: 1px solid #c9c9c9;
@@ -144,249 +130,165 @@ textarea {
 
 .comment-form input[type='text']:focus,
 .search-form input[type='text']:focus,
-.post-password-form input[type='text']:focus, .comment-form
-input[type='tel']:focus,
-.search-form
-input[type='tel']:focus,
-.post-password-form
-input[type='tel']:focus, .comment-form
-input[type='email']:focus,
-.search-form
-input[type='email']:focus,
-.post-password-form
-input[type='email']:focus, .comment-form
-input[type='search']:focus,
-.search-form
-input[type='search']:focus,
-.post-password-form
-input[type='search']:focus, .comment-form
-input[type='password']:focus,
-.search-form
-input[type='password']:focus,
-.post-password-form
-input[type='password']:focus, .comment-form
-input[type='url']:focus,
-.search-form
-input[type='url']:focus,
-.post-password-form
-input[type='url']:focus, .comment-form
-input[type='date']:focus,
-.search-form
-input[type='date']:focus,
-.post-password-form
-input[type='date']:focus, .comment-form
-textarea:focus,
-.search-form
-textarea:focus,
-.post-password-form
-textarea:focus {
+.post-password-form input[type='text']:focus,
+.comment-form input[type='tel']:focus,
+.search-form input[type='tel']:focus,
+.post-password-form input[type='tel']:focus,
+.comment-form input[type='email']:focus,
+.search-form input[type='email']:focus,
+.post-password-form input[type='email']:focus,
+.comment-form input[type='search']:focus,
+.search-form input[type='search']:focus,
+.post-password-form input[type='search']:focus,
+.comment-form input[type='password']:focus,
+.search-form input[type='password']:focus,
+.post-password-form input[type='password']:focus,
+.comment-form input[type='url']:focus,
+.search-form input[type='url']:focus,
+.post-password-form input[type='url']:focus,
+.comment-form input[type='date']:focus,
+.search-form input[type='date']:focus,
+.post-password-form input[type='date']:focus,
+.comment-form textarea:focus,
+.search-form textarea:focus,
+.post-password-form textarea:focus {
   border-color: #c2a476;
   color: #c2a476;
 }
 
 .comment-form input[type='text']::-webkit-input-placeholder,
 .search-form input[type='text']::-webkit-input-placeholder,
-.post-password-form input[type='text']::-webkit-input-placeholder, .comment-form
-input[type='tel']::-webkit-input-placeholder,
-.search-form
-input[type='tel']::-webkit-input-placeholder,
-.post-password-form
-input[type='tel']::-webkit-input-placeholder, .comment-form
-input[type='email']::-webkit-input-placeholder,
-.search-form
-input[type='email']::-webkit-input-placeholder,
-.post-password-form
-input[type='email']::-webkit-input-placeholder, .comment-form
-input[type='search']::-webkit-input-placeholder,
-.search-form
-input[type='search']::-webkit-input-placeholder,
-.post-password-form
-input[type='search']::-webkit-input-placeholder, .comment-form
-input[type='password']::-webkit-input-placeholder,
-.search-form
-input[type='password']::-webkit-input-placeholder,
-.post-password-form
-input[type='password']::-webkit-input-placeholder, .comment-form
-input[type='url']::-webkit-input-placeholder,
-.search-form
-input[type='url']::-webkit-input-placeholder,
-.post-password-form
-input[type='url']::-webkit-input-placeholder, .comment-form
-input[type='date']::-webkit-input-placeholder,
-.search-form
-input[type='date']::-webkit-input-placeholder,
-.post-password-form
-input[type='date']::-webkit-input-placeholder, .comment-form
-textarea::-webkit-input-placeholder,
-.search-form
-textarea::-webkit-input-placeholder,
-.post-password-form
-textarea::-webkit-input-placeholder {
+.post-password-form input[type='text']::-webkit-input-placeholder,
+.comment-form input[type='tel']::-webkit-input-placeholder,
+.search-form input[type='tel']::-webkit-input-placeholder,
+.post-password-form input[type='tel']::-webkit-input-placeholder,
+.comment-form input[type='email']::-webkit-input-placeholder,
+.search-form input[type='email']::-webkit-input-placeholder,
+.post-password-form input[type='email']::-webkit-input-placeholder,
+.comment-form input[type='search']::-webkit-input-placeholder,
+.search-form input[type='search']::-webkit-input-placeholder,
+.post-password-form input[type='search']::-webkit-input-placeholder,
+.comment-form input[type='password']::-webkit-input-placeholder,
+.search-form input[type='password']::-webkit-input-placeholder,
+.post-password-form input[type='password']::-webkit-input-placeholder,
+.comment-form input[type='url']::-webkit-input-placeholder,
+.search-form input[type='url']::-webkit-input-placeholder,
+.post-password-form input[type='url']::-webkit-input-placeholder,
+.comment-form input[type='date']::-webkit-input-placeholder,
+.search-form input[type='date']::-webkit-input-placeholder,
+.post-password-form input[type='date']::-webkit-input-placeholder,
+.comment-form textarea::-webkit-input-placeholder,
+.search-form textarea::-webkit-input-placeholder,
+.post-password-form textarea::-webkit-input-placeholder {
   color: #c2a476;
 }
 
 .comment-form input[type='text']::-moz-placeholder,
 .search-form input[type='text']::-moz-placeholder,
-.post-password-form input[type='text']::-moz-placeholder, .comment-form
-input[type='tel']::-moz-placeholder,
-.search-form
-input[type='tel']::-moz-placeholder,
-.post-password-form
-input[type='tel']::-moz-placeholder, .comment-form
-input[type='email']::-moz-placeholder,
-.search-form
-input[type='email']::-moz-placeholder,
-.post-password-form
-input[type='email']::-moz-placeholder, .comment-form
-input[type='search']::-moz-placeholder,
-.search-form
-input[type='search']::-moz-placeholder,
-.post-password-form
-input[type='search']::-moz-placeholder, .comment-form
-input[type='password']::-moz-placeholder,
-.search-form
-input[type='password']::-moz-placeholder,
-.post-password-form
-input[type='password']::-moz-placeholder, .comment-form
-input[type='url']::-moz-placeholder,
-.search-form
-input[type='url']::-moz-placeholder,
-.post-password-form
-input[type='url']::-moz-placeholder, .comment-form
-input[type='date']::-moz-placeholder,
-.search-form
-input[type='date']::-moz-placeholder,
-.post-password-form
-input[type='date']::-moz-placeholder, .comment-form
-textarea::-moz-placeholder,
-.search-form
-textarea::-moz-placeholder,
-.post-password-form
-textarea::-moz-placeholder {
+.post-password-form input[type='text']::-moz-placeholder,
+.comment-form input[type='tel']::-moz-placeholder,
+.search-form input[type='tel']::-moz-placeholder,
+.post-password-form input[type='tel']::-moz-placeholder,
+.comment-form input[type='email']::-moz-placeholder,
+.search-form input[type='email']::-moz-placeholder,
+.post-password-form input[type='email']::-moz-placeholder,
+.comment-form input[type='search']::-moz-placeholder,
+.search-form input[type='search']::-moz-placeholder,
+.post-password-form input[type='search']::-moz-placeholder,
+.comment-form input[type='password']::-moz-placeholder,
+.search-form input[type='password']::-moz-placeholder,
+.post-password-form input[type='password']::-moz-placeholder,
+.comment-form input[type='url']::-moz-placeholder,
+.search-form input[type='url']::-moz-placeholder,
+.post-password-form input[type='url']::-moz-placeholder,
+.comment-form input[type='date']::-moz-placeholder,
+.search-form input[type='date']::-moz-placeholder,
+.post-password-form input[type='date']::-moz-placeholder,
+.comment-form textarea::-moz-placeholder,
+.search-form textarea::-moz-placeholder,
+.post-password-form textarea::-moz-placeholder {
   opacity: 1;
   color: #c2a476;
 }
 
 .comment-form input[type='text']:-moz-placeholder,
 .search-form input[type='text']:-moz-placeholder,
-.post-password-form input[type='text']:-moz-placeholder, .comment-form
-input[type='tel']:-moz-placeholder,
-.search-form
-input[type='tel']:-moz-placeholder,
-.post-password-form
-input[type='tel']:-moz-placeholder, .comment-form
-input[type='email']:-moz-placeholder,
-.search-form
-input[type='email']:-moz-placeholder,
-.post-password-form
-input[type='email']:-moz-placeholder, .comment-form
-input[type='search']:-moz-placeholder,
-.search-form
-input[type='search']:-moz-placeholder,
-.post-password-form
-input[type='search']:-moz-placeholder, .comment-form
-input[type='password']:-moz-placeholder,
-.search-form
-input[type='password']:-moz-placeholder,
-.post-password-form
-input[type='password']:-moz-placeholder, .comment-form
-input[type='url']:-moz-placeholder,
-.search-form
-input[type='url']:-moz-placeholder,
-.post-password-form
-input[type='url']:-moz-placeholder, .comment-form
-input[type='date']:-moz-placeholder,
-.search-form
-input[type='date']:-moz-placeholder,
-.post-password-form
-input[type='date']:-moz-placeholder, .comment-form
-textarea:-moz-placeholder,
-.search-form
-textarea:-moz-placeholder,
-.post-password-form
-textarea:-moz-placeholder {
+.post-password-form input[type='text']:-moz-placeholder,
+.comment-form input[type='tel']:-moz-placeholder,
+.search-form input[type='tel']:-moz-placeholder,
+.post-password-form input[type='tel']:-moz-placeholder,
+.comment-form input[type='email']:-moz-placeholder,
+.search-form input[type='email']:-moz-placeholder,
+.post-password-form input[type='email']:-moz-placeholder,
+.comment-form input[type='search']:-moz-placeholder,
+.search-form input[type='search']:-moz-placeholder,
+.post-password-form input[type='search']:-moz-placeholder,
+.comment-form input[type='password']:-moz-placeholder,
+.search-form input[type='password']:-moz-placeholder,
+.post-password-form input[type='password']:-moz-placeholder,
+.comment-form input[type='url']:-moz-placeholder,
+.search-form input[type='url']:-moz-placeholder,
+.post-password-form input[type='url']:-moz-placeholder,
+.comment-form input[type='date']:-moz-placeholder,
+.search-form input[type='date']:-moz-placeholder,
+.post-password-form input[type='date']:-moz-placeholder,
+.comment-form textarea:-moz-placeholder,
+.search-form textarea:-moz-placeholder,
+.post-password-form textarea:-moz-placeholder {
   color: #c2a476;
 }
 
 .comment-form input[type='text']:-ms-input-placeholder,
 .search-form input[type='text']:-ms-input-placeholder,
-.post-password-form input[type='text']:-ms-input-placeholder, .comment-form
-input[type='tel']:-ms-input-placeholder,
-.search-form
-input[type='tel']:-ms-input-placeholder,
-.post-password-form
-input[type='tel']:-ms-input-placeholder, .comment-form
-input[type='email']:-ms-input-placeholder,
-.search-form
-input[type='email']:-ms-input-placeholder,
-.post-password-form
-input[type='email']:-ms-input-placeholder, .comment-form
-input[type='search']:-ms-input-placeholder,
-.search-form
-input[type='search']:-ms-input-placeholder,
-.post-password-form
-input[type='search']:-ms-input-placeholder, .comment-form
-input[type='password']:-ms-input-placeholder,
-.search-form
-input[type='password']:-ms-input-placeholder,
-.post-password-form
-input[type='password']:-ms-input-placeholder, .comment-form
-input[type='url']:-ms-input-placeholder,
-.search-form
-input[type='url']:-ms-input-placeholder,
-.post-password-form
-input[type='url']:-ms-input-placeholder, .comment-form
-input[type='date']:-ms-input-placeholder,
-.search-form
-input[type='date']:-ms-input-placeholder,
-.post-password-form
-input[type='date']:-ms-input-placeholder, .comment-form
-textarea:-ms-input-placeholder,
-.search-form
-textarea:-ms-input-placeholder,
-.post-password-form
-textarea:-ms-input-placeholder {
+.post-password-form input[type='text']:-ms-input-placeholder,
+.comment-form input[type='tel']:-ms-input-placeholder,
+.search-form input[type='tel']:-ms-input-placeholder,
+.post-password-form input[type='tel']:-ms-input-placeholder,
+.comment-form input[type='email']:-ms-input-placeholder,
+.search-form input[type='email']:-ms-input-placeholder,
+.post-password-form input[type='email']:-ms-input-placeholder,
+.comment-form input[type='search']:-ms-input-placeholder,
+.search-form input[type='search']:-ms-input-placeholder,
+.post-password-form input[type='search']:-ms-input-placeholder,
+.comment-form input[type='password']:-ms-input-placeholder,
+.search-form input[type='password']:-ms-input-placeholder,
+.post-password-form input[type='password']:-ms-input-placeholder,
+.comment-form input[type='url']:-ms-input-placeholder,
+.search-form input[type='url']:-ms-input-placeholder,
+.post-password-form input[type='url']:-ms-input-placeholder,
+.comment-form input[type='date']:-ms-input-placeholder,
+.search-form input[type='date']:-ms-input-placeholder,
+.post-password-form input[type='date']:-ms-input-placeholder,
+.comment-form textarea:-ms-input-placeholder,
+.search-form textarea:-ms-input-placeholder,
+.post-password-form textarea:-ms-input-placeholder {
   color: #c2a476;
 }
 
 .comment-form input[type='text'].placeholder,
 .search-form input[type='text'].placeholder,
-.post-password-form input[type='text'].placeholder, .comment-form
-input[type='tel'].placeholder,
-.search-form
-input[type='tel'].placeholder,
-.post-password-form
-input[type='tel'].placeholder, .comment-form
-input[type='email'].placeholder,
-.search-form
-input[type='email'].placeholder,
-.post-password-form
-input[type='email'].placeholder, .comment-form
-input[type='search'].placeholder,
-.search-form
-input[type='search'].placeholder,
-.post-password-form
-input[type='search'].placeholder, .comment-form
-input[type='password'].placeholder,
-.search-form
-input[type='password'].placeholder,
-.post-password-form
-input[type='password'].placeholder, .comment-form
-input[type='url'].placeholder,
-.search-form
-input[type='url'].placeholder,
-.post-password-form
-input[type='url'].placeholder, .comment-form
-input[type='date'].placeholder,
-.search-form
-input[type='date'].placeholder,
-.post-password-form
-input[type='date'].placeholder, .comment-form
-textarea.placeholder,
-.search-form
-textarea.placeholder,
-.post-password-form
-textarea.placeholder {
+.post-password-form input[type='text'].placeholder,
+.comment-form input[type='tel'].placeholder,
+.search-form input[type='tel'].placeholder,
+.post-password-form input[type='tel'].placeholder,
+.comment-form input[type='email'].placeholder,
+.search-form input[type='email'].placeholder,
+.post-password-form input[type='email'].placeholder,
+.comment-form input[type='search'].placeholder,
+.search-form input[type='search'].placeholder,
+.post-password-form input[type='search'].placeholder,
+.comment-form input[type='password'].placeholder,
+.search-form input[type='password'].placeholder,
+.post-password-form input[type='password'].placeholder,
+.comment-form input[type='url'].placeholder,
+.search-form input[type='url'].placeholder,
+.post-password-form input[type='url'].placeholder,
+.comment-form input[type='date'].placeholder,
+.search-form input[type='date'].placeholder,
+.post-password-form input[type='date'].placeholder,
+.comment-form textarea.placeholder,
+.search-form textarea.placeholder,
+.post-password-form textarea.placeholder {
   color: #c2a476;
 }
 
@@ -426,7 +328,7 @@ textarea.placeholder {
 .comment-form input[type='submit'] {
   width: 100%;
   height: 50px;
-  font: 500 18px/20px 'Lora', Arial, helvetica, sans-serif;
+  font: 500 18px/20px "Lora", Arial, helvetica, sans-serif;
   text-transform: uppercase;
   display: block;
   float: none;
@@ -468,7 +370,7 @@ textarea.placeholder {
   color: #fff;
   height: 50px;
   border: none;
-  padding: 0 .5em;
+  padding: 0 0.5em;
 }
 
 .comment-form input[type='submit']:hover,
@@ -507,7 +409,7 @@ textarea.placeholder {
 
 .commentlist .meta {
   text-transform: uppercase;
-  font: 400 13px/17px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 13px/17px "Lora", Arial, helvetica, sans-serif;
 }
 
 .commentlist .meta a {
@@ -535,7 +437,7 @@ textarea.placeholder {
   text-transform: uppercase;
   display: inline-block;
   vertical-align: top;
-  font: 400 15px/18px 'Roboto', Arial, helvetica, sans-serif;
+  font: 400 15px/18px "Roboto", Arial, helvetica, sans-serif;
   color: #fff;
 }
 
@@ -558,7 +460,7 @@ textarea.placeholder {
 .comment,
 .commentlist-holder {
   overflow: hidden;
-  font: 400 15px/30px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 15px/30px "Lora", Arial, helvetica, sans-serif;
 }
 
 .commentlist-item .commentlist-item,
@@ -605,7 +507,7 @@ textarea.placeholder {
 .navigation-comments .page-numbers {
   display: inline-block;
   vertical-align: middle;
-  padding: 0 .4em;
+  padding: 0 0.4em;
 }
 
 @media (max-width: 767px) {
@@ -861,12 +763,12 @@ img.aligncenter {
   padding: 30px 0 0;
   text-align: center;
   text-transform: uppercase;
-  font: 500 14px/16px 'Lora', Arial, helvetica, sans-serif;
+  font: 500 14px/16px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1199px) {
   .navbar-default {
-    font: 500 13px/16px 'Lora', Arial, helvetica, sans-serif;
+    font: 500 13px/16px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -906,6 +808,11 @@ img.aligncenter {
   .navbar-default .navbar-nav.navbar-right li:first-child {
     margin: 5px 0;
   }
+}
+
+.navbar-default .navbar-nav.navbar-right .dropdown-menu {
+  right: auto;
+  left: 0;
 }
 
 .navbar-default .navbar-nav li {
@@ -1419,6 +1326,21 @@ h1:after {
   background: #353535;
 }
 
+.reservation-bar .itemsList {
+  overflow: hidden;
+  font: 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
+}
+
+.reservation-bar .itemsList li {
+  overflow: hidden;
+  margin: 0 0 15px;
+  border: 1px solid #c9c9c9;
+  color: #aeaeae;
+  padding: 11px 12px;
+  border-radius: 4px;
+  margin: 0 0 15px;
+}
+
 .reservation-bar .fake-select {
   position: relative;
   display: block;
@@ -1467,7 +1389,7 @@ h1:after {
   width: 100%;
   height: 42px;
   border: 1px solid #c9c9c9;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .reservation-bar .date {
@@ -1490,36 +1412,36 @@ h1:after {
   line-height: 16px;
 }
 
-.reservation-bar .form-control {
+.reservation-bar .form-control, .reservation-bar .items li {
   color: #aeaeae;
   box-shadow: none;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1023px) {
-  .reservation-bar .form-control {
+  .reservation-bar .form-control, .reservation-bar .items li {
     margin: 0 0 15px;
   }
 }
 
-.reservation-bar .form-control::-webkit-input-placeholder {
+.reservation-bar .form-control::-webkit-input-placeholder, .reservation-bar .items li::-webkit-input-placeholder {
   color: #aeaeae;
 }
 
-.reservation-bar .form-control::-moz-placeholder {
+.reservation-bar .form-control::-moz-placeholder, .reservation-bar .items li::-moz-placeholder {
   opacity: 1;
   color: #aeaeae;
 }
 
-.reservation-bar .form-control:-moz-placeholder {
+.reservation-bar .form-control:-moz-placeholder, .reservation-bar .items li:-moz-placeholder {
   color: #aeaeae;
 }
 
-.reservation-bar .form-control:-ms-input-placeholder {
+.reservation-bar .form-control:-ms-input-placeholder, .reservation-bar .items li:-ms-input-placeholder {
   color: #aeaeae;
 }
 
-.reservation-bar .form-control.placeholder {
+.reservation-bar .form-control.placeholder, .reservation-bar .items li.placeholder {
   color: #aeaeae;
 }
 
@@ -1532,7 +1454,7 @@ h1:after {
   color: #fff;
   width: 100%;
   height: 40px;
-  font: 400 15px/17px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 15px/17px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .reservation-bar .btn:hover {
@@ -1544,14 +1466,14 @@ h1:after {
   padding: 0 40px;
   text-align: center;
   color: #7e7e7e;
-  font: 400 italic 16px/23px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 italic 16px/23px "Lora", Arial, helvetica, sans-serif;
   position: relative;
 }
 
 @media (max-width: 1023px) {
   .about .box {
     padding: 0 10px;
-    font: 400 italic 14px/23px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 italic 14px/23px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -1672,14 +1594,14 @@ h1:after {
 }
 
 .our-room .text-block {
-  font: 400 16px/23px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 16px/23px "Lora", Arial, helvetica, sans-serif;
   padding: 70px 0 70px 30px;
   color: #f9f6f1;
 }
 
 @media (max-width: 767px) {
   .our-room .text-block {
-    font: 400 14px/23px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 14px/23px "Lora", Arial, helvetica, sans-serif;
     background: rgba(53, 53, 53, 0.7);
     padding: 20px 15px;
     overflow: hidden;
@@ -1734,7 +1656,7 @@ h1:after {
 }
 
 .our-room .services-list {
-  font: 400 12px/14px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 12px/14px "Lora", Arial, helvetica, sans-serif;
   text-transform: uppercase;
   margin: 0 0 35px -30px;
   display: table;
@@ -1958,7 +1880,7 @@ h1:after {
   width: 119px;
   height: 119px;
   border: 1px solid #c2a476;
-  font: 400 36px/119px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 36px/119px "Lora", Arial, helvetica, sans-serif;
 }
 
 .counter-list .number:after {
@@ -1974,7 +1896,7 @@ h1:after {
 
 .counter-list .title {
   position: relative;
-  font: 400 italic 18px/20px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 italic 18px/20px "Lora", Arial, helvetica, sans-serif;
 }
 
 .carousel img {
@@ -2036,7 +1958,7 @@ h1:after {
 }
 
 .news .carousel-caption h2 {
-  font: 400 30px/36px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 30px/36px "Lora", Arial, helvetica, sans-serif;
   margin: 0 0 20px;
 }
 
@@ -2048,7 +1970,7 @@ h1:after {
 
 @media (max-width: 767px) {
   .news .carousel-caption h2 {
-    font: 400 20px/26px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 20px/26px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -2133,12 +2055,12 @@ h1:after {
   float: right;
   color: #fff;
   text-transform: uppercase;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 479px) {
   .navigation-bar .link {
-    font: 400 12px/14px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 400 12px/14px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -2149,13 +2071,13 @@ h1:after {
 /* breadcrumb styles */
 .breadcrumb {
   text-transform: uppercase;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
   margin: 0;
 }
 
 @media (max-width: 479px) {
   .breadcrumb {
-    font: 400 12px/14px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 400 12px/14px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -2212,7 +2134,7 @@ h1:after {
 .about-us h1 {
   margin: 0 0 30px;
   text-align: center;
-  font: 400 36px/40px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 36px/40px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -2227,7 +2149,7 @@ h1:after {
 }
 
 .about-us .text-box {
-  font: 300 16px/30px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 16px/30px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -2281,7 +2203,7 @@ h1:after {
   border-width: 0 0 1px 1px;
   padding: 40px 15px 20px 80px;
   border-color: rgba(255, 255, 255, 0.05);
-  font: 300 16px/21px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 16px/21px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 991px) {
@@ -2295,7 +2217,7 @@ h1:after {
   .services-block .block {
     height: auto !important;
     padding: 20px 20px 20px 80px;
-    font: 300 14px/20px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 300 14px/20px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -2467,13 +2389,13 @@ h1:after {
   color: #fff;
   margin: 0 0 10px;
   text-transform: uppercase;
-  font: 400 22px/24px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 22px/24px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
   .our-team h2 {
     margin: 0 0 2px;
-    font: 400 10px/12px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 400 10px/12px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -2482,13 +2404,13 @@ h1:after {
   display: block;
   margin: 0 0 15px;
   text-transform: capitalize;
-  font: 400 italic 16px/18px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 italic 16px/18px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
   .our-team .sub-heading {
     margin: 0 0 2px;
-    font: 400 italic 9px/11px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 italic 9px/11px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -2719,7 +2641,7 @@ h1:after {
   margin: 40px -30px 0;
   padding: 7px 10px;
   text-transform: uppercase;
-  font: 400 24px/26px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 24px/26px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -2747,7 +2669,7 @@ h1:after {
   margin: 0 0 20px;
   color: #f9f6f1;
   text-transform: uppercase;
-  font: 400 18px/20px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 18px/20px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .sidebar .block {
@@ -2768,7 +2690,7 @@ h1:after {
   padding: 0;
   margin: 0;
   color: #f9f6f1;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .sidebar .list li {
@@ -2810,7 +2732,7 @@ h1:after {
 
 .sidebar .list.tags li {
   width: 50%;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .sidebar .gallery {
@@ -2859,7 +2781,7 @@ h1:after {
   text-align: center;
   display: block;
   color: #aeaeae;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .range-slider .price-range-both.value {
@@ -2905,7 +2827,7 @@ h1:after {
   margin: 0 17px 0 0;
   color: #353535;
   text-transform: capitalize;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .pages-show .selection {
@@ -2972,7 +2894,7 @@ h1:after {
   width: 100%;
   height: 28px;
   border: 1px solid #d4d2ce;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .view-type {
@@ -3055,7 +2977,7 @@ h1:after {
   color: #f9f6f1;
   padding: 27px 5px 26px;
   background: #353535;
-  font: 300 14px/19px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 14px/19px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -3067,12 +2989,12 @@ h1:after {
 .rooms .info-frame h1 {
   padding: 0;
   margin: 0;
-  font: 400 24px/26px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 24px/26px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1199px) {
   .rooms .info-frame h1 {
-    font: 400 20px/24px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 20px/24px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -3082,13 +3004,13 @@ h1:after {
 
 .rooms .info-frame .rent-price {
   display: block;
-  font: 400 24px/28px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 24px/28px "Lora", Arial, helvetica, sans-serif;
 }
 
 .rooms .info-frame .rent-price span {
   display: block;
   color: #f9f6f1;
-  font: 400 14px/18px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 14px/18px "Lora", Arial, helvetica, sans-serif;
 }
 
 .rooms .text-box {
@@ -3140,12 +3062,12 @@ h1:after {
 
 .rooms.list-view .info-frame h1 {
   margin: 0 0 20px;
-  font: 400 30px/36px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 30px/36px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1199px) {
   .rooms.list-view .info-frame h1 {
-    font: 400 20px/24px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 20px/24px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -3180,12 +3102,12 @@ h1:after {
   float: left;
   margin: 0 5px 8px 0;
   text-transform: uppercase;
-  font: 400 14px/16px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 14px/16px "Lora", Arial, helvetica, sans-serif;
 }
 
 .rooms .detail-list dd {
   margin: 0 0 8px;
-  font: 400 italic 14px/16px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 italic 14px/16px "Lora", Arial, helvetica, sans-serif;
 }
 
 .rooms .btn-holder {
@@ -3209,7 +3131,7 @@ h1:after {
   display: block;
   color: #353535;
   letter-spacing: 1px;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1023px) {
@@ -3239,7 +3161,7 @@ h1:after {
 .paging .heading {
   color: #353535;
   text-transform: capitalize;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .paging .pagination {
@@ -3263,7 +3185,7 @@ h1:after {
   width: 20px;
   height: 20px;
   border: 1px solid #d4d2ce;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .paging .pagination > li > a:hover {
@@ -3357,7 +3279,7 @@ h1:after {
   margin: 0 0 0 -100px;
   color: #f9f6f1;
   background: #353535;
-  font: 300 14px/19px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 14px/19px "Source Sans Pro", Arial, helvetica, sans-serif;
   padding: 30px;
 }
 
@@ -3376,12 +3298,12 @@ h1:after {
 .blog-posts .info-frame h1 {
   padding: 0;
   margin: 0 0 20px;
-  font: 400 30px/36px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 30px/36px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1199px) {
   .blog-posts .info-frame h1 {
-    font: 400 20px/24px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 20px/24px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -3391,13 +3313,13 @@ h1:after {
 
 .blog-posts .info-frame .rent-price {
   display: block;
-  font: 400 24px/28px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 24px/28px "Lora", Arial, helvetica, sans-serif;
 }
 
 .blog-posts .info-frame .rent-price span {
   display: block;
   color: #f9f6f1;
-  font: 400 14px/18px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 14px/18px "Lora", Arial, helvetica, sans-serif;
 }
 
 .blog-posts .btn-holder {
@@ -3413,7 +3335,7 @@ h1:after {
 
 .blog-posts .btn-holder .btn {
   color: #f9f6f1;
-  font: 400 16px/18px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Lora", Arial, helvetica, sans-serif;
 }
 
 .blog-posts .image-slider img {
@@ -3465,12 +3387,12 @@ h1:after {
 
 /* post detail styles */
 .post-detail {
-  font: 300 16px/23px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 16px/23px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
   .post-detail {
-    font: 300 14px/21px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 300 14px/21px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -3505,7 +3427,7 @@ h1:after {
 
 .post-detail .metas {
   margin: 0 0 25px;
-  font: 400 13px/15px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 13px/15px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -3521,7 +3443,7 @@ h1:after {
 .post-detail .pager {
   margin: 0;
   text-transform: uppercase;
-  font: 300 18px/20px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 18px/20px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .post-detail .pager li {
@@ -3631,18 +3553,18 @@ h1:after {
   text-align: center;
   width: 20px;
   height: 19px;
-  font: 400 12px/19px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 12px/19px "Lora", Arial, helvetica, sans-serif;
   background: url(../images/sprite.png) no-repeat -288px -14px;
 }
 
 .comments-block .form-top h2 {
   margin: 0;
   text-transform: capitalize;
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .comments-block .form-control {
-  font: 300 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .comments-block .form-control::-webkit-input-placeholder {
@@ -3669,7 +3591,7 @@ h1:after {
 .comments-block .btn {
   width: 100%;
   color: #fff;
-  font: 400 18px/20px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 18px/20px "Lora", Arial, helvetica, sans-serif;
 }
 
 .comments-block .btn:hover {
@@ -3678,12 +3600,12 @@ h1:after {
 
 /* contact styles */
 .contact {
-  font: 300 16px/24px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 16px/24px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
   .contact {
-    font: 300 14px/20px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 300 14px/20px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -3713,7 +3635,7 @@ h1:after {
   color: #353535;
   position: relative;
   text-transform: uppercase;
-  font: 400 16px/18px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Lora", Arial, helvetica, sans-serif;
 }
 
 .contact .contact-info span {
@@ -3730,7 +3652,7 @@ h1:after {
 
 .contact .contact-info dd {
   margin: 0 0 25px;
-  font: 400 italic 14px/18px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 italic 14px/18px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -3745,7 +3667,7 @@ h1:after {
 
 .contact label {
   margin: 0 0 3px;
-  font: 300 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .contact-form .form-group {
@@ -3769,7 +3691,7 @@ h1:after {
   width: 100%;
   color: #fff;
   text-transform: uppercase;
-  font: 400 18px/22px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 18px/22px "Lora", Arial, helvetica, sans-serif;
 }
 
 .contact-form .btn:hover {
@@ -3780,7 +3702,7 @@ h1:after {
 .rooms-section .header {
   text-align: center;
   padding-bottom: 30px;
-  font: 300 16px/23px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 300 16px/23px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 .rooms-section .header h1 {
@@ -3946,17 +3868,17 @@ h1:after {
 
 .rooms-section .info-block .holder .title {
   text-transform: uppercase;
-  font: 400 22px/24px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 22px/24px "Lora", Arial, helvetica, sans-serif;
 }
 
 .rooms-section .info-block .holder .price {
   color: #f9f6f1;
-  font: 400 14px/16px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 14px/16px "Lora", Arial, helvetica, sans-serif;
 }
 
 .rooms-section .info-block .holder .price span {
   display: block;
-  font: 400 24px/28px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 24px/28px "Lora", Arial, helvetica, sans-serif;
 }
 
 /* testimonials styles */
@@ -3978,7 +3900,7 @@ h1:after {
   height: 100%;
   background: #353535;
   padding: 30px 78px 30px 38px;
-  font: 300 italic 13px/22px 'Lora', Arial, helvetica, sans-serif;
+  font: 300 italic 13px/22px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1023px) {
@@ -4008,20 +3930,20 @@ h1:after {
   display: block;
   margin: 0 0 20px;
   text-transform: capitalize;
-  font: 400 22px/24px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 22px/24px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1023px) {
   .testimonials blockquote cite {
     margin: 0 0 10px;
-    font: 400 18px/22px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 18px/22px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
 @media (max-width: 479px) {
   .testimonials blockquote cite {
     margin: 0 0 5px;
-    font: 400 16px/22px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 16px/22px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -4238,25 +4160,25 @@ h1:after {
 .menu-list {
   margin: 0;
   padding: 0;
-  font: 400 16px/21px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/21px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
   .menu-list {
-    font: 400 14px/21px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 400 14px/21px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
 .menu-list h2 {
   margin: 0 0 10px;
   text-transform: none;
-  font: 400 22px/24px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 22px/24px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1023px) {
   .menu-list h2 {
     margin: 0 0 5px;
-    font: 400 18px/22px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 400 18px/22px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -4327,7 +4249,7 @@ h1:after {
   color: #353535;
   margin: -40px 0 0;
   border: 1px solid #e2dfdb;
-  font: 600 30px/78px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 600 30px/78px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 /* billing form styles */
@@ -4365,7 +4287,7 @@ h1:after {
   width: 100%;
   color: #fff;
   text-transform: uppercase;
-  font: 400 18px/22px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 18px/22px "Lora", Arial, helvetica, sans-serif;
 }
 
 .billing-form .btn:hover {
@@ -4374,12 +4296,12 @@ h1:after {
 
 /* room-details styles */
 .room-details .info-frame {
-  font: 400 16px/21px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/21px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
   .room-details .info-frame {
-    font: 400 14px/20px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 400 14px/20px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -4409,12 +4331,12 @@ h1:after {
   padding: 0;
   margin: 0 0 15px;
   overflow: hidden;
-  font: 400 italic 16px/18px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 italic 16px/18px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
   .room-details .detail-list {
-    font: 400 italic 14px/18px 'Lora', Arial, helvetica, sans-serif;
+    font: 400 italic 14px/18px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -4452,7 +4374,7 @@ h1:after {
 .room-details .btn-holder .btn {
   float: right;
   color: #353535;
-  font: 400 18px/20px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 18px/20px "Lora", Arial, helvetica, sans-serif;
 }
 
 .room-details .btn-holder .btn:hover {
@@ -4461,13 +4383,13 @@ h1:after {
 
 .room-details .rent-price {
   display: block;
-  font: 400 30px/36px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 30px/36px "Lora", Arial, helvetica, sans-serif;
 }
 
 .room-details .rent-price span {
   display: block;
   color: #7e7e7e;
-  font: 400 16px/18px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Lora", Arial, helvetica, sans-serif;
 }
 
 /* flex slider styles */
@@ -4613,12 +4535,12 @@ h1:after {
 }
 
 .description-block [class^="col-"]:first-child {
-  font: 400 16px/23px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/23px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1023px) {
   .description-block [class^="col-"]:first-child {
-    font: 400 12px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 400 12px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -4630,7 +4552,7 @@ h1:after {
 }
 
 .description-block [class^="col-"]:first-child h1 {
-  font: 400 30px/36px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 30px/36px "Lora", Arial, helvetica, sans-serif;
   margin: 0 0 15px;
 }
 
@@ -4672,7 +4594,7 @@ h1:after {
   letter-spacing: 5px;
   position: absolute;
   color: #f9f6f1;
-  font: 700 72px/72px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 700 72px/72px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1023px) {
@@ -4685,7 +4607,7 @@ h1:after {
   .description-block .image-frame h1 {
     right: -4px;
     bottom: -33px;
-    font: 700 30px/36px 'Source Sans Pro', Arial, helvetica, sans-serif;
+    font: 700 30px/36px "Source Sans Pro", Arial, helvetica, sans-serif;
   }
 }
 
@@ -4782,7 +4704,7 @@ h1:after {
   border-radius: 5px;
   text-shadow: none;
   text-transform: uppercase;
-  font: 400 24px/32px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 24px/32px "Lora", Arial, helvetica, sans-serif;
 }
 
 .article-box .close:hover {
@@ -4806,7 +4728,7 @@ h1:after {
 }
 
 .article-box .info-frame {
-  font: 400 16px/23px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/23px "Source Sans Pro", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 767px) {
@@ -4852,7 +4774,7 @@ form .fake-input, form label {
 }
 
 form .fake-label {
-  font: 400 16px/18px 'Source Sans Pro', Arial, helvetica, sans-serif;
+  font: 400 16px/18px "Source Sans Pro", Arial, helvetica, sans-serif;
   color: #aeaeae;
 }
 
@@ -5049,12 +4971,12 @@ form input:disabled ~ .fake-label {
 
 .f-nav {
   text-transform: uppercase;
-  font: 500 14px/16px 'Lora', Arial, helvetica, sans-serif;
+  font: 500 14px/16px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1199px) {
   .f-nav {
-    font: 500 13px/16px 'Lora', Arial, helvetica, sans-serif;
+    font: 500 13px/16px "Lora", Arial, helvetica, sans-serif;
   }
 }
 
@@ -5139,7 +5061,7 @@ form input:disabled ~ .fake-label {
   color: #fff;
   overflow: hidden;
   padding: 13px 0;
-  font: 400 16px/25px 'Lora', Arial, helvetica, sans-serif;
+  font: 400 16px/25px "Lora", Arial, helvetica, sans-serif;
 }
 
 @media (max-width: 1023px) {
@@ -5179,7 +5101,7 @@ form input:disabled ~ .fake-label {
   width: 50px;
   height: 50px;
   position: absolute;
-  border-radius: 3px;
+  border-radius: 3px 3px 0 0;
   background: #353535;
   text-align: center;
   color: #f9f6f1;
