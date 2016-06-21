@@ -103,6 +103,17 @@ a:focus { outline: none!important; }
   vertical-align: bottom;
   }
 }
+.news .carousel-caption h2 {
+  font-weight: 700 !important;
+}
+
+.news .carousel-indicators {
+  left: 0 !important;
+  margin: 0 0 0 -98px;
+}
+.btn-default:hover {
+    color: #fff !important ;
+}
 @media only screen and (min-width:1025px) {
     a[href^=tel],a[href^=skype], a[href^=sms] {
     cursor:default;
