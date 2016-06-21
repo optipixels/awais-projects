@@ -31,17 +31,15 @@ var currentTallest = 0,
      rowDivs[currentDiv].height(currentTallest);
    }
  });
-}
+
 
 $(window).load(function() {
   equalheight('.article .col');
-  equalheight('.item .col');
   equalheight('.blocks .block');
 });
 
 
 $(window).resize(function(){
   equalheight('.article .col');
-  equalheight('.item .col');
   equalheight('.blocks .block');
 });

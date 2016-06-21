@@ -78,7 +78,22 @@ a:focus { outline: none!important; }
 @import 'layouts/footer';
 
 @import "utils/icomoon";
-
+@import "utils/fancy";
+.carousel-caption {
+  position: static !important;
+}
+.carousel-inner {
+  letter-spacing: -.32em;
+  >  *{
+    letter-spacing: 0;
+  }
+}
+.news .carousel-inner .col, .testimonials-carousel  .carousel-inner .col {
+  float: none !important;
+  display: inline-block;
+  letter-spacing: 0;
+  vertical-align: bottom; 
+}
 @media only screen and (min-width:1025px) {
     a[href^=tel],a[href^=skype], a[href^=sms] {
     cursor:default;

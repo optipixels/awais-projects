@@ -2250,17 +2250,18 @@ h1 {
 			}
 		}
 	}
+  .row {
+    letter-spacing: -.32em;
+    > * {
+      letter-spacing: 0;
+    }
+  }
 	.image-frame {
-		position: absolute;
-		bottom: 0;
-		left: 0;
-		@include media('<tablet') {
-			position: static;
-			overflow: hidden;
-		}
+		
 		img {
 			display: block;
 			@include size(100%, auto);
+          margin: 0 0 0 -35px;
 		}
 	}
 	.image-holder {

@@ -177,7 +177,7 @@
 	top: -89px;
 	@include square(50px);
 	position: absolute;
-	border-radius: 3px;
+	border-radius: 3px 3px 0 0;
 	background: $mine-shaft;
 	text-align: center;
 	color: $light-grayish;
