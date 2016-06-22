@@ -1,0 +1,61 @@
+HOME
+- at the bottom of the slider the 2 services (electrical and painting) are missing and the yellow background with pattern are too high
+- Our work - reduce the space between title and paragraph and reduce also the line-height
+- Our team - reduce the space between title and project above
+- increase the space between'john doe' and 'pROJECT MANAGER'
+- What clients say - the paragraph is too light (manager architect) too
+- Blog - the information (has another color - it's a light gray)
+	- each article needs to be only on 5 column (not 6)
+Ans. I cant understand this point
+- Footer - contact form - the text in the placeholder should be capitalize and with a lighter color (check psd)
+	- also the yellow triangles are to bigger (change the size for all the triangles)
+	- add also the location pin on the map like in design (yellow with an H on it)
+Ans. Not possible withou id key
+	- when you type in the contact form, the text doesn't see...please change the color
+
+ABOUT
+- under the title "about us" on home/about us section the ABOUT US should be bold (check all pages - services...)
+- please also check the distances above all titles on the website are too large
+
+OUR SERVICES
+- on Construction - detailed section (in the middle) the scroll is missing, remove the read more button and please all the text in the psd from that section
+Ans. later i will apply costom scroll here
+- the second section need more spane between icons and the paragraph (30px)
+- facts section - check the color (#181818) needs a drop shadow, less space on the top and more on the bottom
+
+OUR PROJECTS
+-please add the link
+
+BLOG CATEGORY
+- on Tags section - add more padding on top and bottom
+- on pagination resize the arrows
+- the last article should be a slider
+Ans. Latter i will apply here slider
+
+BLOG CATEGORY 2 
+-the link is missing
+- the last article should be a slider
+Ans. Latter i will apply here slider
+
+POST DETAILS
+- the space surrounding the information (category...) should be equal on the top and the bottom
+Ans. Already used same spacings.
+- Comment information (June 9, 2016 at 3:22 am) reduce the size
+- Comment form - the button should have a border and the text in the placeholders shloud be capitalize
+
+COMING SOON
+- please try to align the title as it is in psd in both pages
+- aslo the contact form needs improvements (like the others in the footer section)
+Ans. Already same as other pages.
+
+
+
+RESPONSIVE
+- try to keep the typography - for example the testimonials title is smaller than the others, should be the same size
+- try to keep the differences of the size of the fonts from desktop to be the same on all the other devices
+
+H1 - 48px - desktop			H1 - 30px - tablet
+p - 18px 				p - 14px
+and so on....
+Ans. Need flexible time for it
+

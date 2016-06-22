@@ -422,13 +422,26 @@ textarea.placeholder {
   height: 50px;
 }
 
-.comment-form input[type='submit'] {
+.comment-form button[type='submit'] {
   width: 100%;
   height: 50px;
+  border: 0;
+  color: #fff;
+  background: #4c4c4c;
   font: 500 18px/20px 'Lato', Arial, helvetica, sans-serif;
   text-transform: uppercase;
+  position: relative;
   display: block;
   float: none;
+}
+.comment-form button[type='submit']:before {
+  content: "";
+  top: 1px;
+  right: 1px;
+  bottom: 1px;
+  left: 1px;
+  position: absolute;
+  border: 1px solid #fff;
 }
 
 .post-password-form label {
@@ -470,6 +483,9 @@ textarea.placeholder {
   padding: 0 .5em;
 }
 
+.comment-form .form-contorl {
+  text-transform: capitalize;
+}
 .comment-form input[type='submit']:hover,
 .post-password-form input[type='submit']:hover,
 .search-form input[type='submit']:hover {
@@ -506,7 +522,7 @@ textarea.placeholder {
 
 .commentlist .meta {
   text-transform: uppercase;
-  font: 400 13px/17px 'Lato', Arial, helvetica, sans-serif;
+  font: 400 12px/14px 'Lato', Arial, helvetica, sans-serif;
 }
 
 .commentlist .meta a {
@@ -1048,7 +1064,6 @@ img.aligncenter {
 
 .navbar-default .dropdown-menu {
   background: transparent;
-  box-shadow: none;
   border: 0;
 }
 
@@ -1135,7 +1150,7 @@ body.active .navbar-collapse {
 }
 
 .g-padding {
-  padding: 120px 0 60px;
+  padding: 80px 0 60px;
 }
 
 @media (max-width: 1023px) {
@@ -1540,6 +1555,9 @@ h1 span:before {
   text-transform: uppercase;
   font: 400 16px/18px 'Roboto', Arial, helvetica, sans-serif;
 }
+.banner .breadcrumb > li.active {
+  font-weight: 700;
+}
 
 .banner .breadcrumb > li + li:before {
   color: #fff;
@@ -1559,21 +1577,14 @@ h1 span:before {
   overflow: hidden;
   position: absolute;
   width: 50%;
-  height: 160px;
-  padding-top: 15.3%;
+  height: 100px;
+  padding-top: 10.5%;
 }
 
 @media (max-width: 1023px) {
   .banner .corner {
     width: 50%;
     height: 118px;
-  }
-}
-
-@media (max-width: 767px) {
-  .banner .corner {
-    width: 50%;
-    height: 49px;
   }
 }
 
@@ -1596,9 +1607,9 @@ h1 span:before {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: rotate(17deg);
-  -ms-transform: rotate(17deg);
-  transform: rotate(17deg);
+  -webkit-transform: rotate(11.8deg);
+  -ms-transform: rotate(11.8deg);
+  transform: rotate(11.8deg);
 }
 
 .banner .corner.right {
@@ -1609,9 +1620,9 @@ h1 span:before {
   -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
-  -webkit-transform: rotate(-14.8deg);
-  -ms-transform: rotate(-14.8deg);
-  transform: rotate(-14.8deg);
+  -webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
 }
 
 /* carousel styles */
@@ -1810,15 +1821,8 @@ h1 span:before {
   overflow: hidden;
   position: absolute;
   width: 50%;
-  height: 160px;
-  padding-top: 15.3%;
-}
-
-@media (max-width: 1023px) {
-  .carousel .corner {
-    width: 50%;
-    height: 118px;
-  }
+  height: 100px;
+  padding-top: 10.5%;
 }
 
 @media (max-width: 767px) {
@@ -1847,9 +1851,9 @@ h1 span:before {
   -webkit-transform-origin: 0 0;
   -ms-transform-origin: 0 0;
   transform-origin: 0 0;
-  -webkit-transform: rotate(17deg);
-  -ms-transform: rotate(17deg);
-  transform: rotate(17deg);
+  -webkit-transform: rotate(11.8deg);
+  -ms-transform: rotate(11.8deg);
+  transform: rotate(11.8deg);
 }
 
 .carousel .corner.right {
@@ -1860,9 +1864,58 @@ h1 span:before {
   -webkit-transform-origin: 100% 100%;
   -ms-transform-origin: 100% 100%;
   transform-origin: 100% 100%;
-  -webkit-transform: rotate(-14.8deg);
-  -ms-transform: rotate(-14.8deg);
-  transform: rotate(-14.8deg);
+  -webkit-transform: rotate(-10deg);
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+.services-bar {
+  z-index: 11;
+  right: 0;
+  left: 0;
+  bottom: 10px;
+  position: absolute;
+}
+.services-bar .service-link {
+  color: #fff;
+  text-transform: uppercase;
+  text-shadow: 0 1px 2px rgba(0,0,0,.2);
+  font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
+}
+.services-bar .service-link:hover {
+  text-decoration: none;
+}
+.service-link .icon,
+.service-link .text {
+  display: inline-block;
+  vertical-align: middle;
+}
+.service-link .ico-electrical {
+  width: 23px;
+  height: 46px;
+  margin: 0 20px 0 0;
+  background: url(../images/sprite.png) no-repeat -309px -225px;
+}
+.service-link .ico-painting {
+  width: 36px;
+  height: 37px;
+  margin: 0 0 0 20px;
+  background: url(../images/sprite.png) no-repeat -309px -168px;
+}
+@media (max-width: 1023px) {
+  .services-bar {
+    bottom: 2px;
+  }
+  .services-bar .service-link {
+    font: 700 18px/22px 'PT Sans Caption', Arial, helvetica, sans-serif;
+  }
+}
+@media (max-width: 767px) {
+  .service-link .icon {
+    display: none;
+  }
+  .services-bar .service-link {
+    font: 700 12px/16px 'PT Sans Caption', Arial, helvetica, sans-serif;
+  }
 }
 
 /* who we are styles */
@@ -2162,6 +2215,17 @@ h1 span:before {
 }
 
 /* services styles */
+.services .tab-content > .tab-pane {
+  height: 0;
+  display: block!important;
+  opacity: 0!important;
+  visibility: hidden!important;
+}
+.services .tab-content > .active {
+  height: 100%;
+  opacity: 1!important;
+  visibility: visible!important;
+}
 .services .nav-tabs {
   border: 0;
 }
@@ -2250,6 +2314,10 @@ h1 span:before {
   .services .nav-tabs .title span {
     font: 700 10px/14px 'PT Sans Caption', Arial, helvetica, sans-serif;
   }
+}
+
+.services .desc-box {
+  height: 100%!important;
 }
 
 .services .nav-tabs.text-right .icon {
@@ -2421,15 +2489,6 @@ h1 span:before {
   }
 }
 
-.services .read-more {
-  color: #fff;
-  border-color: #fff;
-}
-
-.services .read-more span {
-  border-color: #fff;
-}
-
 .services .tab-pane {
   height: 100%;
 }
@@ -2520,6 +2579,9 @@ h1 span:before {
 .our-work {
   overflow: hidden;
 }
+.our-work h1 {
+  margin-bottom: -30px;
+}
 
 .our-work .text-box {
   text-align: center;
@@ -2528,6 +2590,9 @@ h1 span:before {
 @media (max-width: 767px) {
   .our-work .text-box {
     font-size: 14px;
+  }
+  .our-work h1 {
+    margin-bottom: 0;
   }
 }
 
@@ -2761,6 +2826,7 @@ h1 span:before {
 .our-team .title span {
   display: block;
   color: #fff;
+  margin: 8px 0 0;
   text-align: center;
   font: 400 16px/18px 'Roboto', Arial, helvetica, sans-serif;
 }
@@ -3188,7 +3254,9 @@ form .btn-submit span {
   text-align: center;
   color: #fff;
 }
-
+.counter-list.black .grid-item .number, .counter-list.black .grid-item .title {
+    color: #181818;
+}
 .counter-list .number {
   margin: 0 0 30px;
   font: 700 48px/58px 'PT Sans Caption', Arial, helvetica, sans-serif;
@@ -3202,8 +3270,9 @@ form .btn-submit span {
 }
 
 .counter-list .title {
-  padding: 15px 0;
+  padding: 15px 0 18px;
   position: relative;
+  text-shadow: 0 1px 2px rgba(0,0,0,.2);
   font: 400 italic 18px/20px 'Roboto', Arial, helvetica, sans-serif;
 }
 
@@ -3517,7 +3586,7 @@ form .btn-submit span {
 
 .services-block h1 {
   color: #fff;
-  margin: 0 0 10px;
+  margin: 0 0 20px;
   text-transform: uppercase;
   font: 700 24px/28px 'PT Sans Caption', Arial, helvetica, sans-serif;
 }
@@ -4181,7 +4250,7 @@ form .btn-submit span {
   vertical-align: top;
   color: #808080;
   background: #fff;
-  padding: 5px 13px;
+  padding: 10px 13px;
 }
 
 .aside .tags a:hover {
@@ -4243,7 +4312,12 @@ form .btn-submit span {
   width: 30px;
   height: 30px;
   color: #4c4c4c;
+  text-align: center;
   padding: 4px 10px;
+}
+.pagination .glyphicon {
+  left: -2px;
+  top: 2px;
 }
 
 .pagination > li > a:hover {
@@ -4612,15 +4686,8 @@ form .btn-submit span {
   overflow: hidden;
   position: absolute;
   width: 50%;
-  height: 160px;
-  padding-bottom: 15.3%;
-}
-
-@media (max-width: 1023px) {
-  .b-container .corner {
-    width: 50%;
-    height: 118px;
-  }
+  height: 100px;
+  padding-bottom: 10.5%;
 }
 
 @media (max-width: 767px) {
@@ -4649,9 +4716,9 @@ form .btn-submit span {
   -webkit-transform-origin: 0 100%;
   -ms-transform-origin: 0 100%;
   transform-origin: 0 100%;
-  -webkit-transform: rotate(-17deg);
-  -ms-transform: rotate(-17deg);
-  transform: rotate(-17deg);
+  -webkit-transform: rotate(-11.8deg);
+  -ms-transform: rotate(-11.8deg);
+  transform: rotate(-11.8deg);
 }
 
 .b-container .corner.right {
@@ -4662,14 +4729,17 @@ form .btn-submit span {
   -webkit-transform-origin: 100% 0;
   -ms-transform-origin: 100% 0;
   transform-origin: 100% 0;
-  -webkit-transform: rotate(14.8deg);
-  -ms-transform: rotate(14.8deg);
-  transform: rotate(14.8deg);
+  -webkit-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
 }
-
+.is-countdown {
+    overflow: hidden;
+    padding: 0 0 30px;
+}
 .b-container .columns {
   color: #fff;
-  padding-bottom: 50px;
+  padding-bottom: 80px;
 }
 
 @media (max-width: 767px) {
@@ -4784,28 +4854,30 @@ form .btn-submit span {
 .b-container .form-control {
   height: auto;
   padding: 9px 12px;
+  color: #909090;
+  text-transform: capitalize;
   border-color: rgba(255, 255, 255, 0.5);
 }
 
 .b-container .form-control::-webkit-input-placeholder {
-  color: #4c4c4c;
+  color: #909090;
 }
 
 .b-container .form-control::-moz-placeholder {
   opacity: 1;
-  color: #4c4c4c;
+  color: #909090;
 }
 
 .b-container .form-control:-moz-placeholder {
-  color: #4c4c4c;
+  color: #909090;
 }
 
 .b-container .form-control:-ms-input-placeholder {
-  color: #4c4c4c;
+  color: #909090;
 }
 
 .b-container .form-control.placeholder {
-  color: #4c4c4c;
+  color: #909090;
 }
 
 #footer {
@@ -5413,18 +5485,18 @@ body > .jcf-select-drop.jcf-drop-flipped {
 .jcf-scrollbar-vertical {
   position: absolute;
   cursor: default;
-  background: #e3e3e3;
-  width: 14px;
+  background: transparent;
+  width: 10px;
   bottom: 0;
-  right: 0;
+  right: -20px;
   top: 0;
 }
 
 .jcf-scrollbar-vertical .jcf-scrollbar-dec,
 .jcf-scrollbar-vertical .jcf-scrollbar-inc {
-  background: #bbb;
-  height: 14px;
-  width: 14px;
+  background: transparent;
+  height: 0;
+  width: 0;
   left: 0;
   top: 0;
 }
@@ -5435,9 +5507,9 @@ body > .jcf-select-drop.jcf-drop-flipped {
 }
 
 .jcf-scrollbar-vertical .jcf-scrollbar-handle {
-  background: #888;
+  background: #fff;
   height: 1px;
-  width: 14px;
+  width: 10px;
 }
 
 .jcf-scrollbar-horizontal {
