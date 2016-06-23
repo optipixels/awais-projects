@@ -1371,9 +1371,9 @@ h1 {
   line-height: 58px;
 }
 
-@media (max-width: 767px) {
+@media (max-width: 1023px) {
   h1 {
-    font-size: 38px;
+    font-size: 30px;
   }
 }
 
@@ -2167,7 +2167,7 @@ h1 span:before {
 }
 
 .consultant h1 {
-  font-size: 46px;
+  letter-spacing: -1px;
   color: #fff;
   margin: 0 0 25px;
 }
@@ -2933,6 +2933,11 @@ h1 span:before {
   font: 400 italic 16px/25px 'Roboto', Arial, helvetica, sans-serif;
   color: #fff;
   quotes: none;
+}
+@media (max-width: 767px) {
+  .testimonials blockquote {
+    font: 400 italic 14px/23px 'Roboto', Arial, helvetica, sans-serif;
+  }
 }
 
 .testimonials blockquote q, .testimonials blockquote cite {
@@ -3771,7 +3776,7 @@ form .btn-submit span {
 
 @media (max-width: 767px) {
   .project-detail .text-box {
-    font: 400 14px/18px 'Roboto', Arial, helvetica, sans-serif;
+    font: 400 14px/20px 'Roboto', Arial, helvetica, sans-serif;
   }
 }
 
@@ -3955,7 +3960,7 @@ form .btn-submit span {
 }
 
 .blog .box {
-  padding: 15px 0 0;
+  padding: 15px 15px 0 0;
 }
 
 @media (max-width: 1023px) {
@@ -5573,4 +5578,8 @@ body > .jcf-select-drop.jcf-drop-flipped {
     cursor: default;
     pointer-events: none;
   }
+}
+
+.article-carousel .item:after {
+  display: none;
 }
