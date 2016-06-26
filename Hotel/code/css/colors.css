@@ -156,7 +156,7 @@
 }
 
 .contact-form .btn:hover {
-  color: #c2a476;
+  color: #c2a476 !important;
 }
 
 /* rooms-section styles */
