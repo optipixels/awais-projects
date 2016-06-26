@@ -858,10 +858,11 @@ img.aligncenter {
 }
 
 @media (max-width: 1023px) {
+  .contact-info{ margin: 5px 0 0;  }
   .contact-info li {
     padding: 0 0 0 25px;
-    margin: 10px 0 0;
-    display: block;
+    margin: 0 0 0 5px;
+    /*display: block;*/
   }
 }
 
@@ -1161,7 +1162,7 @@ body.active .navbar-collapse {
 
 @media (max-width: 767px) {
   .g-padding {
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -1171,7 +1172,7 @@ body.active .navbar-collapse {
 
 @media (max-width: 767px) {
   .top-padding {
-    padding: 15px 0;
+    padding: 20px 0;
   }
 }
 
@@ -1373,7 +1374,23 @@ h1 {
 
 @media (max-width: 1023px) {
   h1 {
-    font-size: 30px;
+    font-size: 38px;
+    line-height: 48px;
+  }
+  h2, .h2{
+    font-size: 26px;
+    line-height: 30px;
+  }
+}
+
+@media (max-width: 767px) {
+  h1 {
+    font-size: 28px;
+    line-height: 38px;
+  }
+  h2, .h2{
+    font-size: 22px;
+    line-height: 24px;
   }
 }
 
@@ -1392,7 +1409,7 @@ h1 span:after, h1 span:before {
 
 h1 span:after {
   width: 3px;
-  height: 50px;
+  /*height: 50px;*/
   border-width: 0 0 0 3px;
   top: 10px;
   bottom: 0;
@@ -1409,13 +1426,13 @@ h1 span:before {
   z-index: 2;
 }
 
-@media (max-width: 767px) {
+/*@media (max-width: 767px) {
   h2 {
     font-size: 30px;
     line-height: 34px;
     margin: 0 0 15px;
   }
-}
+}*/
 
 .btn {
   border: 0;
@@ -1508,7 +1525,7 @@ h1 span:before {
 
 @media (max-width: 767px) {
   .banner .description {
-    padding: 45px 15px 50px;
+    padding: 45px 15px 100px;
   }
 }
 
@@ -1538,14 +1555,14 @@ h1 span:before {
 
 @media (max-width: 1023px) {
   .banner h1 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 38px;
+    line-height: 42px;
   }
 }
 
 @media (max-width: 767px) {
   .banner h1 {
-    font-size: 20px;
+    font-size: 28px;
     margin: 10px 0;
   }
 }
@@ -1658,6 +1675,20 @@ h1 span:before {
     font: 400 italic 16px/18px 'Roboto', Arial, helvetica, sans-serif;
   }
 }
+@media (max-width: 767px) {
+  .carousel .description {
+    bottom:auto;
+    top:50%;
+    -moz-transform: translateY(-50%);
+    -webkit-transform: translateY(-50%);
+    -o-transform: translateY(-50%);
+    -ms-transform: translateY(-50%);
+    transform: translateY(-50%);
+  }
+}
+@media (max-width: 767px) {
+  .carousel .description { display: none; }
+}
 
 .carousel .description .container {
   display: table;
@@ -1712,16 +1743,16 @@ h1 span:before {
 
 @media (max-width: 1023px) {
   .carousel h1 {
-    font-size: 30px;
-    line-height: 36px;
+    font-size: 44px;
+    line-height: 48px;
     margin: 40px 0 0;
   }
 }
 
 @media (max-width: 767px) {
   .carousel h1 {
-    font-size: 20px;
-    margin: 10px 0 0;
+    font-size: 28px;
+    margin: 0;
   }
 }
 
@@ -1933,6 +1964,7 @@ h1 span:before {
 @media (max-width: 767px) {
   .who-we-are {
     font-size: 14px;
+    line-height: 20px;
     padding-bottom: 20px;
   }
 }
@@ -2067,10 +2099,11 @@ h1 span:before {
 
 @media (max-width: 767px) {
   .steps li {
-    width: 48%;
-    margin: 0;
-    padding: 0 0 15px;
+   /* width: 48%;*/
+    margin: 0 20px 0 0;
+    padding: 15px 0 30px;
   }
+  section{ padding: 20px 0; }
 }
 
 .steps li:first-child:before {
@@ -2180,15 +2213,15 @@ h1 span:before {
 
 @media (max-width: 1023px) {
   .consultant h1 {
-    font-size: 28px;
-    line-height: 32px;
+    font-size: 38px;
+    line-height: 42px;
   }
 }
 
 @media (max-width: 767px) {
   .consultant h1 {
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 28px;
+    line-height: 38px;
   }
 }
 
@@ -2529,6 +2562,7 @@ h1 span:before {
   position: relative;
   display: table-cell;
   vertical-align: middle;
+  padding: 20px 0;
 }
 
 .services .frame:after, .services .frame:before {
@@ -2920,8 +2954,13 @@ h1 span:before {
 
 @media (max-width: 1023px) {
   .testimonials h1 {
-    font-size: 30px;
-    margin: 0 0 20px;
+    font-size: 38px;
+    /*margin: 0 0 20px;*/
+  }
+}
+@media (max-width: 767px) {
+  .testimonials h1 {
+    font-size: 28px;
   }
 }
 
@@ -3014,12 +3053,12 @@ h1 span:before {
 }
 
 .news .box {
-  padding: 15px 0 0 100px;
+  padding: 15px 0 0 15px;
 }
 
 @media (max-width: 1023px) {
   .news .box {
-    padding: 15px 0 0 30px;
+    padding: 15px 0 0;
   }
 }
 
@@ -3047,12 +3086,12 @@ h1 span:before {
 }
 
 .news .text-right .box {
-  padding: 15px 100px 0 0;
+  padding: 15px 15px 0 0;
 }
 
 @media (max-width: 1023px) {
   .news .text-right .box {
-    padding: 15px 30px 0 0;
+    padding: 15px 0 0 0;
   }
 }
 
@@ -3418,6 +3457,7 @@ form .btn-submit span {
   width: 100%;
   height: 100%;
   table-layout: fixed;
+  padding: 20px 0 0;
 }
 
 .services-block .frame {
@@ -4009,6 +4049,10 @@ form .btn-submit span {
 }
 
 @media (max-width: 1199px) {
+  .post-info li{
+    margin: 0 0 0 16px;
+  }
+  .news .post-info,
   .blog .post-info {
     font: 400 12px/26px 'Roboto', Arial, helvetica, sans-serif;
   }
