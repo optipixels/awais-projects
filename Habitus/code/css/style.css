@@ -1114,7 +1114,7 @@ img.aligncenter {
   border-bottom: 4px double transparent;
   margin: -4px 0;
 }
-#nav ul>li.active a,
+#nav ul>li.active>a,
 #nav ul>li:hover>a{
   border-color: #fda700;
   color: #fda700;
@@ -5861,4 +5861,7 @@ body > .jcf-select-drop.jcf-drop-flipped {
 
 .article-carousel .item:after {
   display: none;
+}
+.mobile-nav-wrap {
+    height: 100%;
 }
