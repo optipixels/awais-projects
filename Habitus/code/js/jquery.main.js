@@ -1,4 +1,5 @@
 jQuery(document).ready(function(){
+	"use strict";
 	mobileNav('#nav>ul', '.nav-area');
 	    
 	function mobileNav(navTag, menuBtnPrependTo){
@@ -38,6 +39,7 @@ jQuery(document).ready(function(){
 });
 // function for tabs
 $(function() {
+	"use strict";
 	$('.blocks li').click(function(event){
 		event.preventDefault();//stop browser to take action for clicked anchor
 					
@@ -64,6 +66,7 @@ $(function() {
 
 // function for counter
 $(function() {
+	"use strict";
 	$( '.stats' ).counter({
 		autoStart: false
 	});
@@ -86,6 +89,7 @@ $(function() {
 
 // function for countdown clock
 $(function () {
+	"use strict";
 	var austDay = new Date();
 	austDay = new Date(austDay.getFullYear() + 1, 1 - 6, 9);
 	$('#defaultCountdown').countdown({until: austDay});
@@ -94,7 +98,7 @@ $(function () {
 
 // page init
 jQuery(function(){
-	initMobileNav();
+	"use strict";
 	initSameHeight();
 	initCustomForms();
 	initFitVids();
@@ -103,6 +107,7 @@ jQuery(function(){
 
 // initialize custom form elements
 function initCustomForms() {
+	"use strict";
 	jcf.setOptions('Select', {
 		wrapNative: false,
 		wrapNativeOnMobile: false
@@ -112,6 +117,7 @@ function initCustomForms() {
 
 // mobile menu init
 function initMobileNav() {
+	"use strict";
 	jQuery('body').mobileNav({
 		hideOnClickOutside: true,
 		menuActiveClass: 'active',
@@ -122,11 +128,13 @@ function initMobileNav() {
 
 // handle flexible video size
 function initFitVids() {
+	"use strict";
 	jQuery('.video').fitVids();
 }
 
 // align blocks height
 function initSameHeight() {
+	"use strict";
 	jQuery('.nav-tabs').sameHeight({
 		elements: 'li',
 		flexible: true,
@@ -152,6 +160,7 @@ function initSameHeight() {
  */
 ;(function($) {
 	function MobileNav(options) {
+		"use strict";
 		this.options = $.extend({
 			container: null,
 			hideOnClickOutside: false,
@@ -257,6 +266,7 @@ function initSameHeight() {
  * jQuery SameHeight plugin
  */
 ;(function($){
+	"use strict";
 	$.fn.sameHeight = function(opt) {
 		var options = $.extend({
 			skipClass: 'same-height-ignore',

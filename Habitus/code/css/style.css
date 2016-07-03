@@ -388,6 +388,7 @@ textarea.placeholder,
 textarea.placeholder {
   color: #4c4c4c;
 }
+iframe{ border:0; }
 .mobile-nav,
 .menu-btn {
     display: none;
@@ -1410,6 +1411,7 @@ html {
 .comming-soon {
   height: 100%;
 }
+.comming-soon #wrapper{background-image: url(../images/bg-wrapper.jpg);}
 
 @media (max-width: 767px) {
   .comming-soon {
@@ -1467,6 +1469,7 @@ html {
 
 .comming-soon .b-container .holder {
   padding: 60px 0 0;
+  background: none;
 }
 
 .comming-soon .b-container .holder:after {
@@ -1694,6 +1697,7 @@ h1 span:before {
   background-position: center top;
   -webkit-background-size: cover;
   background-size: cover;
+  background-image: url(../images/image8.jpg);
 }
 
 .banner:after {
@@ -2443,6 +2447,7 @@ h1 span:before {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center top;
+  background-image: url(../images/image2.jpg);
 }
 
 @media (max-width: 767px) {
@@ -2452,6 +2457,7 @@ h1 span:before {
 }
 
 /* services styles */
+.services .tab-content{background-image: url(../images/image3.jpg);}
 .services .tab-content > .tab-pane {
   height: 0;
   display: block!important;
@@ -2482,7 +2488,7 @@ h1 span:before {
 
 @media (max-width: 767px) {
   .services .nav-tabs li {
-    width: 33%;
+    width: 33.333%;
     height: auto;
     margin: 0 0 5px;
     float: left;
@@ -2549,7 +2555,7 @@ h1 span:before {
 
 @media (max-width: 767px) {
   .services .nav-tabs .title span {
-    font: 700 10px/14px 'PT Sans Caption', Arial, helvetica, sans-serif;
+    font: 700 15px/16px 'PT Sans Caption', Arial, helvetica, sans-serif;
   }
 }
 
@@ -2649,6 +2655,12 @@ h1 span:before {
   .services .nav-tabs .icon{ height: 46px !important; }
   .services .nav-tabs .metal-roofing .icon{ height: 36px !important; }
 }
+
+/*@media (max-width: 640px) {
+    .services .nav-tabs li{
+      width: 33.333%;
+    }
+}*/
 
 @media (max-width: 767px) {
   .services .block1 {
@@ -3089,6 +3101,7 @@ h1 span:before {
   -webkit-background-size: cover;
   background-size: cover;
   text-align: center;
+  background-image: url(../images/image4.jpg);
 }
 
 .testimonials:after {
@@ -3474,6 +3487,7 @@ form .btn-submit span {
   -webkit-background-size: cover;
   background-size: cover;
   padding: 120px 0;
+  background-image: url(../images/black-bg.jpg);
 }
 
 @media (max-width: 767px) {
@@ -3650,6 +3664,7 @@ form .btn-submit span {
   -webkit-background-size: cover;
   background-size: cover;
   position: relative;
+  background-image: url(../images/image10.jpg);
 }
 @media (max-width: 768px) {
   .services-block{
@@ -4879,6 +4894,7 @@ form .btn-submit span {
 }
 
 .b-container .holder {
+  background-image: url(../images/image7.jpg);
   background-position: center top;
   -webkit-background-size: cover;
   background-size: cover;
